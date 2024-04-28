@@ -1,0 +1,7 @@
+{
+	"parent": "minecraft:cape/cape_11",
+	"textures": {
+		"0": "item/capes/glizzy",
+		"particle": "item/capes/glizzy"
+	}
+}

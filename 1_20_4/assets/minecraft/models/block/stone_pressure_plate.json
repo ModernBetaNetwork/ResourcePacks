@@ -1,0 +1,10 @@
+{
+  "parent": "minecraft:block/pressure_plate_up",
+  "textures": {
+    "texture": "minecraft:block/stone"
+  },
+    "ground": {
+      "scale": [0.5, 0.5, 0.5]
+    }
+  }
+}

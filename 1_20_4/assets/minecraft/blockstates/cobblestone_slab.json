@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "minecraft:block/cobblestone_slab"
+    },
+    "type=double": {
+      "model": "minecraft:block/cobblestone"
+    }
+  }
+}

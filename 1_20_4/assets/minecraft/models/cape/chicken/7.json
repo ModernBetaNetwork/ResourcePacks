@@ -1,0 +1,7 @@
+{
+	"parent": "minecraft:cape/cape_7",
+	"textures": {
+		"0": "item/capes/chicken",
+		"particle": "item/capes/chicken"
+	}
+}

@@ -1,0 +1,9 @@
+{
+	"parent": "minecraft:cape/cape",
+	"display": {
+		"head": {
+			"translation": [0, -63.08, -10.39],
+			"scale": [2.1465, 2.1465, 2.1465]
+		}
+	}
+}

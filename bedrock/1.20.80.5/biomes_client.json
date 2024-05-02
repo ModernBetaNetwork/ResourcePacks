@@ -1,0 +1,18 @@
+{
+   "biomes" : {
+      "default" : {
+         "fog_identifier" : "minecraft:fog_default",
+         "fog_ids_to_merge" : [ "minecraft:fog_default" ],
+         "inherit_from_prior_fog" : false,
+         "remove_all_prior_fog" : false,
+         "water_surface_color" : "#FFFFFF",
+         "water_surface_transparency" : 0.650
+      },
+      "hell" : {
+         "fog_identifier" : "minecraft:fog_hell",
+         "fog_ids_to_merge" : [ "minecraft:fog_hell" ],
+         "inherit_from_prior_fog" : false,
+         "water_surface_color" : "#FFFFFF"
+      },
+   }
+}

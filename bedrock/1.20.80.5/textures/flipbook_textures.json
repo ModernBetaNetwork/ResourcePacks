@@ -1,0 +1,23 @@
+[
+  {
+    "flipbook_texture": "textures/blocks/water_still_grey",
+    "atlas_tile": "still_water_grey",
+    "ticks_per_frame": 2
+  },
+  {
+    "flipbook_texture": "textures/blocks/water_flow_grey",
+    "atlas_tile": "flowing_water_grey",
+    "replicate": 2
+  },
+  {
+    "flipbook_texture": "textures/blocks/lava_still",
+    "atlas_tile": "still_lava",
+    "ticks_per_frame": 16
+  },
+  {
+    "flipbook_texture": "textures/blocks/lava_flow",
+    "atlas_tile": "flowing_lava",
+    "ticks_per_frame": 10,
+    "replicate": 2
+  }
+]

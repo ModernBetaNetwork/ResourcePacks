@@ -73,6 +73,15 @@
     "replace": true,
     "sounds": []
   },
+  "block.shulker_box.break": {
+    "sounds": [
+      "dig/wood1",
+      "dig/wood2",
+      "dig/wood3",
+      "dig/wood4"
+    ],
+    "subtitle": "subtitles.block.generic.break"
+  },
   "block.chest.close": {
     "replace": true,
     "sounds": []

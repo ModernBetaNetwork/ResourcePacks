@@ -436,7 +436,7 @@
       "textures" : "black_glazed_terracotta"
    },
    "black_shulker_box" : {
-      "sound" : "stone",
+      "sound" : "wood",
       "textures" : "black_shulker_box"
    },
    "black_stained_glass" : {
@@ -647,7 +647,7 @@
       }
    },
    "brown_shulker_box" : {
-      "sound" : "stone",
+      "sound" : "wood",
       "textures" : "brown_shulker_box"
    },
    "brown_stained_glass" : {
@@ -1599,21 +1599,21 @@
    },
    "dispenser" : {
       "carried_textures" : {
-         "down" : "dispenser_top",
-         "east" : "dispenser_side",
-         "north" : "dispenser_side",
-         "south" : "dispenser_front_horizontal",
-         "up" : "dispenser_top",
-         "west" : "dispenser_side"
+         "down" : "beehive_top",
+         "east" : "beehive_side",
+         "north" : "beehive_side",
+         "south" : "beehive_front",
+         "up" : "beehive_top",
+         "west" : "beehive_side"
       },
-      "sound" : "stone",
+      "sound" : "wood",
       "textures" : {
-         "down" : "dispenser_top",
-         "east" : "dispenser_front_vertical",
-         "north" : "dispenser_side",
-         "south" : "dispenser_front_horizontal",
-         "up" : "dispenser_top",
-         "west" : "dispenser_side"
+         "down" : "beehive_top",
+         "east" : "beehive_side",
+         "north" : "beehive_side",
+         "south" : "beehive_front",
+         "up" : "beehive_top",
+         "west" : "beehive_side"
       }
    },
    "double_cut_copper_slab" : {
@@ -4778,7 +4778,7 @@
       "textures" : "white_glazed_terracotta"
    },
    "white_shulker_box" : {
-      "sound" : "stone",
+      "sound" : "wood",
       "textures" : "white_shulker_box"
    },
    "white_stained_glass" : {

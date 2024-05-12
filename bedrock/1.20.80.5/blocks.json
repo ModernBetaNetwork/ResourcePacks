@@ -358,20 +358,20 @@
    },
    "birch_leaves" : {
       "brightness_gamma" : 0.80,
-      "carried_textures" : "birch_leaves_carried",
+      "carried_textures" : "oak_leaves_carried",
       "isotropic" : {
          "down" : true,
          "up" : true
       },
       "sound" : "grass",
-      "textures" : "birch_leaves"
+      "textures" : "oak_leaves"
    },
    "birch_log" : {
       "sound" : "wood",
       "textures" : {
-         "down" : "birch_log_top",
+         "down" : "oak_log_top",
          "side" : "birch_log_side",
-         "up" : "birch_log_top"
+         "up" : "oak_log_top"
       }
    },
    "birch_pressure_plate" : {
@@ -436,7 +436,7 @@
       "textures" : "black_glazed_terracotta"
    },
    "black_shulker_box" : {
-      "sound" : "stone",
+      "sound" : "wood",
       "textures" : "black_shulker_box"
    },
    "black_stained_glass" : {
@@ -647,7 +647,7 @@
       }
    },
    "brown_shulker_box" : {
-      "sound" : "stone",
+      "sound" : "wood",
       "textures" : "brown_shulker_box"
    },
    "brown_stained_glass" : {
@@ -1572,7 +1572,7 @@
       "textures" : {
          "down" : "rail_detector",
          "side" : "rail_detector",
-         "up" : "rail_detector_powered"
+         "up" : "rail_detector"
       }
    },
    "diamond_block" : {
@@ -1695,21 +1695,21 @@
    },
    "dropper" : {
       "carried_textures" : {
-         "down" : "dropper_top",
-         "east" : "dropper_side",
-         "north" : "dropper_side",
-         "south" : "dropper_front_horizontal",
-         "up" : "dropper_top",
-         "west" : "dropper_side"
+         "down" : "furnace_top",
+         "east" : "furnace_side",
+         "north" : "furnace_side",
+         "south" : "dispenser_front_horizontal",
+         "up" : "furnace_top",
+         "west" : "furnace_side"
       },
       "sound" : "stone",
       "textures" : {
-         "down" : "dropper_top",
-         "east" : "dropper_front_vertical",
-         "north" : "dropper_side",
-         "south" : "dropper_front_horizontal",
-         "up" : "dropper_top",
-         "west" : "dropper_side"
+         "down" : "furnace_top",
+         "east" : "furnace_side",
+         "north" : "furnace_side",
+         "south" : "dispenser_front_horizontal",
+         "up" : "furnace_top",
+         "west" : "furnace_side"
       }
    },
    "emerald_block" : {
@@ -2231,8 +2231,8 @@
    "jukebox" : {
       "sound" : "wood",
       "textures" : {
-         "down" : "jukebox_side",
-         "side" : "jukebox_side",
+         "down" : "noteblock",
+         "side" : "noteblock",
          "up" : "jukebox_top"
       }
    },
@@ -3220,7 +3220,7 @@
       "carried_textures" : {
          "down" : "piston_bottom",
          "side" : "piston_side",
-         "up" : "piston_top_normal"
+         "up" : "stonebrick"
       },
       "sound" : "stone",
       "textures" : {
@@ -3230,7 +3230,7 @@
       }
    },
    "pistonArmCollision" : {
-      "textures" : "piston_top"
+      "textures" : "stonebrick"
    },
    "pitcher_crop" : {
       "sound" : "grass",
@@ -4010,9 +4010,9 @@
    "spruce_log" : {
       "sound" : "wood",
       "textures" : {
-         "down" : "spruce_log_top",
+         "down" : "oak_log_top",
          "side" : "spruce_log_side",
-         "up" : "spruce_log_top"
+         "up" : "oak_log_top"
       }
    },
    "spruce_pressure_plate" : {
@@ -4073,13 +4073,13 @@
       "textures" : "sign"
    },
    "stickyPistonArmCollision" : {
-      "textures" : "piston_top"
+      "textures" : "stonebrick"
    },
    "sticky_piston" : {
       "carried_textures" : {
          "down" : "piston_bottom",
          "side" : "piston_side",
-         "up" : "piston_top_sticky"
+         "up" : "mossy_stone_brick"
       },
       "sound" : "stone",
       "textures" : {
@@ -4778,7 +4778,7 @@
       "textures" : "white_glazed_terracotta"
    },
    "white_shulker_box" : {
-      "sound" : "stone",
+      "sound" : "wood",
       "textures" : "white_shulker_box"
    },
    "white_stained_glass" : {

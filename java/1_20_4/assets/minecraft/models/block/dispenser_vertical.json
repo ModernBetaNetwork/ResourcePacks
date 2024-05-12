@@ -1,7 +1,0 @@
-{
-  "parent": "minecraft:block/orientable_vertical",
-  "textures": {
-    "front": "minecraft:block/chest_top",
-    "side": "minecraft:block/chest_side"
-  }
-}

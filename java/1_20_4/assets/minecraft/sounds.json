@@ -54,17 +54,6 @@
     "replace": true,
     "sounds": []
   },
-  
-  "block.cake.add_candle": {
-    "replace": true,
-    "sounds": [
-      "dig/wood1",
-      "dig/wood2",
-      "dig/wood3",
-      "dig/wood4"
-    ],
-    "subtitle": "subtitles.block.cake.add_candle"
-  },
   "block.shulker_box.close": {
     "replace": true,
     "sounds": []
@@ -602,13 +591,6 @@
       "portal/trigger"
     ],
     "subtitle": "subtitles.block.portal.trigger"
-  },
-  "block.pumpkin.carve": {
-    "sounds": [
-      "block/pumpkin/carve1",
-      "block/pumpkin/carve2"
-    ],
-    "subtitle": "subtitles.block.pumpkin.carve"
   },
   "block.redstone_torch.burnout": {
     "sounds": [

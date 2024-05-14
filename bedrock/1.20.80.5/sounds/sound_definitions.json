@@ -58,7 +58,7 @@
          "max_distance" : null,
          "min_distance" : 100.0,
          "sounds" : [
-            "sounds/random/explode"
+            "sounds/random/explode1"
          ]
       },
       "ambient.weather.rain" : {
@@ -344,34 +344,21 @@
          "category" : "neutral",
          "max_distance" : null,
          "min_distance" : null,
-         "sounds" : [
-            "sounds/component/jump_to_block/jump1",
-            "sounds/component/jump_to_block/jump2"
-         ]
+         "sounds" : []
       },
       "damage.fallbig" : {
          "__use_legacy_max_distance" : "true",
          "category" : "player",
          "max_distance" : null,
          "min_distance" : null,
-         "sounds" : [
-            {
-               "load_on_low_memory" : true,
-               "name" : "sounds/damage/fallbig"
-            }
-         ]
+         "sounds" : []
       },
       "damage.fallsmall" : {
          "__use_legacy_max_distance" : "true",
          "category" : "player",
          "max_distance" : null,
          "min_distance" : null,
-         "sounds" : [
-            {
-               "load_on_low_memory" : true,
-               "name" : "sounds/damage/fallsmall"
-            }
-         ]
+         "sounds" : []
       },
       "dig.cloth" : {
          "__use_legacy_max_distance" : "true",
@@ -558,12 +545,10 @@
          "max_distance" : null,
          "min_distance" : null,
          "sounds" : [
-            "sounds/step/grass1",
-            "sounds/step/grass2",
-            "sounds/step/grass3",
-            "sounds/step/grass4",
-            "sounds/step/grass5",
-            "sounds/step/grass6"
+            "sounds/dig/grass1",
+            "sounds/dig/grass2",
+            "sounds/dig/grass3",
+            "sounds/dig/grass4"
          ]
       },
       "fall.gravel" : {
@@ -572,10 +557,10 @@
          "max_distance" : null,
          "min_distance" : null,
          "sounds" : [
-            "sounds/step/gravel1",
-            "sounds/step/gravel2",
-            "sounds/step/gravel3",
-            "sounds/step/gravel4"
+            "sounds/dig/gravel1",
+            "sounds/dig/gravel2",
+            "sounds/dig/gravel3",
+            "sounds/dig/gravel4"
          ]
       },
       "fall.ladder" : {
@@ -602,10 +587,10 @@
          "max_distance" : null,
          "min_distance" : null,
          "sounds" : [
-            "sounds/step/sand1",
-            "sounds/step/sand2",
-            "sounds/step/sand3",
-            "sounds/step/sand4"
+            "sounds/dig/sand1",
+            "sounds/dig/sand2",
+            "sounds/dig/sand3",
+            "sounds/dig/sand4"
          ]
       },
       "fall.slime" : {
@@ -638,11 +623,10 @@
          "max_distance" : null,
          "min_distance" : null,
          "sounds" : [
-            "sounds/step/soul_sand1",
-            "sounds/step/soul_sand2",
-            "sounds/step/soul_sand3",
-            "sounds/step/soul_sand4",
-            "sounds/step/soul_sand5"
+            "sounds/dig/sand1",
+            "sounds/dig/sand2",
+            "sounds/dig/sand3",
+            "sounds/dig/sand4"
          ]
       },
       "fall.stone" : {
@@ -651,10 +635,10 @@
          "max_distance" : null,
          "min_distance" : null,
          "sounds" : [
-            "sounds/step/stone1",
-            "sounds/step/stone2",
-            "sounds/step/stone3",
-            "sounds/step/stone4"
+            "sounds/dig/stone1",
+            "sounds/dig/stone2",
+            "sounds/dig/stone3",
+            "sounds/dig/stone4"
          ]
       },
       "fall.wood" : {
@@ -788,13 +772,11 @@
          "sounds" : [
             {
                "load_on_low_memory" : true,
-               "name" : "sounds/step/grass1"
+               "name" : "sounds/dig/grass1"
             },
-            "sounds/step/grass2",
-            "sounds/step/grass3",
-            "sounds/step/grass4",
-            "sounds/step/grass5",
-            "sounds/step/grass6"
+            "sounds/dig/grass2",
+            "sounds/dig/grass3",
+            "sounds/dig/grass4"
          ]
       },
       "hit.gravel" : {
@@ -805,11 +787,11 @@
          "sounds" : [
             {
                "load_on_low_memory" : true,
-               "name" : "sounds/step/gravel1"
+               "name" : "sounds/dig/gravel1"
             },
-            "sounds/step/gravel2",
-            "sounds/step/gravel3",
-            "sounds/step/gravel4"
+            "sounds/dig/gravel2",
+            "sounds/dig/gravel3",
+            "sounds/dig/gravel4"
          ]
       },
       "hit.ladder" : {
@@ -841,12 +823,11 @@
          "sounds" : [
             {
                "load_on_low_memory" : true,
-               "name" : "sounds/step/sand1"
+               "name" : "sounds/dig/sand1"
             },
-            "sounds/step/sand2",
-            "sounds/step/sand3",
-            "sounds/step/sand4",
-            "sounds/step/sand5"
+            "sounds/dig/sand2",
+            "sounds/dig/sand3",
+            "sounds/dig/sand4"
          ]
       },
       "hit.slime" : {
@@ -897,13 +878,13 @@
          "max_distance" : null,
          "min_distance" : null,
          "sounds" : [
-            "sounds/step/stone1",
-            "sounds/step/stone2",
+            "sounds/dig/stone1",
+            "sounds/dig/stone2",
             {
                "load_on_low_memory" : true,
-               "name" : "sounds/step/stone3"
+               "name" : "sounds/dig/stone3"
             },
-            "sounds/step/stone4"
+            "sounds/dig/stone4"
          ]
       },
       "hit.wood" : {
@@ -2811,10 +2792,7 @@
             {
                "load_on_low_memory" : true,
                "name" : "sounds/random/explode1"
-            },
-            "sounds/random/explode2",
-            "sounds/random/explode3",
-            "sounds/random/explode4"
+            }
          ]
       },
       "random.fizz" : {
@@ -3301,13 +3279,11 @@
          "sounds" : [
             {
                "load_on_low_memory" : true,
-               "name" : "sounds/step/grass1"
+               "name" : "sounds/dig/grass1"
             },
-            "sounds/step/grass2",
-            "sounds/step/grass3",
-            "sounds/step/grass4",
-            "sounds/step/grass5",
-            "sounds/step/grass6"
+            "sounds/dig/grass2",
+            "sounds/dig/grass3",
+            "sounds/dig/grass4"
          ]
       },
       "step.gravel" : {
@@ -3318,19 +3294,19 @@
          "sounds" : [
             {
                "load_on_low_memory" : true,
-               "name" : "sounds/step/gravel1",
+               "name" : "sounds/dig/gravel1",
                "volume" : 0.30
             },
             {
-               "name" : "sounds/step/gravel2",
+               "name" : "sounds/dig/gravel2",
                "volume" : 0.30
             },
             {
-               "name" : "sounds/step/gravel3",
+               "name" : "sounds/dig/gravel3",
                "volume" : 0.30
             },
             {
-               "name" : "sounds/step/gravel4",
+               "name" : "sounds/dig/gravel4",
                "volume" : 0.30
             }
          ]
@@ -3364,11 +3340,11 @@
          "sounds" : [
             {
                "load_on_low_memory" : true,
-               "name" : "sounds/step/sand1"
+               "name" : "sounds/dig/sand1"
             },
-            "sounds/step/sand2",
-            "sounds/step/sand3",
-            "sounds/step/sand4"
+            "sounds/dig/sand2",
+            "sounds/dig/sand3",
+            "sounds/dig/sand4"
          ]
       },
       "step.slime" : {
@@ -3419,13 +3395,13 @@
          "max_distance" : null,
          "min_distance" : null,
          "sounds" : [
-            "sounds/step/stone1",
-            "sounds/step/stone2",
+            "sounds/dig/stone1",
+            "sounds/dig/stone2",
             {
                "load_on_low_memory" : true,
-               "name" : "sounds/step/stone3"
+               "name" : "sounds/dig/stone3"
             },
-            "sounds/step/stone4"
+            "sounds/dig/stone4"
          ]
       },
       "step.wood" : {
@@ -3485,12 +3461,10 @@
          "max_distance" : null,
          "min_distance" : null,
          "sounds" : [
-            "sounds/step/grass1",
-            "sounds/step/grass2",
-            "sounds/step/grass3",
-            "sounds/step/grass4",
-            "sounds/step/grass5",
-            "sounds/step/grass6"
+            "sounds/dig/grass1",
+            "sounds/dig/grass2",
+            "sounds/dig/grass3",
+            "sounds/dig/grass4"
          ]
       },
       "use.gravel" : {
@@ -3499,10 +3473,10 @@
          "max_distance" : null,
          "min_distance" : null,
          "sounds" : [
-            "sounds/step/gravel1",
-            "sounds/step/gravel2",
-            "sounds/step/gravel3",
-            "sounds/step/gravel4"
+            "sounds/dig/gravel1",
+            "sounds/dig/gravel2",
+            "sounds/dig/gravel3",
+            "sounds/dig/gravel4"
          ]
       },
       "use.ladder" : {
@@ -3537,11 +3511,10 @@
          "max_distance" : null,
          "min_distance" : null,
          "sounds" : [
-            "sounds/step/sand1",
-            "sounds/step/sand2",
-            "sounds/step/sand3",
-            "sounds/step/sand4",
-            "sounds/step/sand5"
+            "sounds/dig/sand1",
+            "sounds/dig/sand2",
+            "sounds/dig/sand3",
+            "sounds/dig/sand4"
          ]
       },
       "use.slime" : {
@@ -3563,10 +3536,10 @@
          "max_distance" : null,
          "min_distance" : null,
          "sounds" : [
-            "sounds/step/snow1",
-            "sounds/step/snow2",
-            "sounds/step/snow3",
-            "sounds/step/snow4"
+            "sounds/dig/snow1",
+            "sounds/dig/snow2",
+            "sounds/dig/snow3",
+            "sounds/dig/snow4"
          ]
       },
       "use.soul_sand" : {
@@ -3589,10 +3562,10 @@
          "max_distance" : null,
          "min_distance" : null,
          "sounds" : [
-            "sounds/step/stone1",
-            "sounds/step/stone2",
-            "sounds/step/stone3",
-            "sounds/step/stone4"
+            "sounds/dig/stone1",
+            "sounds/dig/stone2",
+            "sounds/dig/stone3",
+            "sounds/dig/stone4"
          ]
       },
       "use.wood" : {

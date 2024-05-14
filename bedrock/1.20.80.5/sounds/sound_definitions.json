@@ -515,9 +515,8 @@
          "sounds" : [
             {
                "load_on_low_memory" : true,
-               "name" : "sounds/liquid/splash"
-            },
-            "sounds/liquid/splash2"
+               "name" : "sounds/random/splash"
+            }
          ]
       },
       "entity.zombie.converted_to_drowned" : {
@@ -2914,15 +2913,7 @@
          "category" : "player",
          "max_distance" : null,
          "min_distance" : null,
-         "sounds" : [
-            "sounds/random/swim1",
-            "sounds/random/swim2",
-            "sounds/random/swim3",
-            {
-               "load_on_low_memory" : true,
-               "name" : "sounds/random/swim4"
-            }
-         ]
+         "sounds" : [ "sounds/random/splash" ]
       },
       "random.toast" : {
          "__use_legacy_max_distance" : "true",
@@ -3172,77 +3163,11 @@
             }
          ]
       },
-      "resonate.amethyst_block" : {
-         "category" : "block",
-         "max_distance" : null,
-         "min_distance" : null,
-         "sounds" : [
-            {
-               "name" : "sounds/block/amethyst/resonate1",
-               "volume" : 3.0
-            },
-            {
-               "name" : "sounds/block/amethyst/resonate2",
-               "volume" : 3.0
-            },
-            {
-               "name" : "sounds/block/amethyst/resonate3",
-               "volume" : 3.0
-            },
-            {
-               "name" : "sounds/block/amethyst/resonate4",
-               "volume" : 3.0
-            }
-         ]
-      },
-      "respawn_anchor.ambient" : {
-         "category" : "block",
-         "max_distance" : 7.0,
-         "min_distance" : null,
-         "sounds" : [
-            "sounds/block/respawn_anchor/ambient1",
-            "sounds/block/respawn_anchor/ambient2",
-            "sounds/block/respawn_anchor/ambient3"
-         ]
-      },
-      "respawn_anchor.charge" : {
-         "category" : "block",
-         "max_distance" : null,
-         "min_distance" : null,
-         "sounds" : [
-            "sounds/block/respawn_anchor/charge1",
-            "sounds/block/respawn_anchor/charge2",
-            "sounds/block/respawn_anchor/charge3"
-         ]
-      },
-      "respawn_anchor.deplete" : {
-         "category" : "block",
-         "max_distance" : null,
-         "min_distance" : null,
-         "sounds" : [
-            "sounds/block/respawn_anchor/deplete1",
-            "sounds/block/respawn_anchor/deplete2"
-         ]
-      },
-      "respawn_anchor.set_spawn" : {
-         "category" : "block",
-         "max_distance" : null,
-         "min_distance" : null,
-         "sounds" : [
-            "sounds/block/respawn_anchor/set_spawn1",
-            "sounds/block/respawn_anchor/set_spawn2",
-            "sounds/block/respawn_anchor/set_spawn3"
-         ]
-      },
       "scrape" : {
          "category" : "neutral",
          "max_distance" : null,
          "min_distance" : null,
-         "sounds" : [
-            "sounds/item/axe/scrape1",
-            "sounds/item/axe/scrape2",
-            "sounds/item/axe/scrape3"
-         ]
+         "sounds" : []
       },
       "sign.dye.use" : {
          "__use_legacy_max_distance" : "true",

@@ -3,13 +3,13 @@
     "header": {
         "description": "Welcome to 2011!",
         "name": "Modern Beta Resources",
-        "uuid": "66c6e9a8-3093-462a-9c36-dbb052165822",
+        "uuid": "093a869a-5b04-44cf-a473-0f5252c63c6d",
         "version": [0, 0, 1],
         "min_engine_version": [ 1, 20, 80 ]
     },
     "modules": [
         {
-            "description": "Example vanilla resource pack",
+            "description": "Welcome to 2011!",
             "type": "resources",
             "uuid": "743f6949-53be-44b6-b326-398005028819",
             "version": [0, 0, 1]

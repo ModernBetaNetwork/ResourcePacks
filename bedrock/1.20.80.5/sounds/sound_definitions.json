@@ -907,137 +907,247 @@
          "min_distance" : null,
          "sounds" : []
       },
+      "jump.ancient_debris" : {
+         "category" : "player",
+         "max_distance" : null,
+         "min_distance" : null,
+         "sounds" : []
+      },
+      "jump.azalea" : {
+         "category" : "player",
+         "max_distance" : null,
+         "min_distance" : null,
+         "sounds" : []
+      },
+      "jump.basalt" : {
+         "category" : "player",
+         "max_distance" : null,
+         "min_distance" : null,
+         "sounds" : []
+      },
+      "jump.big_dripleaf" : {
+         "category" : "player",
+         "max_distance" : null,
+         "min_distance" : null,
+         "sounds" : []
+      },
+      "jump.bone_block" : {
+         "category" : "player",
+         "max_distance" : null,
+         "min_distance" : null,
+         "sounds" : []
+      },
+      "jump.cave_vines" : {
+         "category" : "player",
+         "max_distance" : null,
+         "min_distance" : null,
+         "sounds" : []
+      },
+      "jump.chain" : {
+         "category" : "player",
+         "max_distance" : null,
+         "min_distance" : null,
+         "sounds" : []
+      },
       "jump.cloth" : {
          "__use_legacy_max_distance" : "true",
          "category" : "player",
          "max_distance" : null,
          "min_distance" : null,
-         "sounds" : [
-            "sounds/jump/cloth1",
-            {
-               "load_on_low_memory" : true,
-               "name" : "sounds/jump/cloth2"
-            },
-            "sounds/jump/cloth3",
-            "sounds/jump/cloth4"
-         ]
+         "sounds" : []
+      },
+      "jump.coral" : {
+         "category" : "player",
+         "max_distance" : null,
+         "min_distance" : null,
+         "sounds" : []
+      },
+      "jump.deepslate" : {
+         "category" : "player",
+         "max_distance" : null,
+         "min_distance" : null,
+         "sounds" : []
+      },
+      "jump.deepslate_bricks" : {
+         "category" : "player",
+         "max_distance" : null,
+         "min_distance" : null,
+         "sounds" : []
+      },
+      "jump.dirt_with_roots" : {
+         "category" : "player",
+         "max_distance" : null,
+         "min_distance" : null,
+         "sounds" : []
+      },
+      "jump.dripstone_block" : {
+         "category" : "player",
+         "max_distance" : null,
+         "min_distance" : null,
+         "sounds" : []
       },
       "jump.grass" : {
          "__use_legacy_max_distance" : "true",
          "category" : "player",
          "max_distance" : null,
          "min_distance" : null,
-         "sounds" : [
-            "sounds/jump/grass1",
-            {
-               "load_on_low_memory" : true,
-               "name" : "sounds/jump/grass2"
-            },
-            "sounds/jump/grass3",
-            "sounds/jump/grass4"
-         ]
+         "sounds" : []
       },
       "jump.gravel" : {
          "__use_legacy_max_distance" : "true",
          "category" : "player",
          "max_distance" : null,
          "min_distance" : null,
-         "sounds" : [
-            "sounds/jump/gravel1",
-            "sounds/jump/gravel2",
-            "sounds/jump/gravel3",
-            {
-               "load_on_low_memory" : true,
-               "name" : "sounds/jump/gravel4"
-            }
-         ]
+         "sounds" : []
+      },
+      "jump.hanging_roots" : {
+         "category" : "player",
+         "max_distance" : null,
+         "min_distance" : null,
+         "sounds" : []
+      },
+      "jump.honey_block" : {
+         "category" : "player",
+         "max_distance" : null,
+         "min_distance" : null,
+         "sounds" : []
+      },
+      "jump.moss" : {
+         "category" : "player",
+         "max_distance" : null,
+         "min_distance" : null,
+         "sounds" : []
+      },
+      "jump.nether_brick" : {
+         "category" : "player",
+         "max_distance" : null,
+         "min_distance" : null,
+         "sounds" : []
+      },
+      "jump.nether_gold_ore" : {
+         "category" : "player",
+         "max_distance" : null,
+         "min_distance" : null,
+         "sounds" : []
+      },
+      "jump.nether_sprouts" : {
+         "category" : "player",
+         "max_distance" : null,
+         "min_distance" : null,
+         "sounds" : []
+      },
+      "jump.nether_wart" : {
+         "category" : "player",
+         "max_distance" : null,
+         "min_distance" : null,
+         "sounds" : []
+      },
+      "jump.netherite" : {
+         "category" : "player",
+         "max_distance" : null,
+         "min_distance" : null,
+         "sounds" : []
+      },
+      "jump.netherrack" : {
+         "category" : "player",
+         "max_distance" : null,
+         "min_distance" : null,
+         "sounds" : []
+      },
+      "jump.nylium" : {
+         "category" : "player",
+         "max_distance" : null,
+         "min_distance" : null,
+         "sounds" : []
+      },
+      "jump.pointed_dripstone" : {
+         "category" : "player",
+         "max_distance" : null,
+         "min_distance" : null,
+         "sounds" : []
+      },
+      "jump.roots" : {
+         "category" : "player",
+         "max_distance" : null,
+         "min_distance" : null,
+         "sounds" : []
       },
       "jump.sand" : {
          "__use_legacy_max_distance" : "true",
          "category" : "player",
          "max_distance" : null,
          "min_distance" : null,
-         "sounds" : [
-            "sounds/jump/sand1",
-            "sounds/jump/sand2",
-            "sounds/jump/sand3",
-            {
-               "load_on_low_memory" : true,
-               "name" : "sounds/jump/sand4"
-            }
-         ]
+         "sounds" : []
+      },
+      "jump.sculk_sensor" : {
+         "category" : "player",
+         "max_distance" : null,
+         "min_distance" : null,
+         "sounds" : []
+      },
+      "jump.shroomlight" : {
+         "category" : "player",
+         "max_distance" : null,
+         "min_distance" : null,
+         "sounds" : []
       },
       "jump.slime" : {
          "__use_legacy_max_distance" : "true",
          "category" : "player",
          "max_distance" : null,
          "min_distance" : null,
-         "sounds" : [
-            "sounds/mob/slime/small1",
-            "sounds/mob/slime/small2",
-            "sounds/mob/slime/small3",
-            "sounds/mob/slime/small4",
-            "sounds/mob/slime/small5"
-         ]
+         "sounds" : []
       },
       "jump.snow" : {
          "__use_legacy_max_distance" : "true",
          "category" : "player",
          "max_distance" : null,
          "min_distance" : null,
-         "sounds" : [
-            {
-               "load_on_low_memory" : true,
-               "name" : "sounds/jump/snow1"
-            },
-            "sounds/jump/snow2",
-            "sounds/jump/snow3",
-            "sounds/jump/snow4"
-         ]
+         "sounds" : []
       },
       "jump.soul_sand" : {
          "category" : "player",
          "max_distance" : null,
          "min_distance" : null,
-         "sounds" : [
-            "sounds/dig/sand1",
-            {
-               "load_on_low_memory" : true,
-               "name" : "sounds/dig/sand2"
-            },
-            "sounds/dig/sand3",
-            "sounds/dig/sand4"
-         ]
+         "sounds" : []
+      },
+      "jump.soul_soil" : {
+         "category" : "player",
+         "max_distance" : null,
+         "min_distance" : null,
+         "sounds" : []
+      },
+      "jump.spore_blossom" : {
+         "category" : "player",
+         "max_distance" : null,
+         "min_distance" : null,
+         "sounds" : []
+      },
+      "jump.stem" : {
+         "category" : "player",
+         "max_distance" : null,
+         "min_distance" : null,
+         "sounds" : []
       },
       "jump.stone" : {
          "__use_legacy_max_distance" : "true",
          "category" : "player",
          "max_distance" : null,
          "min_distance" : null,
-         "sounds" : [
-            "sounds/jump/stone1",
-            {
-               "load_on_low_memory" : true,
-               "name" : "sounds/jump/stone2"
-            },
-            "sounds/jump/stone3",
-            "sounds/jump/stone4"
-         ]
+         "sounds" : []
+      },
+      "jump.vines" : {
+         "category" : "player",
+         "max_distance" : null,
+         "min_distance" : null,
+         "sounds" : []
       },
       "jump.wood" : {
          "__use_legacy_max_distance" : "true",
          "category" : "player",
          "max_distance" : null,
          "min_distance" : null,
-         "sounds" : [
-            "sounds/dig/wood1",
-            "sounds/dig/wood2",
-            "sounds/dig/wood3",
-            {
-               "load_on_low_memory" : true,
-               "name" : "sounds/dig/wood4"
-            }
-         ]
+         "sounds" : []
       },
       "land.cloth" : {
          "__use_legacy_max_distance" : "true",
@@ -1045,10 +1155,10 @@
          "max_distance" : null,
          "min_distance" : null,
          "sounds" : [
-            "sounds/jump/cloth1",
-            "sounds/jump/cloth2",
-            "sounds/jump/cloth3",
-            "sounds/jump/cloth4"
+            "sounds/dig/cloth1",
+            "sounds/dig/cloth2",
+            "sounds/dig/cloth3",
+            "sounds/dig/cloth4"
          ]
       },
       "land.grass" : {
@@ -1057,10 +1167,10 @@
          "max_distance" : null,
          "min_distance" : null,
          "sounds" : [
-            "sounds/jump/grass1",
-            "sounds/jump/grass2",
-            "sounds/jump/grass3",
-            "sounds/jump/grass4"
+            "sounds/dig/grass1",
+            "sounds/dig/grass2",
+            "sounds/dig/grass3",
+            "sounds/dig/grass4"
          ]
       },
       "land.gravel" : {
@@ -1069,10 +1179,10 @@
          "max_distance" : null,
          "min_distance" : null,
          "sounds" : [
-            "sounds/jump/gravel1",
-            "sounds/jump/gravel2",
-            "sounds/jump/gravel3",
-            "sounds/jump/gravel4"
+            "sounds/dig/gravel1",
+            "sounds/dig/gravel2",
+            "sounds/dig/gravel3",
+            "sounds/dig/gravel4"
          ]
       },
       "land.netherrack" : {
@@ -1092,10 +1202,10 @@
          "max_distance" : null,
          "min_distance" : null,
          "sounds" : [
-            "sounds/jump/sand1",
-            "sounds/jump/sand2",
-            "sounds/jump/sand3",
-            "sounds/jump/sand4"
+            "sounds/dig/sand1",
+            "sounds/dig/sand2",
+            "sounds/dig/sand3",
+            "sounds/dig/sand4"
          ]
       },
       "land.slime" : {
@@ -1117,10 +1227,10 @@
          "max_distance" : null,
          "min_distance" : null,
          "sounds" : [
-            "sounds/jump/snow1",
-            "sounds/jump/snow2",
-            "sounds/jump/snow3",
-            "sounds/jump/snow4"
+            "sounds/dig/snow1",
+            "sounds/dig/snow2",
+            "sounds/dig/snow3",
+            "sounds/dig/snow4"
          ]
       },
       "land.soul_sand" : {
@@ -1140,10 +1250,10 @@
          "max_distance" : null,
          "min_distance" : null,
          "sounds" : [
-            "sounds/jump/stone1",
-            "sounds/jump/stone2",
-            "sounds/jump/stone3",
-            "sounds/jump/stone4"
+            "sounds/dig/stone1",
+            "sounds/dig/stone2",
+            "sounds/dig/stone3",
+            "sounds/dig/stone4"
          ]
       },
       "land.wood" : {

@@ -1,7 +1,0 @@
-{
-	"parent": "minecraft:cape/cape_6",
-	"textures": {
-		"0": "item/capes/notch",
-		"particle": "item/capes/notch"
-	}
-}

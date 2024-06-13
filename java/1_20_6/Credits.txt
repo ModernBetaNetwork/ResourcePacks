@@ -1,3 +1,4 @@
 Contributors:
 Karltroid (Owner)
 Stridey	(Vanilla Tweaks Developer)
+DartCat25 (Core shaders)

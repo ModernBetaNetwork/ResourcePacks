@@ -50,6 +50,11 @@
   "telemetry.event.advancement_made.description": "Understanding the context behind receiving a achievement can help us better understand and improve the progression of the game.",
   "telemetry.property.advancement_id.title": "Achievement ID",
   
+  "menu.returnToGame": "Back to game",
+  "menu.returnToMenu": "Save and quit to title",
+  "menu.disconnect": "Save and quit to title",
+  "menu.sendFeedback": "Give feedback",
+  
   "attribute.modifier.equals.0": "",
   "attribute.modifier.equals.1": "",
   "attribute.modifier.equals.2": "",
@@ -146,10 +151,11 @@
   "block.minecraft.white_shulker_box": "Chest",
   "block.minecraft.white_wool": "Wool",
   
+  "menu.game": "Game menu",
   "deathScreen.score.value": "Score: &e0",
   "deathScreen.title": "Game over!",
   "deathScreen.title.hardcore": "Game over!",
-  "deathScreen.titleScreen": "Title Menu",
+  "deathScreen.titleScreen": "Title menu",
   "demo.help.fullWrapped": "This demo will last 5 in-game days (about 1 hour and 40 minutes of real time). Check the achievements for hints! Have fun!",
   
   "entity.minecraft.cod": "Fish",

@@ -2,6 +2,7 @@
 	"credit": "Made with Blockbench",
 	"parent": "minecraft:item/generated",
 	"textures": {
+		"particle": "block/tripwire",
 		"layer0": "item/bow"
 	},
 	"display": {

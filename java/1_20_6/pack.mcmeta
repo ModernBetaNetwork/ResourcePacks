@@ -1,7 +1,7 @@
 {
 	"pack": {
 		"pack_format": 15,
-		"supported_formats": [15, 33],
+		"supported_formats": [15, 34],
 		"description": "Beta 1.7.3 Resources"
 	},
 	"overlays": {

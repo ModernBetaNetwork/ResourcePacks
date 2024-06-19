@@ -1,0 +1,6 @@
+{
+	"parent": "item/oak_slab",
+	"textures": {
+		"all": "block/cobblestone"
+	}
+}

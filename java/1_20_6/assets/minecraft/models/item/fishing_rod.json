@@ -1,6 +1,7 @@
 {
     "parent": "item/handheld_rod",
     "textures": {
+        "particle": "block/tripwire",
         "layer0": "item/fishing_rod"
     }
 }

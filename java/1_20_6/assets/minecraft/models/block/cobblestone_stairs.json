@@ -1,12 +1,6 @@
 {
-  "parent": "minecraft:block/stairs",
-  "textures": {
-    "bottom": "minecraft:block/cobblestone",
-    "side": "minecraft:block/cobblestone",
-    "top": "minecraft:block/cobblestone"
-  },
-    "ground": {
-      "scale": [0.5, 0.5, 0.5]
-    }
-  }
+	"parent": "block/oak_stairs",
+	"textures": {
+		"all": "block/cobblestone"
+	}
 }

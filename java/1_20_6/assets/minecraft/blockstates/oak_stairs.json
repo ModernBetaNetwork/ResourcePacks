@@ -1,7 +1,8 @@
 {
   "variants": {
     "facing=east": {
-      "model": "minecraft:block/oak_stairs"
+      "model": "minecraft:block/oak_stairs",
+      "uvlock": true
     },
     "facing=north": {
       "model": "minecraft:block/oak_stairs",

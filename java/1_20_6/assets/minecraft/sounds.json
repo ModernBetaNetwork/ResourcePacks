@@ -252,6 +252,7 @@
     "subtitle": "subtitles.block.generic.footsteps"
   },
   "block.gravel.break": {
+    "replace": true,
     "sounds": [
       "dig/gravel1",
       "dig/gravel2",
@@ -280,6 +281,7 @@
     "subtitle": "subtitles.block.generic.hit"
   },
   "block.gravel.place": {
+    "replace": true,
     "sounds": [
       "dig/gravel1",
       "dig/gravel2",
@@ -574,6 +576,7 @@
     "subtitle": "subtitles.block.generic.hit"
   },
   "block.sand.place": {
+    "replace": true,
     "sounds": [
       "dig/sand1",
       "dig/sand2",

@@ -1,6 +1,8 @@
 {
-	"parent": "item/oak_slab",
+	"parent": "item/sandstone_slab",
 	"textures": {
-		"all": "block/cobblestone"
+		"top": "block/cobblestone",
+		"side": "block/cobblestone",
+		"bottom": "block/cobblestone"
 	}
 }

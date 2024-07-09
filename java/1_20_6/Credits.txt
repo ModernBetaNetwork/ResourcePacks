@@ -2,3 +2,4 @@ Contributors:
 Karltroid (Owner)
 Stridey	(Vanilla Tweaks Developer)
 DartCat25 (Core shaders)
+PoeticRainbow (GoldenDays Pack Creator) - Fixed chest model texture while using Enhanced Block Entities mod

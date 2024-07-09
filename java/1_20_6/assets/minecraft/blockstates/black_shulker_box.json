@@ -1,0 +1,20 @@
+{
+  "variants": {
+    "facing=south": {
+      "model": "minecraft:block/beta_chest_left",
+      "y": 180
+    },
+    "facing=east": {
+      "model": "minecraft:block/beta_chest_left",
+      "y": 450
+    },
+    "facing=north": {
+      "model": "minecraft:block/beta_chest_left",
+      "y": 360
+    },
+    "facing=west": {
+      "model": "minecraft:block/beta_chest_left",
+      "y": 270
+    }
+  }
+}

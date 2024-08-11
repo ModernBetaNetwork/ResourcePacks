@@ -2967,7 +2967,7 @@ entity.xp_bottle.name=Bottle o' Enchanting
 entity.zoglin.name=Zoglin
 entity.zombie.name=Zombie
 entity.zombie_horse.name=Zombie Horse
-entity.zombie_pigman.name=Zombified Piglin
+entity.zombie_pigman.name=Pig Zombie
 entity.zombie_villager.name=Zombie Villager
 entity.zombie_villager_v2.name=Zombie Villager
 

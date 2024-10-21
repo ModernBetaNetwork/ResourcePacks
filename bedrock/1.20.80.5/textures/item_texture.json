@@ -195,6 +195,33 @@
     },
     "record_relic": {
       "textures": "textures/items/music_disc_relic"
+    },
+    "blaze_rod": {
+      "textures": "textures/items/mushroom_stew"
+    },
+    "rabbit_foot": {
+      "textures": "textures/items/fish_raw"
+    },
+    "rabbit_hide": {
+      "textures": "textures/items/fish_cooked"
+    },
+    "spider_eye_fermented": {
+      "textures": "textures/items/porkchop_raw"
+    },
+    "netherbrick": {
+      "textures": "textures/items/porkchop_cooked"
+    },
+    "nautilus_shell": {
+      "textures": "textures/items/bread"
+    },
+    "magma_cream": {
+      "textures": "textures/items/apple"
+    },
+    "melon_speckled": {
+      "textures": "textures/items/apple_golden"
+    },
+    "quartz": {
+      "textures": "textures/items/cookie"
     }
   }
 }

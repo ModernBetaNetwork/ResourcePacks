@@ -188,5 +188,15 @@
   "item.minecraft.music_disc_13": "\u00a7fMusic Disc",
   "item.minecraft.music_disc_13.desc": "",
   "item.minecraft.music_disc_cat": "\u00a7fMusic Disc",
-  "item.minecraft.music_disc_cat.desc": ""
+  "item.minecraft.music_disc_cat.desc": "",
+
+  "item.minecraft.blaze_rod": "Mushroom Stew",
+  "item.minecraft.rabbit_foot": "Fish",
+  "item.minecraft.rabbit_hide": "Cooked Fish",
+  "item.minecraft.fermented_spider_eye": "Raw Porkchop",
+  "item.minecraft.nether_brick": "Cooked Porkchop",
+  "item.minecraft.nautilus_shell": "Bread",
+  "item.minecraft.magma_cream": "Apple",
+  "item.minecraft.glistering_melon_slice": "Golden Apple",
+  "item.minecraft.quartz": "Cookie"
 }

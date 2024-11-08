@@ -1,15 +1,7 @@
 {
 	"pack": {
-		"pack_format": 15,
-		"supported_formats": [15, 34],
-		"description": "Beta 1.7.3 Resources"
-	},
-	"overlays": {
-		"entries": [
-			{
-				"formats": {"min_inclusive": 18, "max_inclusive": 22},
-				"directory": "overlay_18_to_22"
-			}
-		]
+		"pack_format": 42,
+		"supported_formats": [15, 18, 22, 32, 34, 42],
+		"description": "§b§lModern §a§lBeta§r\nDefault Texture Pack"
 	}
 }

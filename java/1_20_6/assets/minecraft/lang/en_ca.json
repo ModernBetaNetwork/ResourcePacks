@@ -130,6 +130,8 @@
   "block.minecraft.dandelion": "Flower",
   "block.minecraft.dropper": "Dispenser",
   "container.dropper": "Dispenser",
+  "container.beehive.bees": "",
+  "container.beehive.honey": "",
   "stat.minecraft.inspect_dropper": "Dispensers Searched",
   "block.minecraft.mossy_cobblestone": "Moss Stone",
   "block.minecraft.oak_door": "Wooden Door",

@@ -1,0 +1,3 @@
+# ignore packaged resourcepacks
+*.mcpack
+*.zip

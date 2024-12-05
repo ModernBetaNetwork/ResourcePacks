@@ -3,11 +3,19 @@
   "modernbeta.rules.2": "\u00a7c\u00a7l✖ NO\u00a7r destroying other's homes/things",
   "modernbeta.rules.3": "\u00a7c\u00a7l✖ NO\u00a7r stealing from chests that aren't marked as public",
   "modernbeta.rules.4": "\u00a7c\u00a7l✖ NO\u00a7r languages besides english in global chats",
-  "modernbeta.rules.5": "\u00a7c\u00a7l✖ NO\u00a7r duplication exploits (except sand/gravel using pistons)",
+  "modernbeta.rules.5": "\u00a7c\u00a7l✖ NO\u00a7r duplication exploits (except sand/gravel via pistons)",
   "modernbeta.rules.6": "\u00a7c\u00a7l✖ NO\u00a7r over sexual comments, racism, sexism, homophobia, etc.",
-  "modernbeta.rules.7": "\u00a7c\u00a7l✖ NO\u00a7r REAL war/drug/political/religious discussions or builds",
+  "modernbeta.rules.7": "\u00a7c\u00a7l✖ NO\u00a7r REAL war/drug/political/religious texts or builds",
   "modernbeta.rules.8": "\u00a7a\u00a7l✔ DO\u00a7r use common sense and make some friends ❤",
   "modernbeta.rules.9": "\u00a7a\u00a7l✔ DO\u00a7r keep real life at the door and enjoy block game ❤",
+
+  "modernbeta.onboarding.take_action.title": "\u00a7c\u00a7lACCEPT RULES IN CHAT",
+  "modernbeta.onboarding.take_action.subtitle": "\u00a7cThen you can continue.",
+  "modernbeta.onboarding.success.title": "\u00a7a\u00a7lHave fun!",
+  "modernbeta.onboarding.success.subtitle": "\u00a7aAll your actions are logged.",
+  "modernbeta.onboarding.success.chat": "\u00a7a\u00a7lThank you for accepting our Rules!\n\u00a7aWelcome to 2011, enjoy Modern Beta!\n",
+
+  "modernbeta.welcome_message": "Welcome %s to the server!",
 
   "addServer.resourcePack": "Server Texture Packs",
   "debug.reload_resourcepacks.help": "F3 + T = Reload texture packs",

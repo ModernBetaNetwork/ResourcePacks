@@ -1,7 +1,10 @@
 {
 	"pack": {
-		"pack_format": 42,
-		"supported_formats": [15, 18, 22, 32, 34, 42],
 		"description": "§b§lModern §a§lBeta§r\nDefault Texture Pack"
+		"pack_format": 42,
+		"supported_formats": {
+			"min_inclusive": 15,
+			"max_inclusive": 46
+		}
 	}
 }

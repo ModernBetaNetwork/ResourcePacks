@@ -515,7 +515,8 @@
          "sounds" : [
             {
                "load_on_low_memory" : true,
-               "name" : "sounds/random/splash"
+               "name" : "sounds/liquid/splash",
+               "volume" : 0.60
             }
          ]
       },
@@ -3001,7 +3002,8 @@
          "sounds" : [
             {
                "load_on_low_memory" : true,
-               "name" : "sounds/random/splash"
+               "name" : "sounds/random/splash",
+               "volume" : 0.60
             }
          ]
       },
@@ -3023,7 +3025,13 @@
          "category" : "player",
          "max_distance" : null,
          "min_distance" : null,
-         "sounds" : [ "sounds/random/splash" ]
+         "sounds" : [
+            {
+               "load_on_low_memory" : true,
+               "name" : "sounds/random/splash",
+               "volume" : 0.60
+            }
+         ]
       },
       "random.toast" : {
          "__use_legacy_max_distance" : "true",

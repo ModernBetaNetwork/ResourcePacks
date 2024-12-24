@@ -66,25 +66,7 @@
          "category" : "weather",
          "max_distance" : null,
          "min_distance" : 100.0,
-         "sounds" : [
-            {
-               "load_on_low_memory" : true,
-               "name" : "sounds/ambient/weather/rain1",
-               "volume" : 0.020
-            },
-            {
-               "name" : "sounds/ambient/weather/rain2",
-               "volume" : 0.020
-            },
-            {
-               "name" : "sounds/ambient/weather/rain3",
-               "volume" : 0.020
-            },
-            {
-               "name" : "sounds/ambient/weather/rain4",
-               "volume" : 0.020
-            }
-         ]
+         "sounds" : []
       },
       "ambient.weather.thunder" : {
          "__use_legacy_max_distance" : "true",

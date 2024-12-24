@@ -36,6 +36,13 @@
 					"min_inclusive": 47,
 					"max_inclusive": 999
 				}
+			},
+			{
+				"directory": "christmas",
+				"formats": {
+					"min_inclusive": 15,
+					"max_inclusive": 46
+				}
 			}
 		]
 	}

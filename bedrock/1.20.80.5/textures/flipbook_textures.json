@@ -78,7 +78,7 @@
   {
     "flipbook_texture": "textures/blocks/water_still_grey",
     "atlas_tile": "still_water_grey",
-    "ticks_per_frame": 2
+    "ticks_per_frame": 4
   },
   {
     "flipbook_texture": "textures/blocks/water_flow_grey",

@@ -1,35 +1,8 @@
 {
-	"credit": "Made with Blockbench",
-	"parent": "block/block",
-	"texture_size": [64, 64],
-	"textures": {
-		"1": "block/chest_side",
-		"2": "block/chest_front",
-		"3": "block/chest_top",
-		"particle": "block/chest_side"
-	},
-	"elements": [
-		{
-			"from": [0, 0, 0],
-			"to": [16, 8, 16],
-			"faces": {
-				"north": {"uv": [0, 8, 16, 16], "texture": "#3", "cullface": "north"},
-				"east": {"uv": [0, 0, 8, 16], "rotation": 270, "texture": "#1", "cullface": "east"},
-				"south": {"uv": [0, 8, 16, 16], "texture": "#3", "cullface": "south"},
-				"west": {"uv": [8, 0, 16, 16], "rotation": 90, "texture": "#1", "cullface": "west"},
-				"down": {"uv": [0, 0, 16, 16], "texture": "#1", "cullface": "down"}
-			}
-		},
-		{
-			"from": [0, 4, 0],
-			"to": [16, 16, 16],
-			"faces": {
-				"north": {"uv": [0, 0, 16, 12], "texture": "#3", "cullface": "north"},
-				"east": {"uv": [4, 0, 16, 16], "rotation": 270, "texture": "#1", "cullface": "east"},
-				"south": {"uv": [0, 0, 16, 12], "texture": "#3", "cullface": "south"},
-				"west": {"uv": [0, 0, 12, 16], "rotation": 90, "texture": "#1", "cullface": "west"},
-				"up": {"uv": [0, 16, 16, 0], "texture": "#2", "cullface": "up"}
-			}
-		}
-	]
+  "parent": "minecraft:block/orientable",
+  "textures": {
+    "front": "minecraft:block/chest_front",
+    "side": "minecraft:block/chest_side",
+    "top": "minecraft:block/chest_top"
+  }
 }

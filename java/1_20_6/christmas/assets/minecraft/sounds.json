@@ -468,9 +468,9 @@
   },
   "block.note_block.bell": {
     "sounds": [
-      "note/harp"
+      "note/bell"
     ],
-    "replace": true,
+    "replace": false,
     "subtitle": "subtitles.block.note_block.note"
   },
   "block.note_block.flute": {
@@ -503,7 +503,7 @@
   },
   "block.note_block.guitar": {
     "sounds": [
-      "note/harp"
+      "note/bell"
     ],
     "replace": true,
     "subtitle": "subtitles.block.note_block.note"

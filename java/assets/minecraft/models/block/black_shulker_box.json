@@ -2,10 +2,10 @@
   "parent": "minecraft:block/cube",
   "textures": {
     "north": "minecraft:block/chest_front_double_left",
-    "east": "minecraft:block/chest_side",
+    "east": "minecraft:block/chest_top_double_right",
     "south": "minecraft:block/chest_back_double_left",
-    "west": "minecraft:block/chest_side",
-    "up": "minecraft:block/chest_top",
-    "down": "minecraft:block/chest_top"
+    "west": "minecraft:block/chest_side_double",
+    "up": "minecraft:block/chest_top_double_right",
+    "down": "minecraft:block/chest_bottom_double"
   }
 }

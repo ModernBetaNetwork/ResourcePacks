@@ -622,9 +622,9 @@
   },
   "block.note_block.bell": {
     "sounds": [
-      "note/harp"
+      "note/bell"
     ],
-    "replace": true,
+    "replace": false,
     "subtitle": "subtitles.block.note_block.note"
   },
   "block.note_block.flute": {
@@ -657,7 +657,7 @@
   },
   "block.note_block.guitar": {
     "sounds": [
-      "note/harp"
+      "note/bell"
     ],
     "replace": true,
     "subtitle": "subtitles.block.note_block.note"
@@ -2344,23 +2344,13 @@
   },
   "weather.rain": {
     "replace": true,
-    "sounds": [
-      "ambient/weather/rain1",
-      "ambient/weather/rain2",
-      "ambient/weather/rain3",
-      "ambient/weather/rain4"
-    ],
-    "subtitle": "subtitles.weather.rain"
+    "sounds": [],
+    "subtitle": ""
   },
   "weather.rain.above": {
     "replace": true,
-    "sounds": [
-      "ambient/weather/rain1",
-      "ambient/weather/rain2",
-      "ambient/weather/rain3",
-      "ambient/weather/rain4"
-    ],
-    "subtitle": "subtitles.weather.rain"
+    "sounds": [],
+    "subtitle": ""
   },
   "block.cloth.break": {
     "replace": true,

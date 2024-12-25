@@ -1,8 +1,23 @@
 {
-  "parent": "minecraft:block/orientable",
-  "textures": {
-    "front": "minecraft:block/chest_front",
-    "side": "minecraft:block/chest_side",
-    "top": "minecraft:block/chest_top"
-  }
+	"credit": "Created by Stridey",
+	"textures": {
+		"top": "block/chest_top",
+		"front": "block/chest_front",
+		"side": "block/chest_side",
+		"bottom": "block/chest_bottom"
+	},
+	"elements": [
+		{
+			"from": [0, 0, 0],
+			"to": [16, 16, 16],
+			"faces": {
+				"north": {"uv": [0, 0, 16, 16], "texture": "#front", "cullface": "north"},
+				"east": {"uv": [0, 0, 16, 16], "texture": "#side", "cullface": "east"},
+				"south": {"uv": [0, 0, 16, 16], "texture": "#side", "cullface": "south"},
+				"west": {"uv": [0, 0, 16, 16], "texture": "#side", "cullface": "west"},
+				"up": {"uv": [0, 0, 16, 16], "texture": "#top", "cullface": "up"},
+				"down": {"uv": [0, 0, 16, 16], "texture": "#bottom", "cullface": "down"}
+			}
+		}
+	]
 }

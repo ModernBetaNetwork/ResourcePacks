@@ -1,6 +1,3 @@
 {
-  "parent": "minecraft:block/leaves",
-  "textures": {
-    "all": "minecraft:block/oak_leaves"
-  }
+  "parent": "minecraft:block/oak_leaves"
 }

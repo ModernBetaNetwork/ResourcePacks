@@ -3,9 +3,9 @@
     "header": {
         "description": "Welcome to 2011!",
         "name": "Modern Beta Resources",
-        "uuid": "212eec96-f318-495e-beee-35732ad350e0",
+        "uuid": "47066739-880c-4ffe-b5c9-bb6502e290b7",
         "version": [0, 0, 1],
-        "min_engine_version": [ 1, 20, 80 ]
+        "min_engine_version": [ 1, 21, 70 ]
     },
     "modules": [
         {

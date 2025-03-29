@@ -546,6 +546,11 @@
     ],
     "subtitle": "subtitles.block.redstone_torch.burnout"
   },
+  "block.sand.idle": {
+    "replace": true,
+    "sounds": [],
+    "subtitle": "subtitles.block.sand.idle"
+  },
   "block.sand.break": {
     "replace": true,
     "sounds": [
@@ -594,6 +599,11 @@
       "dig/sand4"
     ],
     "subtitle": "subtitles.block.generic.footsteps"
+  },
+  "block.sand.wind": {
+    "replace": true,
+    "sounds": [],
+    "subtitle": "subtitles.block.sand.wind"
   },
   "block.snow.break": {
     "sounds": [

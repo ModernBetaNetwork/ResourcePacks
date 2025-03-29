@@ -13,14 +13,14 @@
 				"directory": "1_21_2",
 				"formats": {
 					"min_inclusive": 42,
-					"max_inclusive": 46
+					"max_inclusive": 999
 				}
 			},
 			{
 				"directory": "1_21_4",
 				"formats": {
 					"min_inclusive": 46,
-					"max_inclusive": 46
+					"max_inclusive": 999
 				}
 			},
 			{

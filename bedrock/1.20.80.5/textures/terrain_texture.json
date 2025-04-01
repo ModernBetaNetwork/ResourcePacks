@@ -111,6 +111,9 @@
     },
     "stripped_dark_oak_wood": {
       "textures": "textures/blocks/stripped_dark_oak_log"
+    },
+    "glass_blue": {
+      "textures": "textures/blocks/glass_blue"
     }
   }
 }

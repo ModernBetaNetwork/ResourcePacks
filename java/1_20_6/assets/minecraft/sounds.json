@@ -304,6 +304,56 @@
     "replace": true,
     "sounds": []
   },
+  "block.iron.break": {
+    "replace": true,
+    "sounds": [
+      "dig/stone1",
+      "dig/stone2",
+      "dig/stone3",
+      "dig/stone4"
+    ],
+    "subtitle": "subtitles.block.generic.break"
+  },
+  "block.iron.fall": {
+    "replace": true,
+    "sounds": [
+      "dig/stone1",
+      "dig/stone2",
+      "dig/stone3",
+      "dig/stone4"
+    ],
+    "subtitle": "subtitles.block.generic.fall"
+  },
+  "block.iron.hit": {
+    "replace": true,
+    "sounds": [
+      "dig/stone1",
+      "dig/stone2",
+      "dig/stone3",
+      "dig/stone4"
+    ],
+    "subtitle": "subtitles.block.generic.hit"
+  },
+  "block.iron.place": {
+    "replace": true,
+    "sounds": [
+      "dig/stone1",
+      "dig/stone2",
+      "dig/stone3",
+      "dig/stone4"
+    ],
+    "subtitle": "subtitles.block.generic.place"
+  },
+  "block.iron.step": {
+    "replace": true,
+    "sounds": [
+      "dig/stone1",
+      "dig/stone2",
+      "dig/stone3",
+      "dig/stone4"
+    ],
+    "subtitle": "subtitles.block.generic.footsteps"
+  },
   "block.iron_door.close": {
     "replace": true,
     "sounds": [
@@ -319,6 +369,56 @@
       "block/door/door_open"
     ],
     "subtitle": "subtitles.block.door.toggle"
+  },
+  "block.spawner.break": {
+    "replace": true,
+    "sounds": [
+      "dig/stone1",
+      "dig/stone2",
+      "dig/stone3",
+      "dig/stone4"
+    ],
+    "subtitle": "subtitles.block.generic.break"
+  },
+  "block.spawner.fall": {
+    "replace": true,
+    "sounds": [
+      "dig/stone1",
+      "dig/stone2",
+      "dig/stone3",
+      "dig/stone4"
+    ],
+    "subtitle": "subtitles.block.generic.fall"
+  },
+  "block.spawner.hit": {
+    "replace": true,
+    "sounds": [
+      "dig/stone1",
+      "dig/stone2",
+      "dig/stone3",
+      "dig/stone4"
+    ],
+    "subtitle": "subtitles.block.generic.hit"
+  },
+  "block.spawner.place": {
+    "replace": true,
+    "sounds": [
+      "dig/stone1",
+      "dig/stone2",
+      "dig/stone3",
+      "dig/stone4"
+    ],
+    "subtitle": "subtitles.block.generic.place"
+  },
+  "block.spawner.step": {
+    "replace": true,
+    "sounds": [
+      "dig/stone1",
+      "dig/stone2",
+      "dig/stone3",
+      "dig/stone4"
+    ],
+    "subtitle": "subtitles.block.generic.footsteps"
   },
   "block.ladder.break": {
     "sounds": [
@@ -1506,6 +1606,16 @@
   "entity.player.swim": {
     "replace": true,
     "sounds": []
+  },
+  "ui.cartography_table.take_result": {
+    "replace": true,
+    "sounds": [],
+    "subtitle": "subtitles.ui.cartography_table.take_result"
+  },
+  "ui.hud.bubble_pop": {
+    "replace": true,
+    "sounds": [],
+    "subtitle": "subtitles.ui.hud.bubble_pop"
   },
   "entity.sheep.ambient": {
     "sounds": [

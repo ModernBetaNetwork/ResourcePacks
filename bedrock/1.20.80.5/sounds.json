@@ -2282,7 +2282,7 @@
          "events" : {
             "break" : {
                "pitch" : [ 0.80, 1.0 ],
-               "sound" : "dig.sand",
+               "sound" : "dig.gravel",
                "volume" : 1.0
             },
             "default" : "",

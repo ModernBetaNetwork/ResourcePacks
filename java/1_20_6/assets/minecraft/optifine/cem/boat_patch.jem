@@ -1,0 +1,24 @@
+{
+	"credit": "Made with Blockbench",
+	"textureSize": [0, 0],
+	"texture": ".png",
+	"models": [
+		{
+			"part": "water_patch",
+			"id": "water_patch",
+			"invertAxis": "xy",
+			"translate": [0, -27, -1],
+			"scale": 1,
+			"boxes": [
+				{"coordinates": [-16, 20, -4, 20, 16, 6], "textureOffset": [5, -3]}
+			]
+		},
+		{
+			"part": "root",
+			"id": "root",
+			"invertAxis": "xy",
+			"translate": [0, -24, 0],
+			"scale": 1
+		}
+	]
+}

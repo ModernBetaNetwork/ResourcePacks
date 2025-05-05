@@ -1,7 +1,6 @@
 {
-	"credit": "Made with Blockbench",
+	"credit": "Made by wwu",
 	"textureSize": [0, 0],
-	"texture": ".png",
 	"models": [
 		{
 			"part": "water_patch",

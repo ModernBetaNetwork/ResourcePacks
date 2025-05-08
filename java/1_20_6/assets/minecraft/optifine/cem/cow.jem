@@ -1,6 +1,7 @@
 {
 	"credit": "Created by Stridey",
 	"textureSize": [64, 32],
+	"texture": "textures/entity/cow/cow.png",
 	"models": [
 		{
 			"part": "head",
@@ -21,7 +22,7 @@
 			"rotate": [-90, 0, 0],
 			"boxes": [
 				{"coordinates": [-6, 11, -5, 12, 18, 10], "textureOffset": [18, 4]},
-				{"coordinates": [-2, 11, -6, 4, 6, 1], "textureOffset": [52, 0]}
+				{"coordinates": [-2, 11, -7, 4, 6, 2], "textureOffset": [52, 0]}
 			],
 			"animations": [
 				{

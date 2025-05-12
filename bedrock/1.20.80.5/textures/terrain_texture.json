@@ -114,6 +114,9 @@
     },
     "glass_blue": {
       "textures": "textures/blocks/glass_blue"
+    },
+    "ceiling_lever": {
+      "textures": "textures/blocks/lever_ceiling"
     }
   }
 }

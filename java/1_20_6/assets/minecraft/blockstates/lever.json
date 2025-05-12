@@ -1,28 +1,28 @@
 {
   "variants": {
     "face=ceiling,facing=east,powered=false": {
-      "model": "minecraft:block/lever_top_on"
+      "model": "minecraft:block/lever_top"
     },
     "face=ceiling,facing=east,powered=true": {
-      "model": "minecraft:block/lever_top"
+      "model": "minecraft:block/lever_top_on"
     },
     "face=ceiling,facing=north,powered=false": {
-      "model": "minecraft:block/lever_top_on"
+      "model": "minecraft:block/lever_top"
     },
     "face=ceiling,facing=north,powered=true": {
-      "model": "minecraft:block/lever_top"
+      "model": "minecraft:block/lever_top_on"
     },
     "face=ceiling,facing=south,powered=false": {
-      "model": "minecraft:block/lever_top_on"
+      "model": "minecraft:block/lever_top"
     },
     "face=ceiling,facing=south,powered=true": {
-      "model": "minecraft:block/lever_top"
-    },
-    "face=ceiling,facing=west,powered=false": {
       "model": "minecraft:block/lever_top_on"
     },
-    "face=ceiling,facing=west,powered=true": {
+    "face=ceiling,facing=west,powered=false": {
       "model": "minecraft:block/lever_top"
+    },
+    "face=ceiling,facing=west,powered=true": {
+      "model": "minecraft:block/lever_top_on"
     },
     "face=floor,facing=east,powered=false": {
       "model": "minecraft:block/lever_on",

@@ -1,0 +1,78 @@
+name: Package packs for release
+
+on:
+  release:
+    types: [created]
+
+jobs:
+  package-and-upload:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Get release version
+        id: get_version
+        run: |
+          # get version from tag (remove 'v' prefix if present)
+          VERSION=${GITHUB_REF#refs/tags/}
+          VERSION=${VERSION#v}
+          echo "version=$VERSION" >> $GITHUB_OUTPUT
+          echo "Release version: $VERSION"
+
+      - name: Package for Bedrock Edition
+        run: |
+          if [ ! -d 'bedrock' ]; then
+            echo 'ERROR: bedrock directory does not exist!'
+            exit 1
+          fi
+
+          if [ -f 'CREDITS.txt' ]; then
+            cp CREDITS.txt bedrock/
+          else
+            echo 'WARN: CREDITS.txt does not exist'
+          fi
+
+          cd bedrock
+          zip -r '../bedrock.zip' .
+          cd ..
+          mv bedrock.zip 'ModernBetaBedrockResources-${{ steps.get_version.outputs.version }}.mcpack'
+
+      - name: Package for Java Edition
+        run: |
+          if [ ! -d 'java' ]; then
+            echo 'ERROR: java directory does not exist!'
+            exit 1
+          fi
+
+          if [ -f 'CREDITS.txt' ]; then
+            cp CREDITS.txt java/
+          else
+            echo 'WARN: CREDITS.txt does not exist'
+          fi
+
+          cd java
+          zip -r '../java.zip' .
+          cd ..
+          mv java.zip 'ModernBetaJavaResources-${{ steps.get_version.outputs.version }}.zip'
+
+      - name: Upload Bedrock package to release
+        uses: actions/upload-release-asset@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          upload_url: ${{ github.event.release.upload_url }}
+          asset_path: ./ModernBetaBedrockResources-${{ steps.get_version.outputs.version }}.mcpack
+          asset_name: ModernBetaBedrockResources-${{ steps.get_version.outputs.version }}.mcpack
+          asset_content_type: application/zip
+
+      - name: Upload Java package to release
+        uses: actions/upload-release-asset@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          upload_url: ${{ github.event.release.upload_url }}
+          asset_path: ./ModernBetaJavaResources-${{ steps.get_version.outputs.version }}.zip
+          asset_name: ModernBetaJavaResources-${{ steps.get_version.outputs.version }}.zip
+          asset_content_type: application/zip

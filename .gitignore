@@ -1,3 +1,6 @@
 # ignore packaged resourcepacks
 *.mcpack
 *.zip
+
+# macOS spam
+.DS_Store

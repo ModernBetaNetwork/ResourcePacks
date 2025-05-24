@@ -2,7 +2,7 @@ name: Package packs for release
 
 on:
   release:
-    types: [created]
+    types: [published]
 
 jobs:
   package-and-upload:

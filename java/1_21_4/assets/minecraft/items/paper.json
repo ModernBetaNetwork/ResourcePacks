@@ -1,0 +1,36 @@
+{
+  "model": {
+    "type": "range_dispatch",
+    "property": "custom_model_data",
+    "entries": [
+      {"threshold": 100, "model": { "type": "model", "model": "cape/1/0"}},
+      {"threshold": 101, "model": { "type": "model", "model": "cape/1/1"}},
+      {"threshold": 102, "model": { "type": "model", "model": "cape/1/2"}},
+      {"threshold": 103, "model": { "type": "model", "model": "cape/1/3"}},
+      {"threshold": 104, "model": { "type": "model", "model": "cape/1/4"}},
+      {"threshold": 105, "model": { "type": "model", "model": "cape/1/5"}},
+      {"threshold": 106, "model": { "type": "model", "model": "cape/1/6"}},
+      {"threshold": 107, "model": { "type": "model", "model": "cape/1/7"}},
+      {"threshold": 108, "model": { "type": "model", "model": "cape/1/8"}},
+      {"threshold": 109, "model": { "type": "model", "model": "cape/1/9"}},
+      {"threshold": 110, "model": { "type": "model", "model": "cape/1/10"}},
+      {"threshold": 111, "model": { "type": "model", "model": "cape/1/11"}},
+      {"threshold": 150, "model": { "type": "model", "model": "cape/1/50"}},
+      {"threshold": 151, "model": { "type": "model", "model": "cape/1/51"}},
+      {"threshold": 152, "model": { "type": "model", "model": "cape/1/52"}},
+      {"threshold": 153, "model": { "type": "model", "model": "cape/1/53"}},
+      {"threshold": 154, "model": { "type": "model", "model": "cape/1/54"}},
+      {"threshold": 155, "model": { "type": "model", "model": "cape/1/55"}},
+      {"threshold": 156, "model": { "type": "model", "model": "cape/1/56"}},
+      {"threshold": 157, "model": { "type": "model", "model": "cape/1/57"}},
+      {"threshold": 158, "model": { "type": "model", "model": "cape/1/58"}},
+      {"threshold": 159, "model": { "type": "model", "model": "cape/1/59"}},
+      {"threshold": 160, "model": { "type": "model", "model": "cape/1/60"}},
+      {"threshold": 161, "model": { "type": "model", "model": "cape/1/61"}}
+    ],
+    "fallback": {
+      "type": "model",
+      "model": "item/paper"
+    }
+  }
+}

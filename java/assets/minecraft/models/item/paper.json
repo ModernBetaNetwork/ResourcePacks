@@ -1,0 +1,33 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "minecraft:item/paper"
+  },
+  
+  "overrides": [
+    {"predicate": {"custom_model_data":100}, "model": "cape/1/0"},
+    {"predicate": {"custom_model_data":101}, "model": "cape/1/1"},
+    {"predicate": {"custom_model_data":102}, "model": "cape/1/2"},
+    {"predicate": {"custom_model_data":103}, "model": "cape/1/3"},
+    {"predicate": {"custom_model_data":104}, "model": "cape/1/4"},
+    {"predicate": {"custom_model_data":105}, "model": "cape/1/5"},
+    {"predicate": {"custom_model_data":106}, "model": "cape/1/6"},
+    {"predicate": {"custom_model_data":107}, "model": "cape/1/7"},
+    {"predicate": {"custom_model_data":108}, "model": "cape/1/8"},
+    {"predicate": {"custom_model_data":109}, "model": "cape/1/9"},
+    {"predicate": {"custom_model_data":110}, "model": "cape/1/10"},
+    {"predicate": {"custom_model_data":111}, "model": "cape/1/11"},
+    {"predicate": {"custom_model_data":150}, "model": "cape/1/50"},
+    {"predicate": {"custom_model_data":151}, "model": "cape/1/51"},
+    {"predicate": {"custom_model_data":152}, "model": "cape/1/52"},
+    {"predicate": {"custom_model_data":153}, "model": "cape/1/53"},
+    {"predicate": {"custom_model_data":154}, "model": "cape/1/54"},
+    {"predicate": {"custom_model_data":155}, "model": "cape/1/55"},
+    {"predicate": {"custom_model_data":156}, "model": "cape/1/56"},
+    {"predicate": {"custom_model_data":157}, "model": "cape/1/57"},
+    {"predicate": {"custom_model_data":158}, "model": "cape/1/58"},
+    {"predicate": {"custom_model_data":159}, "model": "cape/1/59"},
+    {"predicate": {"custom_model_data":160}, "model": "cape/1/60"},
+    {"predicate": {"custom_model_data":161}, "model": "cape/1/61"}
+  ]
+}

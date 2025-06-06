@@ -435,7 +435,9 @@
   },
   "block.ladder.hit": {
     "replace": true,
-    "sounds": []
+    "sounds": [
+      {"name": "block.wood.hit", "type": "event"}
+    ]
   },
   "block.ladder.place": {
     "sounds": [
@@ -2264,22 +2266,7 @@
   "music.nether.nether_wastes": {
     "replace": "true",
     "sounds": [
-      {
-        "name": "music/game/nether/nether1",
-        "stream": true
-      },
-      {
-        "name": "music/game/nether/nether2",
-        "stream": true
-      },
-      {
-        "name": "music/game/nether/nether3",
-        "stream": true
-      },
-      {
-        "name": "music/game/nether/nether4",
-        "stream": true
-      }
+      {"name": "music.game", "type": "event"}
     ]
   },
   "music_disc.13": {

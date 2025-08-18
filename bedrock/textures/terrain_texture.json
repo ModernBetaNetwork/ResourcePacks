@@ -117,6 +117,27 @@
     },
     "ceiling_lever": {
       "textures": "textures/blocks/lever_ceiling"
+    },
+    "chest_face": {
+      "textures": "textures/blocks/chest_face"
+    },
+    "chest_side": {
+      "textures": "textures/blocks/chest_side"
+    },
+    "chest_top": {
+      "textures": "textures/blocks/chest_top"
+    },
+    "chest_left_face": {
+      "textures": "textures/blocks/chest_left_face"
+    },
+    "chest_left_back": {
+      "textures": "textures/blocks/chest_left_back"
+    },
+    "chest_right_face": {
+      "textures": "textures/blocks/chest_right_face"
+    },
+    "chest_right_back": {
+      "textures": "textures/blocks/chest_right_back"
     }
   }
 }

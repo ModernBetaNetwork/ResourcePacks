@@ -293,12 +293,12 @@
    },
    "beehive" : {
       "textures" : {
-         "down" : "beehive_top",
-         "east" : "beehive_side",
-         "north" : "beehive_side",
-         "south" : "beehive_front",
-         "up" : "beehive_top",
-         "west" : "beehive_side"
+         "down" : "chest_top",
+         "east" : "chest_side",
+         "north" : "chest_side",
+         "south" : "chest_face",
+         "up" : "chest_top",
+         "west" : "chest_side"
       }
    },
    "beetroot" : {
@@ -4898,5 +4898,41 @@
    "yellow_wool" : {
       "sound" : "cloth",
       "textures" : "wool_colored_yellow"
+   },
+   "chest_single": {
+      "textures": {
+         "north": "chest_face",
+         "south": "chest_side",
+         "east": "chest_side",
+         "west": "chest_side",
+         "up": "chest_top",
+         "down": "chest_top"
+      },
+      "geometry": "geometry.fat_chest",
+      "sound": "wood"
+   },
+   "chest_left": {
+      "textures": {
+         "north": "chest_left_face",
+         "south": "chest_left_back",
+         "east": "chest_side",
+         "west": "chest_side",
+         "up": "chest_top",
+         "down": "chest_top"
+      },
+      "geometry": "geometry.fat_chest",
+      "sound": "wood"
+   },
+   "chest_right": {
+      "textures": {
+         "north": "chest_right_face",
+         "south": "chest_right_back",
+         "east": "chest_side",
+         "west": "chest_side",
+         "up": "chest_top",
+         "down": "chest_top"
+      },
+      "geometry": "geometry.fat_chest",
+      "sound": "wood"
    }
 }

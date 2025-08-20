@@ -109,6 +109,10 @@
     "replace": true,
     "sounds": []
   },
+  "block.blastfurnace.fire_crackle": {
+    "replace": true,
+    "sounds": []
+  },
   "block.glass.break": {
     "sounds": [
       "random/glass1",

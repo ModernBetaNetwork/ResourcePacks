@@ -222,6 +222,9 @@
     },
     "quartz": {
       "textures": "textures/items/cookie"
+    },
+    "minecart_hopper": {
+      "textures": "textures/items/boat_oak"
     }
   }
 }

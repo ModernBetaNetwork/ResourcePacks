@@ -1,0 +1,18 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "minecraft:hopper_minecart",
+      "min_engine_version": "1.8.0",
+      "materials": {
+        "default": "minecart"
+      },
+      "textures": {
+        "default": "textures/entity/beta_boat"
+      },
+      "geometry": {
+        "default": "geometry.beta_boat"
+      }
+    }
+  }
+}

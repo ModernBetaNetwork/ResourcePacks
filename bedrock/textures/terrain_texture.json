@@ -141,6 +141,9 @@
     },
     "transmutated_stone_slab": {
       "textures": "textures/blocks/stone_slab_top"
+    },
+    "none": {
+      "textures": "textures/blocks/none"
     }
   }
 }

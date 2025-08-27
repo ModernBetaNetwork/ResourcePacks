@@ -489,12 +489,12 @@
    "blast_furnace" : {
       "sound" : "stone",
       "textures" : {
-         "down" : "blast_furnace_top",
-         "east" : "blast_furnace_side",
-         "north" : "blast_furnace_side",
-         "south" : "blast_furnace_front_off",
-         "up" : "blast_furnace_top",
-         "west" : "blast_furnace_side"
+         "down" : "furnace_top",
+         "east" : "furnace_side",
+         "north" : "furnace_side",
+         "south" : "furnace_front_on",
+         "up" : "furnace_top",
+         "west" : "furnace_side"
       }
    },
    "blue_candle" : {
@@ -2591,12 +2591,12 @@
    "lit_blast_furnace" : {
       "sound" : "stone",
       "textures" : {
-         "down" : "blast_furnace_top",
-         "east" : "blast_furnace_front_on",
-         "north" : "blast_furnace_side",
-         "south" : "blast_furnace_side",
-         "up" : "blast_furnace_top",
-         "west" : "blast_furnace_side"
+         "down" : "furnace_top",
+         "east" : "furnace_front_on",
+         "north" : "furnace_side",
+         "south" : "furnace_side",
+         "up" : "furnace_top",
+         "west" : "furnace_side"
       }
    },
    "lit_deepslate_redstone_ore" : {

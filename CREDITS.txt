@@ -5,3 +5,5 @@ Stridey	(Developer, Vanilla Tweaks)
 DartCat25 - Shaders
 PoeticRainbow (Creator, Golden Days pack) - Fixed chest model texture while using Enhanced Block Entities mod
 wwu - Translations & parity fixes
+Vanilla Tweaks: https://vanillatweaks.net/
+Bedrock Tweaks: https://bedrocktweaks.net/

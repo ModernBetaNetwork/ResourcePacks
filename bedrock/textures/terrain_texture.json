@@ -138,6 +138,9 @@
     },
     "chest_right_back": {
       "textures": "textures/blocks/chest_right_back"
+    },
+    "transmutated_stone_slab": {
+      "textures": "textures/blocks/stone_slab_top"
     }
   }
 }

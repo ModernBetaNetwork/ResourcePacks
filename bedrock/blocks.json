@@ -1657,9 +1657,9 @@
    "double_stone_slab4" : {
       "sound" : "stone",
       "textures" : {
-         "down" : "stone_slab_bottom_4",
-         "side" : "stone_slab_side_4",
-         "up" : "stone_slab_top_4"
+         "down" : "transmutated_stone_slab",
+         "side" : "transmutated_stone_slab",
+         "up" : "transmutated_stone_slab"
       }
    },
    "double_wooden_slab" : {
@@ -4130,9 +4130,9 @@
    "stone_slab4" : {
       "sound" : "stone",
       "textures" : {
-         "down" : "stone_slab_bottom_4",
-         "side" : "stone_slab_side_4",
-         "up" : "stone_slab_top_4"
+         "down" : "transmutated_stone_slab",
+         "side" : "transmutated_stone_slab",
+         "up" : "transmutated_stone_slab"
       }
    },
    "stone_stairs" : {

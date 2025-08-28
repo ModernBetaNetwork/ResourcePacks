@@ -2760,11 +2760,11 @@
             },
             "button.click_off" : {
                "pitch" : 0.50,
-               "sound" : "random.stone_click"
+               "sound" : "random.click"
             },
             "button.click_on" : {
                "pitch" : 0.60,
-               "sound" : "random.stone_click"
+               "sound" : "random.click"
             },
             "default" : "",
             "hit" : {
@@ -2783,11 +2783,11 @@
             },
             "power.off" : {
                "pitch" : 0.50,
-               "sound" : "random.stone_click"
+               "sound" : "random.click"
             },
             "power.on" : {
                "pitch" : 0.60,
-               "sound" : "random.stone_click"
+               "sound" : "random.click"
             },
             "pressure_plate.click_off" : {
                "sound" : "click_off.stone_pressure_plate"

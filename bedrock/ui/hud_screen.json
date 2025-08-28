@@ -5,7 +5,11 @@
   // Hud Screen
   //---------------------------------------------------------------------------
 
-  "controls": [
+  "hud_player_renderer": {
+    "type": "panel",
+    "size": [ 15, 15 ],
+
+    "controls": [
       {
         "hud_player": {
           "type": "custom",

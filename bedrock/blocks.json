@@ -2529,6 +2529,15 @@
       "sound" : "copper",
       "textures" : "lightning_rod"
    },
+   "lilac" : {
+      "carried_textures" : "none",
+      "sound" : "grass",
+      "textures" : {
+         "down" : "none",
+         "side" : "none",
+         "up" : "none"
+      }
+   },
    "lime_candle" : {
       "carried_textures" : "lime_candle_carried",
       "sound" : "candle",
@@ -3150,6 +3159,15 @@
          "down" : "pearlescent_froglight_top",
          "side" : "pearlescent_froglight_side",
          "up" : "pearlescent_froglight_top"
+      }
+   },
+   "peony" : {
+      "carried_textures" : "none",
+      "sound" : "grass",
+      "textures" : {
+         "down" : "none",
+         "side" : "none",
+         "up" : "none"
       }
    },
    "pink_candle" : {

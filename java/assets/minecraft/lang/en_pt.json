@@ -67,6 +67,8 @@
   "block.minecraft.warped_fungus": "Dandelion",
   "block.minecraft.dandelion": "Dandelion",
   "block.minecraft.carved_pumpkin": "Gourd Squash",
+  "block.minecraft.glow_lichen": "Stairs o' pebbles (unseen)",
+  "block.minecraft.sculk_vein": "Stairs o' oak (unseen)",
   "container.beehive.bees": "",
   "container.beehive.honey": "",
   "item.minecraft.iron_horse_armor": "Musket",

@@ -255,6 +255,54 @@
     ],
     "subtitle": "subtitles.block.generic.footsteps"
   },
+  "block.sculk_vein.break": {
+    "replace": true,
+    "sounds": [
+      "dig/wood1",
+      "dig/wood2",
+      "dig/wood3",
+      "dig/wood4"
+    ],
+    "subtitle": "subtitles.block.generic.break"
+  },
+  "block.sculk_vein.fall": {
+    "replace": true,
+    "sounds": [
+      "dig/wood1",
+      "dig/wood2",
+      "dig/wood3",
+      "dig/wood4"
+    ],
+    "subtitle": "subtitles.block.generic.fall"
+  },
+  "block.sculk_vein.hit": {
+    "replace": true,
+    "sounds": [
+      "dig/wood1",
+      "dig/wood2",
+      "dig/wood3",
+      "dig/wood4"
+    ],
+    "subtitle": "subtitles.block.generic.hit"
+  },
+  "block.sculk_vein.place": {
+    "replace": true,
+    "sounds": [
+      "dig/wood1",
+      "dig/wood2",
+      "dig/wood3",
+      "dig/wood4"
+    ],
+    "subtitle": "subtitles.block.generic.place"
+  },
+  "block.sculk_vein.step": {
+    "replace": true,
+    "sounds": []
+  },
+  "block.vine.step": {
+    "replace": true,
+    "sounds": []
+  },
   "block.gravel.break": {
     "replace": true,
     "sounds": [

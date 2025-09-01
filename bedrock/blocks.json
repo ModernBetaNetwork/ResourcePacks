@@ -4953,11 +4953,7 @@
       "geometry": "geometry.fat_chest",
       "sound": "wood"
    },
-   "invisible_stair_stone": {
-      "sound": "stone",
-      "textures" : "none"
-   },
-   "invisible_stair_wooden": {
+   "invisible_stair": {
       "sound": "wood",
       "textures" : "none"
    }

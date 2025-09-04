@@ -1,0 +1,5 @@
+{
+  "minecraft:oak_leaves": { "occluding": false, "cullingIdentical": false },
+  "minecraft:birch_leaves": { "occluding": false, "cullingIdentical": false },
+  "minecraft:spruce_leaves": { "occluding": false, "cullingIdentical": false }
+}

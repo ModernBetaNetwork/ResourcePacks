@@ -1,11 +1,12 @@
 {
 	"pack": {
-		"description": "§b§lModern §a§lBeta§r\nDefault Texture Pack",
+		"description": "§b§lModern §a§lBeta§r\nVattic's Faithful 32x Pack",
 		"pack_format": 42,
 		"supported_formats": {
 			"min_inclusive": 15,
 			"max_inclusive": 999
-		}
+		},
+		"credit": "https://faithfulpack.net/"
 	},
 	"overlays": {
 		"entries": [

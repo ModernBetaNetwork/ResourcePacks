@@ -1,0 +1,15 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "minecraft:item/suspicious_stew"
+  },
+  
+  "overrides": [
+    {"predicate": {"custom_model_data":0}, "model": "texturepack/bare_necessities"},
+    {"predicate": {"custom_model_data":1}, "model": "texturepack/default"},
+    {"predicate": {"custom_model_data":2}, "model": "texturepack/default_old_cobble_bricks"},
+    {"predicate": {"custom_model_data":3}, "model": "texturepack/default_christmas"},
+    {"predicate": {"custom_model_data":4}, "model": "texturepack/faithful"},
+    {"predicate": {"custom_model_data":5}, "model": "texturepack/alpha"}
+  ]
+}

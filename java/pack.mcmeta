@@ -17,6 +17,13 @@
 				}
 			},
 			{
+				"directory": "1_20_5",
+				"formats": {
+					"min_inclusive": 32,
+					"max_inclusive": 999
+				}
+			},
+			{
 				"directory": "1_21_2",
 				"formats": {
 					"min_inclusive": 42,

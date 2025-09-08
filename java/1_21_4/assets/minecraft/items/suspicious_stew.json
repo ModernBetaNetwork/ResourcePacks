@@ -1,0 +1,16 @@
+{
+  "model": {
+    "type": "range_dispatch",
+    "property": "custom_model_data",
+    "fallback": { "type": "model", "model": "item/suspicious_stew" },
+
+    "entries": [
+      { "threshold": 0, "model": { "type": "model", "model": "texturepack/bare_necessities" }},
+      { "threshold": 1, "model": { "type": "model", "model": "texturepack/default" }},
+      { "threshold": 2, "model": { "type": "model", "model": "texturepack/default_old_cobble_bricks" }},
+      { "threshold": 3, "model": { "type": "model", "model": "texturepack/default_christmas" }},
+      { "threshold": 4, "model": { "type": "model", "model": "texturepack/faithful" }},
+      { "threshold": 5, "model": { "type": "model", "model": "texturepack/alpha" }}
+    ]
+  }
+}

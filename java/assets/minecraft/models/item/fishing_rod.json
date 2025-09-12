@@ -1,7 +1,10 @@
 {
-    "parent": "item/handheld_rod",
-    "textures": {
-        "particle": "block/tripwire",
-        "layer0": "item/fishing_rod"
-    }
+  "parent": "item/handheld_rod",
+  "textures": {
+    "particle": "block/tripwire",
+    "layer0": "item/fishing_rod"
+  },
+  "overrides": [
+    { "predicate": { "cast": 1 }, "model": "item/fishing_rod_cast" }
+  ]
 }

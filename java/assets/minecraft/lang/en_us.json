@@ -144,7 +144,7 @@
   "block.minecraft.oak_log": "Wood",
   "block.minecraft.oak_planks": "Wooden Planks",
   "block.minecraft.oak_pressure_plate": "Pressure Plate",
-  "block.minecraft.oak_sign": "Wooden Sign",
+  "block.minecraft.oak_sign": "Sign",
   "block.minecraft.oak_slab": "Wooden Slab",
   "block.minecraft.oak_stairs": "Wooden Stairs",
   "block.minecraft.sculk_vein": "Wooden Stairs (Invisible)",
@@ -159,6 +159,10 @@
   "block.minecraft.sugar_cane": "Sugar Canes",
   "block.minecraft.white_shulker_box": "Chest",
   "block.minecraft.white_wool": "Wool",
+  "block.minecraft.lapis_block": "Lapis Lazuli Block",
+  "block.minecraft.jack_o_lantern": "Jack 'o'Lantern",
+  "item.minecraft.golden_boots": "Golden boots",
+  "item.minecraft.lava_bucket": "Lava bucket",
   
   "menu.game": "Game menu",
   "deathScreen.score.value": "Score: &e0",
@@ -169,7 +173,7 @@
   
   "entity.minecraft.cod": "Fish",
   "item.minecraft.cod_spawn_egg": "Fish Spawn Egg",
-  "item.minecraft.cod": "Fish",
+  "item.minecraft.cod": "Raw Fish",
   "item.minecraft.cooked_cod": "Cooked Fish",
   "subtitles.entity.cod.death": "Fish dies",
   "subtitles.entity.cod.flop": "Fish flops",
@@ -197,6 +201,8 @@
   "item.minecraft.music_disc_cat": "§fMusic Disc",
 
   "item.minecraft.blaze_rod": "Mushroom Stew",
+  "block.minecraft.brown_mushroom": "Mushroom",
+  "block.minecraft.red_mushroom": "Mushroom",
   "item.minecraft.rabbit_foot": "Fish",
   "item.minecraft.rabbit_hide": "Cooked Fish",
   "item.minecraft.fermented_spider_eye": "Raw Porkchop",
@@ -205,5 +211,5 @@
   "item.minecraft.magma_cream": "Apple",
   "item.minecraft.glistering_melon_slice": "Golden Apple",
   "item.minecraft.quartz": "Cookie",
-  "item.minecraft.spectral_arrow": "Milk Bucket"
+  "item.minecraft.spectral_arrow": "Milk"
 }

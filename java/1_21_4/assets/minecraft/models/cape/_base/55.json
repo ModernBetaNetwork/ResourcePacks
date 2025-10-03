@@ -1,21 +1,5 @@
 {
-	"ambientocclusion": false,
-	"texture_size": [22, 17],
-	"elements": [
-		{
-			"from": [3, 1, 8.5],
-			"to": [13, 17, 9.5],
-			"rotation": {"angle": 0, "axis": "y", "origin": [8, 9, 9]},
-			"faces": {
-				"north": {"uv": [8.72727, 0.94118, 16, 16], "texture": "#0"},
-				"east": {"uv": [8, 0.94118, 8.72727, 16], "texture": "#0"},
-				"south": {"uv": [0.72727, 0.94118, 8, 16], "texture": "#0"},
-				"west": {"uv": [0, 0.94118, 0.72727, 16], "texture": "#0"},
-				"up": {"uv": [0.72727, 0, 8, 0.94118], "rotation": 180, "texture": "#0"},
-				"down": {"uv": [8, 0, 15.27273, 0.94118], "rotation": 180, "texture": "#0"}
-			}
-		}
-	],
+	"parent": "minecraft:cape/_base/0",
 	"display": {
 		"head": {
 			"translation": [0, -59.60, -6.65],

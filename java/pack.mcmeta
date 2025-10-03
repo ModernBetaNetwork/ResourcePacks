@@ -1,48 +1,42 @@
 {
 	"pack": {
 		"description": "§c§lModern §a§lBeta§r\nChristmas Texture Pack",
-		"pack_format": 42,
-		"supported_formats": {
-			"min_inclusive": 15,
-			"max_inclusive": 999
-		}
+		"supported_formats": [15, 999],
+		"min_format": [15, 0],
+		"max_format": [999, 0],
+		"pack_format": 34
 	},
 	"overlays": {
 		"entries": [
 			{
 				"directory": "1_20_2",
-				"formats": {
-					"min_inclusive": 18,
-					"max_inclusive": 999
-				}
+				"formats": [18, 999],
+				"min_format": [18, 0],
+				"max_format": [999, 0]
 			},
 			{
 				"directory": "1_20_5",
-				"formats": {
-					"min_inclusive": 32,
-					"max_inclusive": 999
-				}
+				"formats": [32, 999],
+				"min_format": [32, 0],
+				"max_format": [999, 0]
 			},
 			{
 				"directory": "1_21_2",
-				"formats": {
-					"min_inclusive": 42,
-					"max_inclusive": 999
-				}
+				"formats": [32, 999],
+				"min_format": [32, 0],
+				"max_format": [999, 0]
 			},
 			{
 				"directory": "1_21_4",
-				"formats": {
-					"min_inclusive": 46,
-					"max_inclusive": 999
-				}
+				"formats": [46, 999],
+				"min_format": [46, 0],
+				"max_format": [999, 0]
 			},
 			{
 				"directory": "1_21_5",
-				"formats": {
-					"min_inclusive": 47,
-					"max_inclusive": 999
-				}
+				"formats": [47, 999],
+				"min_format": [47, 0],
+				"max_format": [999, 0]
 			}
 		]
 	}

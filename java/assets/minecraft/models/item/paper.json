@@ -178,6 +178,31 @@
     {"predicate": {"custom_model_data":758}, "model": "cape/7/58"},
     {"predicate": {"custom_model_data":759}, "model": "cape/7/59"},
     {"predicate": {"custom_model_data":760}, "model": "cape/7/60"},
-    {"predicate": {"custom_model_data":761}, "model": "cape/7/61"}
+    {"predicate": {"custom_model_data":761}, "model": "cape/7/61"},
+
+    {"predicate": {"custom_model_data":800}, "model": "cape/8/0"},
+    {"predicate": {"custom_model_data":801}, "model": "cape/8/1"},
+    {"predicate": {"custom_model_data":802}, "model": "cape/8/2"},
+    {"predicate": {"custom_model_data":803}, "model": "cape/8/3"},
+    {"predicate": {"custom_model_data":804}, "model": "cape/8/4"},
+    {"predicate": {"custom_model_data":805}, "model": "cape/8/5"},
+    {"predicate": {"custom_model_data":806}, "model": "cape/8/6"},
+    {"predicate": {"custom_model_data":807}, "model": "cape/8/7"},
+    {"predicate": {"custom_model_data":808}, "model": "cape/8/8"},
+    {"predicate": {"custom_model_data":809}, "model": "cape/8/9"},
+    {"predicate": {"custom_model_data":810}, "model": "cape/8/10"},
+    {"predicate": {"custom_model_data":811}, "model": "cape/8/11"},
+    {"predicate": {"custom_model_data":850}, "model": "cape/8/50"},
+    {"predicate": {"custom_model_data":851}, "model": "cape/8/51"},
+    {"predicate": {"custom_model_data":852}, "model": "cape/8/52"},
+    {"predicate": {"custom_model_data":853}, "model": "cape/8/53"},
+    {"predicate": {"custom_model_data":854}, "model": "cape/8/54"},
+    {"predicate": {"custom_model_data":855}, "model": "cape/8/55"},
+    {"predicate": {"custom_model_data":856}, "model": "cape/8/56"},
+    {"predicate": {"custom_model_data":857}, "model": "cape/8/57"},
+    {"predicate": {"custom_model_data":858}, "model": "cape/8/58"},
+    {"predicate": {"custom_model_data":859}, "model": "cape/8/59"},
+    {"predicate": {"custom_model_data":860}, "model": "cape/8/60"},
+    {"predicate": {"custom_model_data":861}, "model": "cape/8/61"}
   ]
 }

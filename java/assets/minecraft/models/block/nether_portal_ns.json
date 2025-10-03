@@ -1,0 +1,20 @@
+{
+	"format_version": "1.21.6",
+	"credit": "Made with Blockbench",
+	"textures": {
+		"particle": "block/nether_portal",
+		"portal": "block/nether_portal"
+	},
+	"elements": [
+		{
+			"from": [0, 0, 6],
+			"to": [16, 16, 10],
+			"faces": {
+				"north": {"uv": [0, 0, 16, 16], "texture": "#portal"},
+				"east": {"uv": [6, 0, 10, 16], "texture": "#portal", "cullface": "west"},
+				"south": {"uv": [0, 0, 16, 16], "texture": "#portal"},
+				"west": {"uv": [6, 0, 10, 16], "texture": "#portal", "cullface": "east"}
+			}
+		}
+	]
+}

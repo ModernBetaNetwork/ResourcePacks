@@ -37,6 +37,12 @@
 				"formats": [47, 999],
 				"min_format": [47, 0],
 				"max_format": [999, 0]
+			},
+			{
+				"directory": "26_1",
+				"formats": [84, 999],
+				"min_format": [84, 0],
+				"max_format": [999, 0]
 			}
 		]
 	}

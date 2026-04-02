@@ -1,0 +1,94 @@
+{
+	"credit": "Created by Stridey",
+	"textureSize": [64, 64],
+	"models": [
+		{
+			"part": "head",
+			"id": "head",
+			"invertAxis": "xy",
+			"translate": [-8, -9, -16],
+			"rotate": [90, 0, 0],
+			"boxes": [
+				{"coordinates": [-8, -7, 16, 16, 16, 6], "textureOffset": [0, 0]}
+			],
+			"animations": [
+				{
+					"this.rx": 0
+				}
+			]
+		},
+		{
+			"part": "foot",
+			"id": "foot",
+			"invertAxis": "xy",
+			"translate": [-8, -9, 0],
+			"rotate": [90, 0, 0],
+			"boxes": [
+				{"coordinates": [-8, -7, 0, 16, 16, 6], "textureOffset": [0, 22]}
+			],
+			"animations": [
+				{
+					"this.rx": 0
+				}
+			]
+		},
+		{
+			"part": "leg1",
+			"id": "leg1",
+			"invertAxis": "xy",
+			"translate": [-8, -9, -16],
+			"rotate": [0, -90, 0],
+			"boxes": [
+				{"coordinates": [5, 0, 16, 3, 3, 0], "textureOffset": [53, 9]},
+				{"coordinates": [8, 0, 16, 0, 3, 3], "textureOffset": [50, 6]}
+			],
+			"animations": [
+				{
+					"this.ry": 0
+				}
+			]
+		},
+		{
+			"part": "leg2",
+			"id": "leg2",
+			"invertAxis": "xy",
+			"translate": [-8, -9, -16],
+			"rotate": [0, -180, 0],
+			"boxes": [
+				{"coordinates": [24, 0, 16, 0, 3, 3], "textureOffset": [50, 18]},
+				{"coordinates": [21, 0, 16, 3, 3, 0], "textureOffset": [53, 21]}
+			],
+			"animations": [
+				{
+					"this.ry": 0
+				}
+			]
+		},
+		{
+			"part": "leg3",
+			"id": "leg3",
+			"invertAxis": "xy",
+			"translate": [-8, -9, 0],
+			"boxes": [
+				{"coordinates": [8, 0, -16, 0, 3, 3], "textureOffset": [50, 0]},
+				{"coordinates": [5, 0, -16, 3, 3, 0], "textureOffset": [53, 3]}
+			]
+		},
+		{
+			"part": "leg4",
+			"id": "leg4",
+			"invertAxis": "xy",
+			"translate": [-8, -9, 0],
+			"rotate": [0, 90, 0],
+			"boxes": [
+				{"coordinates": [21, 0, -16, 3, 3, 0], "textureOffset": [53, 15]},
+				{"coordinates": [24, 0, -16, 0, 3, 3], "textureOffset": [50, 12]}
+			],
+			"animations": [
+				{
+					"this.ry": 0
+				}
+			]
+		}
+	]
+}

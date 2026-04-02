@@ -1,0 +1,57 @@
+{
+	"credit": "Made by wwu",
+	"textureSize": [64, 32],
+	"texture": "textures/entity/hopper_minecart.png",
+	"models": [
+		{
+			"part": "right",
+			"id": "right",
+			"invertAxis": "xy",
+			"translate": [0, -20, -7],
+			"scale": 1,
+			"boxes": [
+				{"coordinates": [-8, 21, 6, 16, 8, 2], "textureOffset": [0, 0]}
+			]
+		},
+		{
+			"part": "back",
+			"id": "back",
+			"invertAxis": "xy",
+			"translate": [9, -20, 0],
+			"scale": 1,
+			"boxes": [
+				{"coordinates": [-17, 21, -1, 16, 8, 2], "textureOffset": [0, 0]}
+			]
+		},
+		{
+			"part": "left",
+			"id": "left",
+			"invertAxis": "xy",
+			"translate": [0, -20, 7],
+			"scale": 1,
+			"boxes": [
+				{"coordinates": [-8, 21, -8, 16, 8, 2], "textureOffset": [0, 0]}
+			]
+		},
+		{
+			"part": "bottom",
+			"id": "bottom",
+			"invertAxis": "xy",
+			"translate": [0, -20, 0],
+			"scale": 1,
+			"boxes": [
+				{"coordinates": [-10, 12, -1, 20, 16, 2], "textureOffset": [0, 10]}
+			]
+		},
+		{
+			"part": "front",
+			"id": "front",
+			"invertAxis": "xy",
+			"translate": [-9, -20, 0],
+			"scale": 1,
+			"boxes": [
+				{"coordinates": [1, 21, -1, 16, 8, 2], "textureOffset": [0, 0]}
+			]
+		}
+	]
+}

@@ -1,0 +1,49 @@
+{
+	"pack": {
+		"description": "§c§lModern §a§lBeta§r\nChristmas Texture Pack",
+		"supported_formats": [15, 999],
+		"min_format": [15, 0],
+		"max_format": [999, 0],
+		"pack_format": 34
+	},
+	"overlays": {
+		"entries": [
+			{
+				"directory": "1_20_2",
+				"formats": [18, 999],
+				"min_format": [18, 0],
+				"max_format": [999, 0]
+			},
+			{
+				"directory": "1_20_5",
+				"formats": [32, 999],
+				"min_format": [32, 0],
+				"max_format": [999, 0]
+			},
+			{
+				"directory": "1_21_2",
+				"formats": [32, 999],
+				"min_format": [32, 0],
+				"max_format": [999, 0]
+			},
+			{
+				"directory": "1_21_4",
+				"formats": [46, 999],
+				"min_format": [46, 0],
+				"max_format": [999, 0]
+			},
+			{
+				"directory": "1_21_5",
+				"formats": [47, 999],
+				"min_format": [47, 0],
+				"max_format": [999, 0]
+			},
+			{
+				"directory": "26_1",
+				"formats": [84, 999],
+				"min_format": [84, 0],
+				"max_format": [999, 0]
+			}
+		]
+	}
+}

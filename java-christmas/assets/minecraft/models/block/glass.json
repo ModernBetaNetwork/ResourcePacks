@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/oak_log",
+  "textures": {
+    "side": "minecraft:block/glass",
+    "end": "minecraft:block/glass_top"
+  }
+}

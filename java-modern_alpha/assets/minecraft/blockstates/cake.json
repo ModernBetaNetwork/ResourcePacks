@@ -1,0 +1,25 @@
+{
+  "variants": {
+    "bites=0": {
+      "model": "minecraft:block/cake"
+    },
+    "bites=1": {
+      "model": "minecraft:block/cake"
+    },
+    "bites=2": {
+      "model": "minecraft:block/cake"
+    },
+    "bites=3": {
+      "model": "minecraft:block/cake"
+    },
+    "bites=4": {
+      "model": "minecraft:block/cake"
+    },
+    "bites=5": {
+      "model": "minecraft:block/cake"
+    },
+    "bites=6": {
+      "model": "minecraft:block/cake"
+    }
+  }
+}

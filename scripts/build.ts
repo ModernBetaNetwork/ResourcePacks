@@ -48,13 +48,8 @@ const CompressionLevel = {
 } as const;
 type CompressionLevel = 0 | 1 | 6 | 9;
 
-async function addFile(
-	zip: Zippable,
-	path: string,
-	file: BunFile,
-	compressionLevel: CompressionLevel = CompressionLevel.DEFAULT,
-) {
-	zip[path] = [await file.bytes(), { level: compressionLevel }];
+async function addFile(zip: Zippable, path: string, file: BunFile) {
+	zip[path] = await file.bytes();
 }
 
 for (const path of packDirs) {
@@ -78,18 +73,8 @@ for (const path of packDirs) {
 
 	const zipContents: Zippable = {};
 
-	addFile(
-		zipContents,
-		basename(licenseFile.name!),
-		licenseFile,
-		CompressionLevel.NONE,
-	);
-	addFile(
-		zipContents,
-		basename(creditsFile.name!),
-		creditsFile,
-		CompressionLevel.NONE,
-	);
+	addFile(zipContents, basename(licenseFile.name!), licenseFile);
+	addFile(zipContents, basename(creditsFile.name!), creditsFile);
 
 	for (const filePath of await readdir(fullPath, { recursive: true })) {
 		try {
@@ -105,7 +90,7 @@ for (const path of packDirs) {
 		}
 	}
 
-	const zip = zipSync(zipContents);
+	const zip = zipSync(zipContents, { level: CompressionLevel.DEFAULT });
 	await Bun.write(Bun.file(zipPath), zip);
 
 	const hash = SHA1.hash(await Bun.file(zipPath).arrayBuffer(), "hex");

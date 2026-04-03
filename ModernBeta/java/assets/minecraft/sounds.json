@@ -880,7 +880,7 @@
       "dig/grass3",
       "dig/grass4"
     ],
-    "subtitle": "subtitles.block.generic.step"
+    "subtitle": "subtitles.block.generic.footsteps"
   },
   "block.sponge.hit": {
     "replace": true,

@@ -1,10 +1,9 @@
 #!/usr/bin/env bun
 
-import { SHA1 } from "bun";
+import { SHA1, type BunFile } from "bun";
+import { zipSync, type AsyncZippable, type Zippable } from "fflate";
 import { mkdir, readdir } from "node:fs/promises";
 import { basename, join } from "node:path";
-import { exit } from "node:process";
-import { CompressionLevel, createArchive } from "zip-bun";
 
 const cwd = process.cwd();
 const outDir = join(cwd, "out");
@@ -41,6 +40,23 @@ makeOutputDir: {
 	}
 }
 
+const CompressionLevel = {
+	NONE: 0,
+	LESS: 1,
+	DEFAULT: 6,
+	HIGHEST: 9,
+} as const;
+type CompressionLevel = 0 | 1 | 6 | 9;
+
+async function addFile(
+	zip: Zippable,
+	path: string,
+	file: BunFile,
+	compressionLevel: CompressionLevel = CompressionLevel.DEFAULT,
+) {
+	zip[path] = [await file.bytes(), { level: compressionLevel }];
+}
+
 for (const path of packDirs) {
 	const fullPath = join(cwd, path);
 
@@ -49,25 +65,27 @@ for (const path of packDirs) {
 		packId = packId.slice(JAVA_PREFIX.length);
 
 	const zipPath = join(outDir, `${packId}.zip`);
-	const zip = createArchive(zipPath);
+	const zipContents: Zippable = {};
 
-	zip.addFile(
+	addFile(
+		zipContents,
 		basename(licenseFile.name!),
-		await licenseFile.arrayBuffer(),
-		CompressionLevel.NO_COMPRESSION,
+		licenseFile,
+		CompressionLevel.NONE,
 	);
-	zip.addFile(
+	addFile(
+		zipContents,
 		basename(creditsFile.name!),
-		await creditsFile.arrayBuffer(),
-		CompressionLevel.NO_COMPRESSION,
+		creditsFile,
+		CompressionLevel.NONE,
 	);
 
 	for (const filePath of await readdir(fullPath, { recursive: true })) {
 		try {
-			zip.addFile(
+			await addFile(
+				zipContents,
 				filePath,
-				await Bun.file(join(fullPath, filePath)).arrayBuffer(),
-				CompressionLevel.DEFAULT,
+				Bun.file(join(fullPath, filePath)),
 			);
 		} catch (err) {
 			if (Error.isError(err) && "code" in err && err.code === "EISDIR")
@@ -75,13 +93,8 @@ for (const path of packDirs) {
 		}
 	}
 
-	const savedSuccessfully = zip.finalize();
-	if (!savedSuccessfully) {
-		console.error(
-			`${packId} not saved successfully, but didn't throw an error!`,
-		);
-		exit(1);
-	}
+	const zip = zipSync(zipContents);
+	Bun.write(Bun.file(zipPath), zip);
 
 	const hash = SHA1.hash(await Bun.file(zipPath).arrayBuffer(), "hex");
 	Bun.write(Bun.file(zipPath + ".sha1"), hash);

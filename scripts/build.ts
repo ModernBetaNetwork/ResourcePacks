@@ -61,10 +61,21 @@ for (const path of packDirs) {
 	const fullPath = join(cwd, path);
 
 	let packId = basename(path);
-	if (packId.startsWith(JAVA_PREFIX))
+	let zipPath: string;
+	if (packId.startsWith(JAVA_PREFIX)) {
 		packId = packId.slice(JAVA_PREFIX.length);
+		zipPath = join(outDir, `${packId}.zip`);
+	} else if (packId === BEDROCK_NAME) {
+		zipPath = join(outDir, `${packId}.mcpack`);
+	} else {
+		console.warn(
+			"Unsupported pack id: " +
+				packId +
+				". This should never happen. Skipping",
+		);
+		continue;
+	}
 
-	const zipPath = join(outDir, `${packId}.zip`);
 	const zipContents: Zippable = {};
 
 	addFile(

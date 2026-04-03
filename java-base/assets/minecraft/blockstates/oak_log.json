@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "minecraft:block/oak_log"
+    },
+    "axis=y": {
+      "model": "minecraft:block/oak_log"
+    },
+    "axis=z": {
+      "model": "minecraft:block/oak_log"
+    }
+  }
+}

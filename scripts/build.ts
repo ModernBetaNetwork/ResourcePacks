@@ -105,10 +105,10 @@ for (const path of packDirs) {
 	}
 
 	const zip = zipSync(zipContents);
-	Bun.write(Bun.file(zipPath), zip);
+	await Bun.write(Bun.file(zipPath), zip);
 
 	const hash = SHA1.hash(await Bun.file(zipPath).arrayBuffer(), "hex");
-	Bun.write(Bun.file(zipPath + ".sha1"), hash);
+	await Bun.write(Bun.file(zipPath + ".sha1"), hash);
 
 	console.info(`Saved ${packId} (${hash})`);
 }

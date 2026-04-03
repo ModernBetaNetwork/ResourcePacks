@@ -18,16 +18,27 @@ if (!(await creditsFile.exists()))
 		"`CREDITS.txt` file does not exist in the working directory!",
 	);
 
-const JAVA_PREFIX = "java-";
-const BEDROCK_NAME = "ModernBetaBedrockEdition";
+const JAVA_DIR = "java";
+const BEDROCK_DIR = "bedrock";
 
-const packDirs = (await readdir(rootDir, { recursive: false }))
-	.map((path) => basename(path))
-	.filter((name) => name.startsWith(JAVA_PREFIX) || name === BEDROCK_NAME);
+// A pack folder is any directory that contains a "java" or "bedrock" subfolder
+const allEntries = await readdir(rootDir, { withFileTypes: true });
+const packDirs = (
+	await Promise.all(
+		allEntries
+			.filter((e) => e.isDirectory())
+			.map(async (e) => {
+				const sub = await readdir(join(rootDir, e.name), { recursive: false });
+				const hasJava = sub.includes(JAVA_DIR);
+				const hasBedrock = sub.includes(BEDROCK_DIR);
+				return hasJava || hasBedrock ? { name: e.name, hasJava, hasBedrock } : null;
+			}),
+	)
+).filter((x) => x !== null);
 
 if (packDirs.length < 1)
 	throw new Error(
-		"Working directory does not contain any packs! Please run the script from the resource packs root.",
+		"Working directory contains no pack folders. Each pack folder must have a `java` and/or `bedrock` subfolder.",
 	);
 
 makeOutputDir: {
@@ -52,53 +63,44 @@ async function addFile(zip: Zippable, path: string, file: BunFile) {
 	zip[path] = await file.bytes();
 }
 
-const hashes: Record<string, string> = {};
-
-for (const path of packDirs) {
-	const fullPath = join(rootDir, path);
-
-	let packId = basename(path);
-	let zipPath: string;
-	if (packId.startsWith(JAVA_PREFIX)) {
-		packId = packId.slice(JAVA_PREFIX.length);
-		zipPath = join(outDir, `${packId}.zip`);
-	} else if (packId === BEDROCK_NAME) {
-		zipPath = join(outDir, `${packId}.mcpack`);
-	} else {
-		console.warn(
-			"Unsupported pack id: " +
-				packId +
-				". This should never happen. Skipping",
-		);
-		continue;
-	}
-
-	const zipContents: Zippable = {};
-
-	addFile(zipContents, basename(licenseFile.name!), licenseFile);
-	addFile(zipContents, basename(creditsFile.name!), creditsFile);
-
-	for (const filePath of await readdir(fullPath, { recursive: true })) {
+async function buildZip(sourceDir: string): Promise<Zippable> {
+	const contents: Zippable = {};
+	await addFile(contents, basename(licenseFile.name!), licenseFile);
+	await addFile(contents, basename(creditsFile.name!), creditsFile);
+	for (const filePath of await readdir(sourceDir, { recursive: true })) {
 		try {
-			await addFile(
-				zipContents,
-				filePath,
-				Bun.file(join(fullPath, filePath)),
-			);
+			await addFile(contents, filePath, Bun.file(join(sourceDir, filePath)));
 		} catch (err) {
 			if (Error.isError(err) && "code" in err && err.code === "EISDIR")
 				continue;
 			else throw err;
 		}
 	}
+	return contents;
+}
 
-	const zip = zipSync(zipContents, { level: CompressionLevel.DEFAULT });
-	await Bun.write(Bun.file(zipPath), zip);
+const hashes: Record<string, string> = {};
 
-	const hash = SHA1.hash(await Bun.file(zipPath).arrayBuffer(), "hex");
-	hashes[basename(zipPath)] = hash;
+for (const { name: packName, hasJava, hasBedrock } of packDirs) {
+	const packRoot = join(rootDir, packName);
 
-	console.info(`Saved ${packId} (${hash})`);
+	const variants: { subDir: string; ext: string }[] = [];
+	if (hasJava)    variants.push({ subDir: JAVA_DIR,    ext: "zip"    });
+	if (hasBedrock) variants.push({ subDir: BEDROCK_DIR, ext: "mcpack" });
+
+	for (const { subDir, ext } of variants) {
+		const sourceDir = join(packRoot, subDir);
+		const zipPath   = join(outDir, `${packName}.${ext}`);
+
+		const contents = await buildZip(sourceDir);
+		const zip      = zipSync(contents, { level: CompressionLevel.DEFAULT });
+
+		await Bun.write(Bun.file(zipPath), zip);
+
+		const hash = SHA1.hash(await Bun.file(zipPath).arrayBuffer(), "hex");
+		hashes[basename(zipPath)] = hash;
+		console.info(`Saved ${packName}.${ext} (${hash})`);
+	}
 }
 
 const longestFilenameLength = Object.keys(hashes)

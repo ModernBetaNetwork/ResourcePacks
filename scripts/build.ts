@@ -19,7 +19,7 @@ if (!(await creditsFile.exists()))
 	);
 
 const JAVA_PREFIX = "java-";
-const BEDROCK_NAME = "bedrock";
+const BEDROCK_NAME = "ModernBetaBedrockEdition";
 
 const packDirs = (await readdir(rootDir, { recursive: false }))
 	.map((path) => basename(path))

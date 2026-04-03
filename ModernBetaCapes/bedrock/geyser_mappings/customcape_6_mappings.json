@@ -1,0 +1,175 @@
+{
+  "format_version": "1",
+  "items": {
+    "minecraft:paper": [
+      {
+        "name": "cape6_0",
+        "allow_offhand": true,
+        "icon": "paper",
+        "frame": 0,
+        "custom_model_data": 600
+      },
+      {
+        "name": "cape6_1",
+        "allow_offhand": true,
+        "icon": "paper",
+        "frame": 0,
+        "custom_model_data": 601
+      },
+      {
+        "name": "cape6_2",
+        "allow_offhand": true,
+        "icon": "paper",
+        "frame": 0,
+        "custom_model_data": 602
+      },
+      {
+        "name": "cape6_3",
+        "allow_offhand": true,
+        "icon": "paper",
+        "frame": 0,
+        "custom_model_data": 603
+      },
+      {
+        "name": "cape6_4",
+        "allow_offhand": true,
+        "icon": "paper",
+        "frame": 0,
+        "custom_model_data": 604
+      },
+      {
+        "name": "cape6_5",
+        "allow_offhand": true,
+        "icon": "paper",
+        "frame": 0,
+        "custom_model_data": 605
+      },
+      {
+        "name": "cape6_6",
+        "allow_offhand": true,
+        "icon": "paper",
+        "frame": 0,
+        "custom_model_data": 606
+      },
+      {
+        "name": "cape6_7",
+        "allow_offhand": true,
+        "icon": "paper",
+        "frame": 0,
+        "custom_model_data": 607
+      },
+      {
+        "name": "cape6_8",
+        "allow_offhand": true,
+        "icon": "paper",
+        "frame": 0,
+        "custom_model_data": 608
+      },
+      {
+        "name": "cape6_9",
+        "allow_offhand": true,
+        "icon": "paper",
+        "frame": 0,
+        "custom_model_data": 609
+      },
+      {
+        "name": "cape6_10",
+        "allow_offhand": true,
+        "icon": "paper",
+        "frame": 0,
+        "custom_model_data": 610
+      },
+      {
+        "name": "cape6_11",
+        "allow_offhand": true,
+        "icon": "paper",
+        "frame": 0,
+        "custom_model_data": 611
+      },
+      {
+        "name": "cape6_50",
+        "allow_offhand": true,
+        "icon": "paper",
+        "frame": 0,
+        "custom_model_data": 650
+      },
+      {
+        "name": "cape6_51",
+        "allow_offhand": true,
+        "icon": "paper",
+        "frame": 0,
+        "custom_model_data": 651
+      },
+      {
+        "name": "cape6_52",
+        "allow_offhand": true,
+        "icon": "paper",
+        "frame": 0,
+        "custom_model_data": 652
+      },
+      {
+        "name": "cape6_53",
+        "allow_offhand": true,
+        "icon": "paper",
+        "frame": 0,
+        "custom_model_data": 653
+      },
+      {
+        "name": "cape6_54",
+        "allow_offhand": true,
+        "icon": "paper",
+        "frame": 0,
+        "custom_model_data": 654
+      },
+      {
+        "name": "cape6_55",
+        "allow_offhand": true,
+        "icon": "paper",
+        "frame": 0,
+        "custom_model_data": 655
+      },
+      {
+        "name": "cape6_56",
+        "allow_offhand": true,
+        "icon": "paper",
+        "frame": 0,
+        "custom_model_data": 656
+      },
+      {
+        "name": "cape6_57",
+        "allow_offhand": true,
+        "icon": "paper",
+        "frame": 0,
+        "custom_model_data": 657
+      },
+      {
+        "name": "cape6_58",
+        "allow_offhand": true,
+        "icon": "paper",
+        "frame": 0,
+        "custom_model_data": 658
+      },
+      {
+        "name": "cape6_59",
+        "allow_offhand": true,
+        "icon": "paper",
+        "frame": 0,
+        "custom_model_data": 659
+      },
+      {
+        "name": "cape6_60",
+        "allow_offhand": true,
+        "icon": "paper",
+        "frame": 0,
+        "custom_model_data": 660
+      },
+      {
+        "name": "cape6_61",
+        "allow_offhand": true,
+        "icon": "paper",
+        "frame": 0,
+        "custom_model_data": 661
+      }
+    ]
+  }
+}

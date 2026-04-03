@@ -1,20 +1,10 @@
 #!/usr/bin/env bun
 
-import assert from "node:assert";
-import { mkdir } from "node:fs/promises";
-import { readdir } from "node:fs/promises";
+import { SHA1 } from "bun";
+import { mkdir, readdir } from "node:fs/promises";
 import { basename, join } from "node:path";
 import { exit } from "node:process";
-import {
-	CompressionLevel,
-	createArchive,
-	createMemoryArchive,
-	zipDirectoryToMemory,
-} from "zip-bun";
-
-// zip each `java-{id}/` dir to -> `out/{id}.zip`
-// add `CREDITS.txt` and `LICENSE` to zip
-// hash the zip and write to `out/{packid}.zip.sha1`
+import { CompressionLevel, createArchive } from "zip-bun";
 
 const cwd = process.cwd();
 const outDir = join(cwd, "out");
@@ -28,9 +18,6 @@ if (!(await creditsFile.exists()))
 	throw new Error(
 		"`CREDITS.txt` file does not exist in the working directory!",
 	);
-
-// scan cwd for java-*/ and bedrock/
-//					 ^ capture packid with regex
 
 const JAVA_PREFIX = "java-";
 const BEDROCK_NAME = "bedrock";
@@ -61,7 +48,8 @@ for (const path of packDirs) {
 	if (packId.startsWith(JAVA_PREFIX))
 		packId = packId.slice(JAVA_PREFIX.length);
 
-	const zip = createArchive(join(outDir, `${packId}.zip`));
+	const zipPath = join(outDir, `${packId}.zip`);
+	const zip = createArchive(zipPath);
 
 	zip.addFile(
 		basename(licenseFile.name!),
@@ -95,5 +83,8 @@ for (const path of packDirs) {
 		exit(1);
 	}
 
-	console.info(`Saved ${packId}`);
+	const hash = SHA1.hash(await Bun.file(zipPath).arrayBuffer(), "hex");
+	Bun.write(Bun.file(zipPath + ".sha1"), hash);
+
+	console.info(`Saved ${packId} (${hash})`);
 }

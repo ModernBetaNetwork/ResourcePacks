@@ -1,15 +1,15 @@
 #!/usr/bin/env bun
 
 import { SHA1, type BunFile } from "bun";
-import { zipSync, type AsyncZippable, type Zippable } from "fflate";
+import { zipSync, type Zippable } from "fflate";
 import { mkdir, readdir } from "node:fs/promises";
-import { basename, join } from "node:path";
+import { basename, dirname, join } from "node:path";
 
-const cwd = process.cwd();
-const outDir = join(cwd, "out");
+const rootDir = dirname(import.meta.dir); // the `scripts` dir's parent dir path - which is the project root
+const outDir = join(rootDir, "out");
 
-const licenseFile = Bun.file(join(cwd, "LICENSE"));
-const creditsFile = Bun.file(join(cwd, "CREDITS.txt"));
+const licenseFile = Bun.file(join(rootDir, "LICENSE"));
+const creditsFile = Bun.file(join(rootDir, "CREDITS.txt"));
 
 if (!(await licenseFile.exists()))
 	throw new Error("`LICENSE` file does not exist in the working directory!");
@@ -21,7 +21,7 @@ if (!(await creditsFile.exists()))
 const JAVA_PREFIX = "java-";
 const BEDROCK_NAME = "bedrock";
 
-const packDirs = (await readdir(cwd, { recursive: false }))
+const packDirs = (await readdir(rootDir, { recursive: false }))
 	.map((path) => basename(path))
 	.filter((name) => name.startsWith(JAVA_PREFIX) || name === BEDROCK_NAME);
 
@@ -58,7 +58,7 @@ async function addFile(
 }
 
 for (const path of packDirs) {
-	const fullPath = join(cwd, path);
+	const fullPath = join(rootDir, path);
 
 	let packId = basename(path);
 	let zipPath: string;

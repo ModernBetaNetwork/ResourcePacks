@@ -299,46 +299,6 @@
     "replace": true,
     "sounds": []
   },
-  "block.sponge.place": {
-    "replace": true,
-    "sounds": [
-      "dig/grass1",
-      "dig/grass2",
-      "dig/grass3",
-      "dig/grass4"
-    ],
-    "subtitle": "subtitles.block.generic.place"
-  },
-  "block.sponge.break": {
-    "replace": true,
-    "sounds": [
-      "dig/grass1",
-      "dig/grass2",
-      "dig/grass3",
-      "dig/grass4"
-    ],
-    "subtitle": "subtitles.block.generic.break"
-  },
-  "block.sponge.step": {
-    "replace": true,
-    "sounds": [
-      "dig/grass1",
-      "dig/grass2",
-      "dig/grass3",
-      "dig/grass4"
-    ],
-    "subtitle": "subtitles.block.generic.step"
-  },
-  "block.sponge.hit": {
-    "replace": true,
-    "sounds": [
-      "dig/grass1",
-      "dig/grass2",
-      "dig/grass3",
-      "dig/grass4"
-    ],
-    "subtitle": "subtitles.block.generic.hit"
-  },
   "block.vine.step": {
     "replace": true,
     "sounds": []

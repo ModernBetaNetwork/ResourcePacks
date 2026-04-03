@@ -1,0 +1,19 @@
+{
+	"name": "scripts",
+	"module": "index.ts",
+	"type": "module",
+	"private": true,
+	"scripts": {
+		"format": "prettier --write ."
+	},
+	"devDependencies": {
+		"@types/bun": "latest"
+	},
+	"peerDependencies": {
+		"typescript": "^5"
+	},
+	"dependencies": {
+		"fflate": "^0.8.2",
+		"prettier": "^3.8.1"
+	}
+}

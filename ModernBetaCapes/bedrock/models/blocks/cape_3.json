@@ -1,0 +1,187 @@
+{
+    "format_version": "1.16.0",
+    "minecraft:geometry":
+    [
+        {
+            "description":
+            {
+                "identifier": "geometry.geyser_custom.cape_3",
+                "texture_width": 16,
+                "texture_height": 16,
+                "visible_bounds_width": 4,
+                "visible_bounds_height": 4.5,
+                "visible_bounds_offset":
+                [
+                    0,
+                    0.75,
+                    0
+                ]
+            },
+            "bones":
+            [
+                {
+                    "name": "geyser_custom",
+                    "binding": "c.item_slot == 'head' ? 'head' : q.item_slot_to_bone_name(c.item_slot)",
+                    "pivot":
+                    [
+                        0,
+                        8,
+                        0
+                    ]
+                },
+                {
+                    "name": "geyser_custom_x",
+                    "parent": "geyser_custom",
+                    "pivot":
+                    [
+                        0,
+                        8,
+                        0
+                    ]
+                },
+                {
+                    "name": "geyser_custom_y",
+                    "parent": "geyser_custom_x",
+                    "pivot":
+                    [
+                        0,
+                        8,
+                        0
+                    ]
+                },
+                {
+                    "name": "geyser_custom_z",
+                    "parent": "geyser_custom_y",
+                    "pivot":
+                    [
+                        0,
+                        8,
+                        0
+                    ],
+                    "cubes":
+                    []
+                },
+                {
+                    "parent": "geyser_custom_z",
+                    "pivot":
+                    [
+                        0,
+                        8,
+                        0
+                    ],
+                    "rotation":
+                    [
+                        0,
+                        0,
+                        0
+                    ],
+                    "cubes":
+                    [
+                        {
+                            "origin":
+                            [
+                                -5,
+                                0,
+                                -0.5
+                            ],
+                            "size":
+                            [
+                                10,
+                                16,
+                                1
+                            ],
+                            "pivot":
+                            [
+                                0,
+                                8,
+                                0
+                            ],
+                            "uv":
+                            {
+                                "north":
+                                {
+                                    "uv":
+                                    [
+                                        8.7433,
+                                        0.9572
+                                    ],
+                                    "uv_size":
+                                    [
+                                        7.2567,
+                                        15.0428
+                                    ]
+                                },
+                                "south":
+                                {
+                                    "uv":
+                                    [
+                                        0.7433,
+                                        0.9572
+                                    ],
+                                    "uv_size":
+                                    [
+                                        7.2567,
+                                        15.0428
+                                    ]
+                                },
+                                "east":
+                                {
+                                    "uv":
+                                    [
+                                        8.0116,
+                                        0.9572
+                                    ],
+                                    "uv_size":
+                                    [
+                                        0.7156,
+                                        15.0428
+                                    ]
+                                },
+                                "west":
+                                {
+                                    "uv":
+                                    [
+                                        0.0116,
+                                        0.9572
+                                    ],
+                                    "uv_size":
+                                    [
+                                        0.7156,
+                                        15.0428
+                                    ]
+                                },
+                                "up":
+                                {
+                                    "uv":
+                                    [
+                                        7.984,
+                                        0.9261
+                                    ],
+                                    "uv_size":
+                                    [
+                                        -7.2567,
+                                        -0.9261
+                                    ]
+                                },
+                                "down":
+                                {
+                                    "uv":
+                                    [
+                                        15.2567,
+                                        0.9261
+                                    ],
+                                    "uv_size":
+                                    [
+                                        -7.2567,
+                                        -0.9261
+                                    ]
+                                }
+                            }
+                        }
+                    ],
+                    "name": "rot_1"
+                }
+            ]
+        }
+    ]
+}

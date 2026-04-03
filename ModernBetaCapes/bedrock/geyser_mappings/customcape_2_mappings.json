@@ -1,0 +1,175 @@
+{
+  "format_version": "1",
+  "items": {
+    "minecraft:paper": [
+      {
+        "name": "cape2_0",
+        "allow_offhand": true,
+        "icon": "paper",
+        "frame": 0,
+        "custom_model_data": 200
+      },
+      {
+        "name": "cape2_1",
+        "allow_offhand": true,
+        "icon": "paper",
+        "frame": 0,
+        "custom_model_data": 201
+      },
+      {
+        "name": "cape2_2",
+        "allow_offhand": true,
+        "icon": "paper",
+        "frame": 0,
+        "custom_model_data": 202
+      },
+      {
+        "name": "cape2_3",
+        "allow_offhand": true,
+        "icon": "paper",
+        "frame": 0,
+        "custom_model_data": 203
+      },
+      {
+        "name": "cape2_4",
+        "allow_offhand": true,
+        "icon": "paper",
+        "frame": 0,
+        "custom_model_data": 204
+      },
+      {
+        "name": "cape2_5",
+        "allow_offhand": true,
+        "icon": "paper",
+        "frame": 0,
+        "custom_model_data": 205
+      },
+      {
+        "name": "cape2_6",
+        "allow_offhand": true,
+        "icon": "paper",
+        "frame": 0,
+        "custom_model_data": 206
+      },
+      {
+        "name": "cape2_7",
+        "allow_offhand": true,
+        "icon": "paper",
+        "frame": 0,
+        "custom_model_data": 207
+      },
+      {
+        "name": "cape2_8",
+        "allow_offhand": true,
+        "icon": "paper",
+        "frame": 0,
+        "custom_model_data": 208
+      },
+      {
+        "name": "cape2_9",
+        "allow_offhand": true,
+        "icon": "paper",
+        "frame": 0,
+        "custom_model_data": 209
+      },
+      {
+        "name": "cape2_10",
+        "allow_offhand": true,
+        "icon": "paper",
+        "frame": 0,
+        "custom_model_data": 210
+      },
+      {
+        "name": "cape2_11",
+        "allow_offhand": true,
+        "icon": "paper",
+        "frame": 0,
+        "custom_model_data": 211
+      },
+      {
+        "name": "cape2_50",
+        "allow_offhand": true,
+        "icon": "paper",
+        "frame": 0,
+        "custom_model_data": 250
+      },
+      {
+        "name": "cape2_51",
+        "allow_offhand": true,
+        "icon": "paper",
+        "frame": 0,
+        "custom_model_data": 251
+      },
+      {
+        "name": "cape2_52",
+        "allow_offhand": true,
+        "icon": "paper",
+        "frame": 0,
+        "custom_model_data": 252
+      },
+      {
+        "name": "cape2_53",
+        "allow_offhand": true,
+        "icon": "paper",
+        "frame": 0,
+        "custom_model_data": 253
+      },
+      {
+        "name": "cape2_54",
+        "allow_offhand": true,
+        "icon": "paper",
+        "frame": 0,
+        "custom_model_data": 254
+      },
+      {
+        "name": "cape2_55",
+        "allow_offhand": true,
+        "icon": "paper",
+        "frame": 0,
+        "custom_model_data": 255
+      },
+      {
+        "name": "cape2_56",
+        "allow_offhand": true,
+        "icon": "paper",
+        "frame": 0,
+        "custom_model_data": 256
+      },
+      {
+        "name": "cape2_57",
+        "allow_offhand": true,
+        "icon": "paper",
+        "frame": 0,
+        "custom_model_data": 257
+      },
+      {
+        "name": "cape2_58",
+        "allow_offhand": true,
+        "icon": "paper",
+        "frame": 0,
+        "custom_model_data": 258
+      },
+      {
+        "name": "cape2_59",
+        "allow_offhand": true,
+        "icon": "paper",
+        "frame": 0,
+        "custom_model_data": 259
+      },
+      {
+        "name": "cape2_60",
+        "allow_offhand": true,
+        "icon": "paper",
+        "frame": 0,
+        "custom_model_data": 260
+      },
+      {
+        "name": "cape2_61",
+        "allow_offhand": true,
+        "icon": "paper",
+        "frame": 0,
+        "custom_model_data": 261
+      }
+    ]
+  }
+}

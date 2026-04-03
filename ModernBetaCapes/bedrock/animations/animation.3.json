@@ -1,0 +1,37 @@
+{
+    "format_version": "1.8.0",
+    "animations":
+    {
+        "animation.geyser_custom.cape_3.head":
+        {
+            "loop": true,
+            "bones":
+            {
+                "geyser_custom_x":
+                {
+                    "position":
+                    [
+                        0,
+                        -30.25,
+                        0.65625
+                    ],
+                    "scale":
+                    [
+                        1.3415625,
+                        1.3415625,
+                        1.3415625
+                    ]
+                },
+                "geyser_custom":
+                {
+                    "position":
+                    [
+                        0,
+                        19.9,
+                        0
+                    ]
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/barrier",
+  "textures": {
+    "particle": "minecraft:block/oak_planks"
+  }
+}

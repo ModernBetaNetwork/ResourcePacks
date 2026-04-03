@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "minecraft:block/spruce_log"
+    },
+    "axis=y": {
+      "model": "minecraft:block/spruce_log"
+    },
+    "axis=z": {
+      "model": "minecraft:block/spruce_log"
+    }
+  }
+}

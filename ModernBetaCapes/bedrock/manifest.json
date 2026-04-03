@@ -1,0 +1,35 @@
+{
+    "format_version": 2,
+    "header":
+    {
+        "description": "Everything needed to bring our capes to life",
+        "name": "Custom Cape Resources",
+        "uuid": "2ab67678-aa52-4129-b200-eb0df0fbdd43",
+        "version":
+        [
+            1,
+            0,
+            0
+        ],
+        "min_engine_version":
+        [
+            1,
+            18,
+            3
+        ]
+    },
+    "modules":
+    [
+        {
+            "description": "Everything needed to bring our capes to life",
+            "type": "resources",
+            "uuid": "428d08dd-0adc-4e02-b302-b6ee6861ca21",
+            "version":
+            [
+                1,
+                0,
+                0
+            ]
+        }
+    ]
+}

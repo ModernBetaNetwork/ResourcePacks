@@ -52,6 +52,8 @@ async function addFile(zip: Zippable, path: string, file: BunFile) {
 	zip[path] = await file.bytes();
 }
 
+const hashes: Record<string, string> = {};
+
 for (const path of packDirs) {
 	const fullPath = join(rootDir, path);
 
@@ -94,7 +96,19 @@ for (const path of packDirs) {
 	await Bun.write(Bun.file(zipPath), zip);
 
 	const hash = SHA1.hash(await Bun.file(zipPath).arrayBuffer(), "hex");
-	await Bun.write(Bun.file(zipPath + ".sha1"), hash);
+	hashes[basename(zipPath)] = hash;
 
 	console.info(`Saved ${packId} (${hash})`);
 }
+
+const longestFilenameLength = Object.keys(hashes)
+	.map((filename) => filename.length)
+	.toSorted((a, b) => b - a)[0]!;
+
+await Bun.write(
+	Bun.file(join(outDir, "checksums.txt")),
+	Object.entries(hashes).map(
+		([filename, hash]) =>
+			`${filename.padEnd(longestFilenameLength, " ")} ${hash}\n`,
+	),
+);

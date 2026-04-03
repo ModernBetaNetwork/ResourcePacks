@@ -60,7 +60,7 @@ const CompressionLevel = {
 type CompressionLevel = 0 | 1 | 6 | 9;
 
 async function addFile(zip: Zippable, path: string, file: BunFile) {
-	zip[path] = await file.bytes();
+    zip[path.replaceAll("\\", "/")] = await file.bytes();
 }
 
 async function buildZip(sourceDir: string): Promise<Zippable> {

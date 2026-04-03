@@ -101,6 +101,7 @@ for (const path of packDirs) {
 		} catch (err) {
 			if (Error.isError(err) && "code" in err && err.code === "EISDIR")
 				continue;
+			else throw err;
 		}
 	}
 

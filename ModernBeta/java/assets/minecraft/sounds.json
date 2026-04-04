@@ -852,6 +852,46 @@
     ],
     "subtitle": "subtitles.block.generic.footsteps"
   },
+  "block.sponge.place": {
+    "replace": true,
+    "sounds": [
+      "dig/grass1",
+      "dig/grass2",
+      "dig/grass3",
+      "dig/grass4"
+    ],
+    "subtitle": "subtitles.block.generic.place"
+  },
+  "block.sponge.break": {
+    "replace": true,
+    "sounds": [
+      "dig/grass1",
+      "dig/grass2",
+      "dig/grass3",
+      "dig/grass4"
+    ],
+    "subtitle": "subtitles.block.generic.break"
+  },
+  "block.sponge.step": {
+    "replace": true,
+    "sounds": [
+      "dig/grass1",
+      "dig/grass2",
+      "dig/grass3",
+      "dig/grass4"
+    ],
+    "subtitle": "subtitles.block.generic.footsteps"
+  },
+  "block.sponge.hit": {
+    "replace": true,
+    "sounds": [
+      "dig/grass1",
+      "dig/grass2",
+      "dig/grass3",
+      "dig/grass4"
+    ],
+    "subtitle": "subtitles.block.generic.hit"
+  },
   "block.stone.break": {
     "sounds": [
       "dig/stone1",
@@ -1453,18 +1493,14 @@
   "entity.hostile.death": {
     "replace": true,
     "sounds": [
-      "damage/hurtflesh1",
-      "damage/hurtflesh2",
-      "damage/hurtflesh3"
+      "damage/hurt"
     ],
     "subtitle": "subtitles.entity.generic.death"
   },
   "entity.hostile.hurt": {
     "replace": true,
     "sounds": [
-      "damage/hurtflesh1",
-      "damage/hurtflesh2",
-      "damage/hurtflesh3"
+      "damage/hurt"
     ],
     "subtitle": "subtitles.entity.generic.hurt"
   },

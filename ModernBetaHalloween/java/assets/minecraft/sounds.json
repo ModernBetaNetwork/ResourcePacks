@@ -1493,18 +1493,14 @@
   "entity.hostile.death": {
     "replace": true,
     "sounds": [
-      "damage/hurtflesh1",
-      "damage/hurtflesh2",
-      "damage/hurtflesh3"
+      "damage/hurt"
     ],
     "subtitle": "subtitles.entity.generic.death"
   },
   "entity.hostile.hurt": {
     "replace": true,
     "sounds": [
-      "damage/hurtflesh1",
-      "damage/hurtflesh2",
-      "damage/hurtflesh3"
+      "damage/hurt"
     ],
     "subtitle": "subtitles.entity.generic.hurt"
   },

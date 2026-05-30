@@ -62,7 +62,12 @@ async function addFile(zip: Zippable, path: string, file: BunFile) {
 	zip[path.replaceAll("\\", "/")] = await file.bytes();
 }
 
-async function buildZip(sourceDir: string): Promise<Zippable> {
+const CAPES_PACK = "ModernBetaCapes";
+const CAPES_EXCLUDE = new Set(["pack.mcmeta", "pack.png"]);
+
+const capesJavaDir = join(rootDir, CAPES_PACK, JAVA_DIR);
+
+async function buildZip(sourceDir: string, overlayCapesDir?: string): Promise<Zippable> {
 	const contents: Zippable = {};
 
 	await addFile(contents, basename(licenseFile.name!), licenseFile);
@@ -74,6 +79,18 @@ async function buildZip(sourceDir: string): Promise<Zippable> {
 		} catch (err) {
 			if (Error.isError(err) && "code" in err && err.code === "EISDIR") continue;
 			else throw err;
+		}
+	}
+
+	if (overlayCapesDir) {
+		for (const filePath of await readdir(overlayCapesDir, { recursive: true })) {
+			if (CAPES_EXCLUDE.has(basename(filePath))) continue;
+			try {
+				await addFile(contents, filePath, Bun.file(join(overlayCapesDir, filePath)));
+			} catch (err) {
+				if (Error.isError(err) && "code" in err && err.code === "EISDIR") continue;
+				else throw err;
+			}
 		}
 	}
 
@@ -93,7 +110,8 @@ for (const { name: packName, hasJava, hasBedrock } of packDirs) {
 		const sourceDir = join(packRoot, subDir);
 		const zipPath = join(outDir, `${packName}.${ext}`);
 
-		const contents = await buildZip(sourceDir);
+		const isJava = subDir === JAVA_DIR;
+		const contents = await buildZip(sourceDir, isJava ? capesJavaDir : undefined);
 		const zip = zipSync(contents, { level: CompressionLevel.DEFAULT });
 
 		await Bun.write(Bun.file(zipPath), zip);

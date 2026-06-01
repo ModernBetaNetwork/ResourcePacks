@@ -228,6 +228,31 @@
     {"predicate": {"custom_model_data":958}, "model": "cape/9/58"},
     {"predicate": {"custom_model_data":959}, "model": "cape/9/59"},
     {"predicate": {"custom_model_data":960}, "model": "cape/9/60"},
-    {"predicate": {"custom_model_data":961}, "model": "cape/9/61"}
+    {"predicate": {"custom_model_data":961}, "model": "cape/9/61"},
+
+    {"predicate": {"custom_model_data":1000}, "model": "cape/10/0"},
+    {"predicate": {"custom_model_data":1001}, "model": "cape/10/1"},
+    {"predicate": {"custom_model_data":1002}, "model": "cape/10/2"},
+    {"predicate": {"custom_model_data":1003}, "model": "cape/10/3"},
+    {"predicate": {"custom_model_data":1004}, "model": "cape/10/4"},
+    {"predicate": {"custom_model_data":1005}, "model": "cape/10/5"},
+    {"predicate": {"custom_model_data":1006}, "model": "cape/10/6"},
+    {"predicate": {"custom_model_data":1007}, "model": "cape/10/7"},
+    {"predicate": {"custom_model_data":1008}, "model": "cape/10/8"},
+    {"predicate": {"custom_model_data":1009}, "model": "cape/10/9"},
+    {"predicate": {"custom_model_data":1010}, "model": "cape/10/10"},
+    {"predicate": {"custom_model_data":1011}, "model": "cape/10/11"},
+    {"predicate": {"custom_model_data":1050}, "model": "cape/10/50"},
+    {"predicate": {"custom_model_data":1051}, "model": "cape/10/51"},
+    {"predicate": {"custom_model_data":1052}, "model": "cape/10/52"},
+    {"predicate": {"custom_model_data":1053}, "model": "cape/10/53"},
+    {"predicate": {"custom_model_data":1054}, "model": "cape/10/54"},
+    {"predicate": {"custom_model_data":1055}, "model": "cape/10/55"},
+    {"predicate": {"custom_model_data":1056}, "model": "cape/10/56"},
+    {"predicate": {"custom_model_data":1057}, "model": "cape/10/57"},
+    {"predicate": {"custom_model_data":1058}, "model": "cape/10/58"},
+    {"predicate": {"custom_model_data":1059}, "model": "cape/10/59"},
+    {"predicate": {"custom_model_data":1060}, "model": "cape/10/60"},
+    {"predicate": {"custom_model_data":1061}, "model": "cape/10/61"}
   ]
 }

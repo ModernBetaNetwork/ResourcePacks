@@ -22,9 +22,32 @@ const BEDROCK_DIR = "bedrock";
 // Special subdirectories that group packs by role
 const BASE_DIR = "_BasePacks";
 const OVERLAY_DIR = "_OverlayPacks";
-const STANDALONE_DIR = "_StandalonePacks";
 
-type PackEntry = { name: string; dir: string; hasJava: boolean; hasBedrock: boolean };
+// Config file at the root of each pack that controls base/overlay inclusion
+const PACK_CONFIG_FILE = "build-config.json";
+
+type PackConfig = { basePacks: boolean; overlayPacks: boolean };
+
+async function readPackConfig(packDir: string): Promise<PackConfig> {
+	const configFile = Bun.file(join(packDir, PACK_CONFIG_FILE));
+	if (await configFile.exists()) {
+		const config = await configFile.json();
+		return {
+			basePacks: config.basePacks === true,
+			overlayPacks: config.overlayPacks === true,
+		};
+	}
+	// Default: include base and overlay packs
+	return { basePacks: true, overlayPacks: true };
+}
+
+type PackEntry = {
+	name: string;
+	dir: string;
+	hasJava: boolean;
+	hasBedrock: boolean;
+	config: PackConfig;
+};
 
 async function discoverPacks(searchDir: string): Promise<PackEntry[]> {
 	let entries: Awaited<ReturnType<typeof readdir>>;
@@ -38,30 +61,30 @@ async function discoverPacks(searchDir: string): Promise<PackEntry[]> {
 			entries
 				.filter((e) => e.isDirectory())
 				.map(async (e) => {
-					const sub = await readdir(join(searchDir, e.name), { recursive: false });
+					const packDir = join(searchDir, e.name);
+					const sub = await readdir(packDir, { recursive: false });
 					const hasJava = sub.includes(JAVA_DIR);
 					const hasBedrock = sub.includes(BEDROCK_DIR);
-					return hasJava || hasBedrock
-						? ({ name: e.name, dir: searchDir, hasJava, hasBedrock } satisfies PackEntry)
-						: null;
+					if (!hasJava && !hasBedrock) return null;
+					const config = await readPackConfig(packDir);
+					return { name: e.name, dir: searchDir, hasJava, hasBedrock, config } satisfies PackEntry;
 				}),
 		)
 	).filter((x) => x !== null);
 }
 
 // Discover packs from each location
-const [mainPacks, basePacks, overlayPacks, standalonePacks] = await Promise.all([
+const [mainPacks, basePacks, overlayPacks] = await Promise.all([
 	discoverPacks(rootDir),
 	discoverPacks(join(rootDir, BASE_DIR)),
 	discoverPacks(join(rootDir, OVERLAY_DIR)),
-	discoverPacks(join(rootDir, STANDALONE_DIR)),
 ]);
 
-// Filter out the base/ overlay/ standalone/ out/ scripts/ dirs from mainPacks
-const RESERVED_DIRS = new Set([BASE_DIR, OVERLAY_DIR, STANDALONE_DIR, "out", "scripts"]);
+// Filter out the base/ overlay/ out/ scripts/ dirs from mainPacks
+const RESERVED_DIRS = new Set([BASE_DIR, OVERLAY_DIR, "out", "scripts"]);
 const filteredMainPacks = mainPacks.filter((p) => !RESERVED_DIRS.has(p.name));
 
-const allPacks = [...filteredMainPacks, ...basePacks, ...overlayPacks, ...standalonePacks];
+const allPacks = [...filteredMainPacks, ...basePacks, ...overlayPacks];
 
 if (allPacks.length < 1)
 	throw new Error(
@@ -113,18 +136,14 @@ async function addDirToZip(zip: Zippable, sourceDir: string, exclude?: Set<strin
 // Files that should never be copied from overlay packs (each pack has its own)
 const OVERLAY_EXCLUDE = new Set(["pack.mcmeta", "pack.png"]);
 
-async function buildZip(
-	pack: PackEntry,
-	subDir: string,
-	isStandalone: boolean,
-): Promise<Zippable> {
+async function buildZip(pack: PackEntry, subDir: string): Promise<Zippable> {
 	const contents: Zippable = {};
 	const sourceDir = join(pack.dir, pack.name, subDir);
 
 	await addFile(contents, basename(licenseFile.name!), licenseFile);
 	await addFile(contents, basename(creditsFile.name!), creditsFile);
 
-	if (!isStandalone) {
+	if (pack.config.basePacks) {
 		// 1. Add all base pack files (pack's own files will override these)
 		for (const basePack of basePacks) {
 			const baseDir = join(basePack.dir, basePack.name, subDir);
@@ -137,7 +156,7 @@ async function buildZip(
 	// 2. Add this pack's own files
 	await addDirToZip(contents, sourceDir);
 
-	if (!isStandalone) {
+	if (pack.config.overlayPacks) {
 		// 3. Add all overlay pack files on top (overrides everything)
 		for (const overlayPack of overlayPacks) {
 			const overlayDir = join(overlayPack.dir, overlayPack.name, subDir);
@@ -153,9 +172,6 @@ async function buildZip(
 const hashes: Record<string, string> = {};
 
 for (const pack of allPacks) {
-	// Packs inside _BasePacks/, _OverlayPacks/, or _StandalonePacks/ are built standalone
-	const isStandalone = pack.dir !== rootDir;
-
 	const variants: { subDir: string; ext: string }[] = [];
 	if (pack.hasJava) variants.push({ subDir: JAVA_DIR, ext: "zip" });
 	if (pack.hasBedrock) variants.push({ subDir: BEDROCK_DIR, ext: "mcpack" });
@@ -163,7 +179,7 @@ for (const pack of allPacks) {
 	for (const { subDir, ext } of variants) {
 		const zipPath = join(outDir, `${pack.name}.${ext}`);
 
-		const contents = await buildZip(pack, subDir, isStandalone);
+		const contents = await buildZip(pack, subDir);
 		const zip = zipSync(contents, { level: CompressionLevel.DEFAULT });
 
 		await Bun.write(Bun.file(zipPath), zip);

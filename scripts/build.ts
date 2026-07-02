@@ -26,19 +26,18 @@ const OVERLAY_DIR = "_OverlayPacks";
 // Config file at the root of each pack that controls base/overlay inclusion
 const PACK_CONFIG_FILE = "build-config.json";
 
-type PackConfig = { basePacks: boolean; overlayPacks: boolean };
+type PackConfig = { basePacks?: boolean; overlayPacks: boolean };
 
-async function readPackConfig(packDir: string): Promise<PackConfig> {
+async function readPackConfig(packDir: string, defaults: PackConfig): Promise<PackConfig> {
 	const configFile = Bun.file(join(packDir, PACK_CONFIG_FILE));
 	if (await configFile.exists()) {
 		const config = await configFile.json();
 		return {
-			basePacks: config.basePacks === true,
+			...(defaults.basePacks !== undefined ? { basePacks: config.basePacks === true } : {}),
 			overlayPacks: config.overlayPacks === true,
 		};
 	}
-	// Default: include base and overlay packs
-	return { basePacks: true, overlayPacks: true };
+	return defaults;
 }
 
 type PackEntry = {
@@ -49,7 +48,7 @@ type PackEntry = {
 	config: PackConfig;
 };
 
-async function discoverPacks(searchDir: string): Promise<PackEntry[]> {
+async function discoverPacks(searchDir: string, configDefaults: PackConfig): Promise<PackEntry[]> {
 	let entries: Awaited<ReturnType<typeof readdir>>;
 	try {
 		entries = await readdir(searchDir, { withFileTypes: true });
@@ -66,7 +65,7 @@ async function discoverPacks(searchDir: string): Promise<PackEntry[]> {
 					const hasJava = sub.includes(JAVA_DIR);
 					const hasBedrock = sub.includes(BEDROCK_DIR);
 					if (!hasJava && !hasBedrock) return null;
-					const config = await readPackConfig(packDir);
+					const config = await readPackConfig(packDir, configDefaults);
 					return { name: e.name, dir: searchDir, hasJava, hasBedrock, config } satisfies PackEntry;
 				}),
 		)
@@ -75,9 +74,9 @@ async function discoverPacks(searchDir: string): Promise<PackEntry[]> {
 
 // Discover packs from each location
 const [mainPacks, basePacks, overlayPacks] = await Promise.all([
-	discoverPacks(rootDir),
-	discoverPacks(join(rootDir, BASE_DIR)),
-	discoverPacks(join(rootDir, OVERLAY_DIR)),
+	discoverPacks(rootDir, { basePacks: true, overlayPacks: true }),
+	discoverPacks(join(rootDir, BASE_DIR), { overlayPacks: true }),
+	discoverPacks(join(rootDir, OVERLAY_DIR), { overlayPacks: false }),
 ]);
 
 // Filter out the base/ overlay/ out/ scripts/ dirs from mainPacks

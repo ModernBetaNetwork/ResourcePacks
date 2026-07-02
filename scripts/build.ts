@@ -19,24 +19,51 @@ if (!(await creditsFile.exists()))
 const JAVA_DIR = "java";
 const BEDROCK_DIR = "bedrock";
 
-// A pack folder is any directory that contains a "java" or "bedrock" subfolder
-const allEntries = await readdir(rootDir, { withFileTypes: true });
-const packDirs = (
-	await Promise.all(
-		allEntries
-			.filter((e) => e.isDirectory())
-			.map(async (e) => {
-				const sub = await readdir(join(rootDir, e.name), {
-					recursive: false,
-				});
-				const hasJava = sub.includes(JAVA_DIR);
-				const hasBedrock = sub.includes(BEDROCK_DIR);
-				return hasJava || hasBedrock ? { name: e.name, hasJava, hasBedrock } : null;
-			}),
-	)
-).filter((x) => x !== null);
+// Special subdirectories that group packs by role
+const BASE_DIR = "_BasePacks";
+const OVERLAY_DIR = "_OverlayPacks";
+const STANDALONE_DIR = "_StandalonePacks";
 
-if (packDirs.length < 1)
+type PackEntry = { name: string; dir: string; hasJava: boolean; hasBedrock: boolean };
+
+async function discoverPacks(searchDir: string): Promise<PackEntry[]> {
+	let entries: Awaited<ReturnType<typeof readdir>>;
+	try {
+		entries = await readdir(searchDir, { withFileTypes: true });
+	} catch {
+		return [];
+	}
+	return (
+		await Promise.all(
+			entries
+				.filter((e) => e.isDirectory())
+				.map(async (e) => {
+					const sub = await readdir(join(searchDir, e.name), { recursive: false });
+					const hasJava = sub.includes(JAVA_DIR);
+					const hasBedrock = sub.includes(BEDROCK_DIR);
+					return hasJava || hasBedrock
+						? ({ name: e.name, dir: searchDir, hasJava, hasBedrock } satisfies PackEntry)
+						: null;
+				}),
+		)
+	).filter((x) => x !== null);
+}
+
+// Discover packs from each location
+const [mainPacks, basePacks, overlayPacks, standalonePacks] = await Promise.all([
+	discoverPacks(rootDir),
+	discoverPacks(join(rootDir, BASE_DIR)),
+	discoverPacks(join(rootDir, OVERLAY_DIR)),
+	discoverPacks(join(rootDir, STANDALONE_DIR)),
+]);
+
+// Filter out the base/ overlay/ standalone/ out/ scripts/ dirs from mainPacks
+const RESERVED_DIRS = new Set([BASE_DIR, OVERLAY_DIR, STANDALONE_DIR, "out", "scripts"]);
+const filteredMainPacks = mainPacks.filter((p) => !RESERVED_DIRS.has(p.name));
+
+const allPacks = [...filteredMainPacks, ...basePacks, ...overlayPacks, ...standalonePacks];
+
+if (allPacks.length < 1)
 	throw new Error(
 		"Working directory contains no pack folders. Each pack folder must have a `java` and/or `bedrock` subfolder.",
 	);
@@ -62,34 +89,60 @@ async function addFile(zip: Zippable, path: string, file: BunFile) {
 	zip[path.replaceAll("\\", "/")] = await file.bytes();
 }
 
-const CAPES_PACK = "ModernBetaCapes";
-const CAPES_EXCLUDE = new Set(["pack.mcmeta", "pack.png"]);
+async function dirExists(path: string): Promise<boolean> {
+	try {
+		await readdir(path);
+		return true;
+	} catch {
+		return false;
+	}
+}
 
-const capesJavaDir = join(rootDir, CAPES_PACK, JAVA_DIR);
-
-async function buildZip(sourceDir: string, overlayCapesDir?: string): Promise<Zippable> {
-	const contents: Zippable = {};
-
-	await addFile(contents, basename(licenseFile.name!), licenseFile);
-	await addFile(contents, basename(creditsFile.name!), creditsFile);
-
+async function addDirToZip(zip: Zippable, sourceDir: string, exclude?: Set<string>): Promise<void> {
 	for (const filePath of await readdir(sourceDir, { recursive: true })) {
+		if (exclude && exclude.has(basename(filePath))) continue;
 		try {
-			await addFile(contents, filePath, Bun.file(join(sourceDir, filePath)));
+			await addFile(zip, filePath, Bun.file(join(sourceDir, filePath)));
 		} catch (err) {
 			if (Error.isError(err) && "code" in err && err.code === "EISDIR") continue;
 			else throw err;
 		}
 	}
+}
 
-	if (overlayCapesDir) {
-		for (const filePath of await readdir(overlayCapesDir, { recursive: true })) {
-			if (CAPES_EXCLUDE.has(basename(filePath))) continue;
-			try {
-				await addFile(contents, filePath, Bun.file(join(overlayCapesDir, filePath)));
-			} catch (err) {
-				if (Error.isError(err) && "code" in err && err.code === "EISDIR") continue;
-				else throw err;
+// Files that should never be copied from overlay packs (each pack has its own)
+const OVERLAY_EXCLUDE = new Set(["pack.mcmeta", "pack.png"]);
+
+async function buildZip(
+	pack: PackEntry,
+	subDir: string,
+	isStandalone: boolean,
+): Promise<Zippable> {
+	const contents: Zippable = {};
+	const sourceDir = join(pack.dir, pack.name, subDir);
+
+	await addFile(contents, basename(licenseFile.name!), licenseFile);
+	await addFile(contents, basename(creditsFile.name!), creditsFile);
+
+	if (!isStandalone) {
+		// 1. Add all base pack files (pack's own files will override these)
+		for (const basePack of basePacks) {
+			const baseDir = join(basePack.dir, basePack.name, subDir);
+			if (await dirExists(baseDir)) {
+				await addDirToZip(contents, baseDir);
+			}
+		}
+	}
+
+	// 2. Add this pack's own files
+	await addDirToZip(contents, sourceDir);
+
+	if (!isStandalone) {
+		// 3. Add all overlay pack files on top (overrides everything)
+		for (const overlayPack of overlayPacks) {
+			const overlayDir = join(overlayPack.dir, overlayPack.name, subDir);
+			if (await dirExists(overlayDir)) {
+				await addDirToZip(contents, overlayDir, OVERLAY_EXCLUDE);
 			}
 		}
 	}
@@ -99,26 +152,25 @@ async function buildZip(sourceDir: string, overlayCapesDir?: string): Promise<Zi
 
 const hashes: Record<string, string> = {};
 
-for (const { name: packName, hasJava, hasBedrock } of packDirs) {
-	const packRoot = join(rootDir, packName);
+for (const pack of allPacks) {
+	// Packs inside _BasePacks/, _OverlayPacks/, or _StandalonePacks/ are built standalone
+	const isStandalone = pack.dir !== rootDir;
 
 	const variants: { subDir: string; ext: string }[] = [];
-	if (hasJava) variants.push({ subDir: JAVA_DIR, ext: "zip" });
-	if (hasBedrock) variants.push({ subDir: BEDROCK_DIR, ext: "mcpack" });
+	if (pack.hasJava) variants.push({ subDir: JAVA_DIR, ext: "zip" });
+	if (pack.hasBedrock) variants.push({ subDir: BEDROCK_DIR, ext: "mcpack" });
 
 	for (const { subDir, ext } of variants) {
-		const sourceDir = join(packRoot, subDir);
-		const zipPath = join(outDir, `${packName}.${ext}`);
+		const zipPath = join(outDir, `${pack.name}.${ext}`);
 
-		const isJava = subDir === JAVA_DIR;
-		const contents = await buildZip(sourceDir, isJava ? capesJavaDir : undefined);
+		const contents = await buildZip(pack, subDir, isStandalone);
 		const zip = zipSync(contents, { level: CompressionLevel.DEFAULT });
 
 		await Bun.write(Bun.file(zipPath), zip);
 
 		const hash = SHA1.hash(await Bun.file(zipPath).arrayBuffer(), "hex");
 		hashes[basename(zipPath)] = hash;
-		console.info(`Saved ${packName}.${ext} (${hash})`);
+		console.info(`Saved ${pack.name}.${ext} (${hash})`);
 	}
 }
 

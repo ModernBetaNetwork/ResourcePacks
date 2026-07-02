@@ -1,4 +1,5 @@
 {
 	"basePacks": true,
-	"overlayPacks": true
+	"overlayPacks": true,
+	"includeCredits": false
 }

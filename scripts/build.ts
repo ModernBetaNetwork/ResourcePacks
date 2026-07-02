@@ -8,7 +8,7 @@ import { basename, dirname, join } from "node:path";
 const rootDir = dirname(import.meta.dir); // the `scripts` dir's parent dir path - which is the project root
 const outDir = join(rootDir, "out");
 
-const licenseFile = Bun.file(join(rootDir, "LICENSE"));
+const licenseFile = Bun.file(join(rootDir, "LICENSE.txt"));
 const creditsFile = Bun.file(join(rootDir, "CREDITS.txt"));
 
 if (!(await licenseFile.exists()))
@@ -26,7 +26,7 @@ const OVERLAY_DIR = "_OverlayPacks";
 // Config file at the root of each pack that controls base/overlay inclusion
 const PACK_CONFIG_FILE = "build-config.json";
 
-type PackConfig = { basePacks?: boolean; overlayPacks: boolean };
+type PackConfig = { basePacks?: boolean; overlayPacks: boolean; includeCredits: boolean };
 
 async function readPackConfig(packDir: string, defaults: PackConfig): Promise<PackConfig> {
 	const configFile = Bun.file(join(packDir, PACK_CONFIG_FILE));
@@ -35,6 +35,7 @@ async function readPackConfig(packDir: string, defaults: PackConfig): Promise<Pa
 		return {
 			...(defaults.basePacks !== undefined ? { basePacks: config.basePacks === true } : {}),
 			overlayPacks: config.overlayPacks === true,
+			includeCredits: config.includeCredits === true,
 		};
 	}
 	return defaults;
@@ -74,9 +75,9 @@ async function discoverPacks(searchDir: string, configDefaults: PackConfig): Pro
 
 // Discover packs from each location
 const [mainPacks, basePacks, overlayPacks] = await Promise.all([
-	discoverPacks(rootDir, { basePacks: true, overlayPacks: true }),
-	discoverPacks(join(rootDir, BASE_DIR), { overlayPacks: true }),
-	discoverPacks(join(rootDir, OVERLAY_DIR), { overlayPacks: false }),
+	discoverPacks(rootDir, { basePacks: true, overlayPacks: true, includeCredits: true }),
+	discoverPacks(join(rootDir, BASE_DIR), { overlayPacks: true, includeCredits: true }),
+	discoverPacks(join(rootDir, OVERLAY_DIR), { overlayPacks: false, includeCredits: true }),
 ]);
 
 // Filter out the base/ overlay/ out/ scripts/ dirs from mainPacks
@@ -140,7 +141,9 @@ async function buildZip(pack: PackEntry, subDir: string): Promise<Zippable> {
 	const sourceDir = join(pack.dir, pack.name, subDir);
 
 	await addFile(contents, basename(licenseFile.name!), licenseFile);
-	await addFile(contents, basename(creditsFile.name!), creditsFile);
+	if (pack.config.includeCredits) {
+		await addFile(contents, basename(creditsFile.name!), creditsFile);
+	}
 
 	if (pack.config.basePacks) {
 		// 1. Add all base pack files (pack's own files will override these)

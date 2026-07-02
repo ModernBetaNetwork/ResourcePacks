@@ -1,6 +1,0 @@
-{
-  "parent": "minecraft:block/oak_log",
-  "textures": {
-    "side": "minecraft:block/spruce_log"
-  }
-}

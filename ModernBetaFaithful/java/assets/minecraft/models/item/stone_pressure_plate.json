@@ -1,6 +1,0 @@
-{
-	"parent": "item/oak_pressure_plate",
-	"textures": {
-		"texture": "block/stone"
-	}
-}

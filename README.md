@@ -63,6 +63,8 @@ Place a `build-config.json` at the root of any pack folder to control how it is 
 
 `pack.mcmeta` and `pack.png` are never copied from overlay packs — each pack keeps its own. Similarly for Bedrock, `manifest.json` and `pack_icon.png` are excluded.
 
+Each Bedrock pack's `manifest.json` has its `header.uuid` replaced with a freshly generated UUID at build time.
+
 ## Building
 - Install [Bun](https://bun.sh) if you don't have it already.
 - Open a terminal to the project root.

@@ -184,6 +184,13 @@ async function buildZip(pack: PackEntry, subDir: string): Promise<Zippable> {
 		}
 	}
 
+	// 4. For Bedrock packs, regenerate the header UUID in manifest.json
+	if (subDir === BEDROCK_DIR && "manifest.json" in contents) {
+		const existing = JSON.parse(new TextDecoder().decode(contents["manifest.json"] as Uint8Array));
+		existing.header.uuid = crypto.randomUUID();
+		contents["manifest.json"] = new TextEncoder().encode(JSON.stringify(existing, null, 4));
+	}
+
 	return contents;
 }
 

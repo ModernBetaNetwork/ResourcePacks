@@ -61,7 +61,7 @@ Place a `build-config.json` at the root of any pack folder to control how it is 
 2. The pack's own files (always, overrides base)
 3. Overlay pack files (if `overlayPacks: true`, overrides everything)
 
-`pack.mcmeta` and `pack.png` are never copied from overlay packs — each pack keeps its own.
+`pack.mcmeta` and `pack.png` are never copied from overlay packs — each pack keeps its own. Similarly for Bedrock, `manifest.json` and `pack_icon.png` are excluded.
 
 ## Building
 - Install [Bun](https://bun.sh) if you don't have it already.

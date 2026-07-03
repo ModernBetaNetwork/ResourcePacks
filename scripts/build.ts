@@ -144,7 +144,8 @@ async function addDirToZip(zip: Zippable, sourceDir: string, exclude?: Set<strin
 }
 
 // Files that should never be copied from overlay packs (each pack has its own)
-const OVERLAY_EXCLUDE = new Set(["pack.mcmeta", "pack.png"]);
+const OVERLAY_EXCLUDE_JAVA = new Set(["pack.mcmeta", "pack.png"]);
+const OVERLAY_EXCLUDE_BEDROCK = new Set(["manifest.json", "pack_icon.png"]);
 
 async function buildZip(pack: PackEntry, subDir: string): Promise<Zippable> {
 	const contents: Zippable = {};
@@ -153,6 +154,7 @@ async function buildZip(pack: PackEntry, subDir: string): Promise<Zippable> {
 	// Resolve platform-specific config, falling back to defaults
 	const platformKey = subDir === JAVA_DIR ? "java" : "bedrock";
 	const config: PackConfig = pack.buildConfig[platformKey] ?? pack.defaults;
+	const overlayExclude = subDir === JAVA_DIR ? OVERLAY_EXCLUDE_JAVA : OVERLAY_EXCLUDE_BEDROCK;
 
 	await addFile(contents, basename(licenseFile.name!), licenseFile);
 	if (config.includeCredits) {
@@ -177,7 +179,7 @@ async function buildZip(pack: PackEntry, subDir: string): Promise<Zippable> {
 		for (const overlayPack of overlayPacks) {
 			const overlayDir = join(overlayPack.dir, overlayPack.name, subDir);
 			if (await dirExists(overlayDir)) {
-				await addDirToZip(contents, overlayDir, OVERLAY_EXCLUDE);
+				await addDirToZip(contents, overlayDir, overlayExclude);
 			}
 		}
 	}

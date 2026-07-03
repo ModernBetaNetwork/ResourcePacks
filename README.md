@@ -71,3 +71,7 @@ Each Bedrock pack's `manifest.json` has its `header.uuid` replaced with a freshl
 - On first use, install script dependencies: `bun install --cwd scripts`
 - Run the build script: `bun run ./scripts/build.ts`
 - Output is written to the `out/` directory along with a `checksums.txt` (SHA1 hashes).
+- To output directly to a different directory (e.g. your Minecraft resource packs folder), use `--out`:
+  ```
+  bun run ./scripts/build.ts --out "C:\Users\You\AppData\Roaming\.minecraft\resourcepacks"
+  ```

@@ -4,13 +4,21 @@ Textures, models, and language files for the visual trickery that makes Modern B
 ## Folder structure
 ```
 /
-├── _BasePacks/        # Files merged into every pack before its own files (e.g. shared base assets)
-├── _OverlayPacks/     # Files merged into every pack on top of its own files (e.g. shared overlays)
-├── <PackName>/        # A root pack — built into its own zip/mcpack
-│   ├── java/          # Java Edition assets
-│   ├── bedrock/       # Bedrock Edition assets (optional)
-│   └── build-config.json
-└── out/               # Build output (generated, not committed)
+├── BasePacks/                # Packs merged into other packs before its own files (also builds itself)
+│   ├── <PackName>/
+│   │   ├── java/             # Java Edition assets
+│   │   ├── bedrock/          
+│   │   └── build-config.json 
+├── _OverlayPacks/            # Packs merged into other packs on top of its own files (also builds itself)
+│   ├── <PackName>/
+│   │   ├── java/             
+│   │   ├── bedrock/          # Bedrock Edition assets (optional)
+│   │   └── build-config.json 
+├── <PackName>/               # A root pack — built into its own zip/mcpack
+│   ├── java/                 
+│   ├── bedrock/              
+│   └── build-config.json     # controls aspects of built pack, including base/overlay, MB credits, etc.
+└── out/                      # Build output (generated, not committed)
 ```
 
 Each pack folder at the root level is discovered automatically. A folder is treated as a pack if it contains a `java` and/or `bedrock` subfolder. The same applies to packs inside `_BasePacks` and `_OverlayPacks`.

@@ -1,0 +1,15 @@
+{
+  "pack": {
+    "min_format": 68,
+    "max_format": 84,
+    "description": [
+      { "text": "High and dry\n", "color": "#5685df" },
+      { "text": "v26.1", "color": "#e0e0dc" },
+      { "text": " | ", "color": "#70706b" },
+      { "text": "dokucraft.co.uk", "color": "#ffcf01" }
+    ]
+  },
+  "dokucraft": {
+    "game_version": "26.1"
+  }
+}

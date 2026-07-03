@@ -37,9 +37,9 @@ Place a `build-config.json` at the root of any pack folder to control how it is 
 ### `_BasePacks` packs — defaults: `overlayPacks: true`, `includeCredits: true`
 - `basePacks` is not applicable here — base packs cannot include other base packs.
 
-### `_OverlayPacks` packs — defaults: `includeCredits: true`
+### `_OverlayPacks` packs — defaults: `overlayPacks: false`, `includeCredits: true`
 - `basePacks` is not applicable here — overlay packs cannot include base packs.
-- `overlayPacks` is not applicable here — overlay packs cannot include other overlay packs.
+- `overlayPacks` defaults to `false` — opt in via `build-config.json` when an overlay needs other overlays applied.
 
 ### Merge order 
 1. Base pack files (if `basePacks: true`)

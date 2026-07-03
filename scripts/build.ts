@@ -26,7 +26,7 @@ const OVERLAY_DIR = "_OverlayPacks";
 // Config file at the root of each pack that controls base/overlay inclusion
 const PACK_CONFIG_FILE = "build-config.json";
 
-type PackConfig = { basePacks?: boolean; overlayPacks?: boolean; includeCredits: boolean };
+type PackConfig = { basePacks?: boolean; overlayPacks: boolean; includeCredits: boolean };
 
 async function readPackConfig(packDir: string, defaults: PackConfig): Promise<PackConfig> {
 	const configFile = Bun.file(join(packDir, PACK_CONFIG_FILE));
@@ -34,7 +34,7 @@ async function readPackConfig(packDir: string, defaults: PackConfig): Promise<Pa
 		const config = await configFile.json();
 		return {
 			...(defaults.basePacks !== undefined ? { basePacks: config.basePacks === true } : {}),
-			...(defaults.overlayPacks !== undefined ? { overlayPacks: config.overlayPacks === true } : {}),
+			overlayPacks: config.overlayPacks === true,
 			includeCredits: config.includeCredits === true,
 		};
 	}
@@ -77,7 +77,7 @@ async function discoverPacks(searchDir: string, configDefaults: PackConfig): Pro
 const [mainPacks, basePacks, overlayPacks] = await Promise.all([
 	discoverPacks(rootDir, { basePacks: true, overlayPacks: true, includeCredits: true }),
 	discoverPacks(join(rootDir, BASE_DIR), { overlayPacks: true, includeCredits: true }),
-	discoverPacks(join(rootDir, OVERLAY_DIR), { includeCredits: true }),
+	discoverPacks(join(rootDir, OVERLAY_DIR), { overlayPacks: false, includeCredits: true }),
 ]);
 
 // Filter out the base/ overlay/ out/ scripts/ dirs from mainPacks

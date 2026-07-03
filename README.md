@@ -24,7 +24,22 @@ Textures, models, and language files for the visual trickery that makes Modern B
 Each pack folder at the root level is discovered automatically. A folder is treated as a pack if it contains a `java` and/or `bedrock` subfolder. The same applies to packs inside `_BasePacks` and `_OverlayPacks`.
 
 ## build-config.json
-Place a `build-config.json` at the root of any pack folder to control how it is built. All fields are optional and fall back to the defaults for that location.
+Place a `build-config.json` at the root of any pack folder to control how it is built. Config is split into `java` and `bedrock` sections so each platform can be configured independently. If a section is absent, defaults for that location are used.
+
+```json
+{
+    "java": {
+        "basePacks": true,
+        "overlayPacks": true,
+        "includeCredits": true
+    },
+    "bedrock": {
+        "basePacks": true,
+        "overlayPacks": true,
+        "includeCredits": true
+    }
+}
+```
 
 | Field | Type | Description |
 |---|---|---|

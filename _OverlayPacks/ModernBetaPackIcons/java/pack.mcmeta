@@ -1,0 +1,19 @@
+{
+	"pack": {
+		"description": "§f§lModern §7§lBeta§r§8\nPack GUI Icons",
+		"supported_formats": [15, 999],
+		"min_format": [15, 0],
+		"max_format": [999, 0],
+		"pack_format": 34
+	},
+	"overlays": {
+		"entries": [
+			{
+				"directory": "1_21_4",
+				"formats": [46, 999],
+				"min_format": [46, 0],
+				"max_format": [999, 0]
+			}
+		]
+	}
+}

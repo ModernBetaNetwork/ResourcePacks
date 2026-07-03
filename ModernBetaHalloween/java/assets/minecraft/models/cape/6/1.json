@@ -1,6 +1,0 @@
-{
-	"parent": "minecraft:cape/_base/1",
-	"textures": {
-		"0": "item/capes/6"
-	}
-}

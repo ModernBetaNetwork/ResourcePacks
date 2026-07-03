@@ -6,7 +6,12 @@ import { mkdir, readdir } from "node:fs/promises";
 import { basename, dirname, join } from "node:path";
 
 const rootDir = dirname(import.meta.dir); // the `scripts` dir's parent dir path - which is the project root
-const outDir = join(rootDir, "out");
+
+// Allow overriding the output directory via --out <path>
+const outArgIndex = process.argv.indexOf("--out");
+const outDir = outArgIndex !== -1 && process.argv[outArgIndex + 1]
+	? process.argv[outArgIndex + 1]!
+	: join(rootDir, "out");
 
 const licenseFile = Bun.file(join(rootDir, "LICENSE.txt"));
 const creditsFile = Bun.file(join(rootDir, "CREDITS.txt"));

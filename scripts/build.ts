@@ -28,17 +28,26 @@ const PACK_CONFIG_FILE = "build-config.json";
 
 type PackConfig = { basePacks?: boolean; overlayPacks: boolean; includeCredits: boolean };
 
-async function readPackConfig(packDir: string, defaults: PackConfig): Promise<PackConfig> {
+type BuildConfig = {
+	java?: PackConfig;
+	bedrock?: PackConfig;
+};
+
+async function readBuildConfig(packDir: string, defaults: PackConfig): Promise<BuildConfig> {
 	const configFile = Bun.file(join(packDir, PACK_CONFIG_FILE));
 	if (await configFile.exists()) {
-		const config = await configFile.json();
+		const raw = await configFile.json();
+		const parseSection = (section: Record<string, unknown>): PackConfig => ({
+			...(defaults.basePacks !== undefined ? { basePacks: section.basePacks === true } : {}),
+			overlayPacks: section.overlayPacks === true,
+			includeCredits: section.includeCredits === true,
+		});
 		return {
-			...(defaults.basePacks !== undefined ? { basePacks: config.basePacks === true } : {}),
-			overlayPacks: config.overlayPacks === true,
-			includeCredits: config.includeCredits === true,
+			java: raw.java ? parseSection(raw.java) : undefined,
+			bedrock: raw.bedrock ? parseSection(raw.bedrock) : undefined,
 		};
 	}
-	return defaults;
+	return {};
 }
 
 type PackEntry = {
@@ -46,7 +55,8 @@ type PackEntry = {
 	dir: string;
 	hasJava: boolean;
 	hasBedrock: boolean;
-	config: PackConfig;
+	buildConfig: BuildConfig;
+	defaults: PackConfig;
 };
 
 async function discoverPacks(searchDir: string, configDefaults: PackConfig): Promise<PackEntry[]> {
@@ -66,8 +76,8 @@ async function discoverPacks(searchDir: string, configDefaults: PackConfig): Pro
 					const hasJava = sub.includes(JAVA_DIR);
 					const hasBedrock = sub.includes(BEDROCK_DIR);
 					if (!hasJava && !hasBedrock) return null;
-					const config = await readPackConfig(packDir, configDefaults);
-					return { name: e.name, dir: searchDir, hasJava, hasBedrock, config } satisfies PackEntry;
+					const buildConfig = await readBuildConfig(packDir, configDefaults);
+					return { name: e.name, dir: searchDir, hasJava, hasBedrock, buildConfig, defaults: configDefaults } satisfies PackEntry;
 				}),
 		)
 	).filter((x) => x !== null);
@@ -134,18 +144,24 @@ async function addDirToZip(zip: Zippable, sourceDir: string, exclude?: Set<strin
 }
 
 // Files that should never be copied from overlay packs (each pack has its own)
-const OVERLAY_EXCLUDE = new Set(["pack.mcmeta", "pack.png"]);
+const OVERLAY_EXCLUDE_JAVA = new Set(["pack.mcmeta", "pack.png"]);
+const OVERLAY_EXCLUDE_BEDROCK = new Set(["manifest.json", "pack_icon.png"]);
 
 async function buildZip(pack: PackEntry, subDir: string): Promise<Zippable> {
 	const contents: Zippable = {};
 	const sourceDir = join(pack.dir, pack.name, subDir);
 
+	// Resolve platform-specific config, falling back to defaults
+	const platformKey = subDir === JAVA_DIR ? "java" : "bedrock";
+	const config: PackConfig = pack.buildConfig[platformKey] ?? pack.defaults;
+	const overlayExclude = subDir === JAVA_DIR ? OVERLAY_EXCLUDE_JAVA : OVERLAY_EXCLUDE_BEDROCK;
+
 	await addFile(contents, basename(licenseFile.name!), licenseFile);
-	if (pack.config.includeCredits) {
+	if (config.includeCredits) {
 		await addFile(contents, basename(creditsFile.name!), creditsFile);
 	}
 
-	if (pack.config.basePacks) {
+	if (config.basePacks) {
 		// 1. Add all base pack files (pack's own files will override these)
 		for (const basePack of basePacks) {
 			const baseDir = join(basePack.dir, basePack.name, subDir);
@@ -158,14 +174,21 @@ async function buildZip(pack: PackEntry, subDir: string): Promise<Zippable> {
 	// 2. Add this pack's own files
 	await addDirToZip(contents, sourceDir);
 
-	if (pack.config.overlayPacks) {
+	if (config.overlayPacks) {
 		// 3. Add all overlay pack files on top (overrides everything)
 		for (const overlayPack of overlayPacks) {
 			const overlayDir = join(overlayPack.dir, overlayPack.name, subDir);
 			if (await dirExists(overlayDir)) {
-				await addDirToZip(contents, overlayDir, OVERLAY_EXCLUDE);
+				await addDirToZip(contents, overlayDir, overlayExclude);
 			}
 		}
+	}
+
+	// 4. For Bedrock packs, regenerate the header UUID in manifest.json
+	if (subDir === BEDROCK_DIR && "manifest.json" in contents) {
+		const existing = JSON.parse(new TextDecoder().decode(contents["manifest.json"] as Uint8Array));
+		existing.header.uuid = crypto.randomUUID();
+		contents["manifest.json"] = new TextEncoder().encode(JSON.stringify(existing, null, 4));
 	}
 
 	return contents;

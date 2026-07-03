@@ -1,4 +1,10 @@
 {
-	"overlayPacks": true,
-	"includeCredits": true
+	"java": {
+		"overlayPacks": true,
+		"includeCredits": true
+	},
+	"bedrock": {
+		"overlayPacks": true,
+		"includeCredits": true
+	}
 }

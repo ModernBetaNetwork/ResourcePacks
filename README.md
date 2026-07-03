@@ -24,7 +24,22 @@ Textures, models, and language files for the visual trickery that makes Modern B
 Each pack folder at the root level is discovered automatically. A folder is treated as a pack if it contains a `java` and/or `bedrock` subfolder. The same applies to packs inside `_BasePacks` and `_OverlayPacks`.
 
 ## build-config.json
-Place a `build-config.json` at the root of any pack folder to control how it is built. All fields are optional and fall back to the defaults for that location.
+Place a `build-config.json` at the root of any pack folder to control how it is built. Config is split into `java` and `bedrock` sections so each platform can be configured independently. If a section is absent, defaults for that location are used.
+
+```json
+{
+    "java": {
+        "basePacks": true,
+        "overlayPacks": true,
+        "includeCredits": true
+    },
+    "bedrock": {
+        "basePacks": true,
+        "overlayPacks": true,
+        "includeCredits": true
+    }
+}
+```
 
 | Field | Type | Description |
 |---|---|---|
@@ -46,7 +61,9 @@ Place a `build-config.json` at the root of any pack folder to control how it is 
 2. The pack's own files (always, overrides base)
 3. Overlay pack files (if `overlayPacks: true`, overrides everything)
 
-`pack.mcmeta` and `pack.png` are never copied from overlay packs — each pack keeps its own.
+`pack.mcmeta` and `pack.png` are never copied from overlay packs — each pack keeps its own. Similarly for Bedrock, `manifest.json` and `pack_icon.png` are excluded.
+
+Each Bedrock pack's `manifest.json` has its `header.uuid` replaced with a freshly generated UUID at build time.
 
 ## Building
 - Install [Bun](https://bun.sh) if you don't have it already.

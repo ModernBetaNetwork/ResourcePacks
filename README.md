@@ -26,19 +26,20 @@ Each pack folder at the root level is discovered automatically. A folder is trea
 ## build-config.json
 Place a `build-config.json` at the root of any pack folder to control how it is built. All fields are optional and fall back to the defaults for that location.
 
-### Root packs — defaults: all `true`
 | Field | Type | Description |
 |---|---|---|
 | `basePacks` | `boolean` | Merge files from `_BasePacks` into this pack before its own files. |
 | `overlayPacks` | `boolean` | Merge files from `_OverlayPacks` into this pack on top of its own files. |
 | `includeCredits` | `boolean` | Include `CREDITS.txt` in the output zip. |
 
+### Root packs — defaults: all `true`
+
 ### `_BasePacks` packs — defaults: `overlayPacks: true`, `includeCredits: true`
-`basePacks` is not applicable here — base packs cannot include other base packs.
+- `basePacks` is not applicable here — base packs cannot include other base packs.
 
 ### `_OverlayPacks` packs — defaults: `includeCredits: true`
-`basePacks` is not applicable here — overlay packs cannot include base packs.
-`overlayPacks` is not applicable here — overlay packs cannot include other overlay packs.
+- `basePacks` is not applicable here — overlay packs cannot include base packs.
+- `overlayPacks` is not applicable here — overlay packs cannot include other overlay packs.
 
 ### Merge order 
 1. Base pack files (if `basePacks: true`)

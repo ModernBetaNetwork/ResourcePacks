@@ -108,5 +108,8 @@
   "item.minecraft.music_disc_13": "§fbom jengva'",
   "item.minecraft.music_disc_13.desc": "",
   "item.minecraft.music_disc_cat": "§fbom jengva'",
-  "item.minecraft.music_disc_cat.desc": ""
+  "item.minecraft.music_disc_cat.desc": "",
+
+  "menu.returnToMenu": "Qaw",
+  "menu.disconnect": "Qaw"
 }

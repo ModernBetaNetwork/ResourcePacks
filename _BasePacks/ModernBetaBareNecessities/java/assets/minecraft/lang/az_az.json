@@ -108,5 +108,8 @@
   "item.minecraft.music_disc_13": "§fMusiqi Diski",
   "item.minecraft.music_disc_13.desc": "",
   "item.minecraft.music_disc_cat": "§fMusiqi Diski",
-  "item.minecraft.music_disc_cat.desc": ""
+  "item.minecraft.music_disc_cat.desc": "",
+
+  "menu.returnToMenu": "Əlaqəni kəs",
+  "menu.disconnect": "Əlaqəni kəs"
 }

@@ -108,5 +108,8 @@
   "item.minecraft.music_disc_13": "§fMuziko-disko",
   "item.minecraft.music_disc_13.desc": "",
   "item.minecraft.music_disc_cat": "§fMuziko-disko",
-  "item.minecraft.music_disc_cat.desc": ""
+  "item.minecraft.music_disc_cat.desc": "",
+
+  "menu.returnToMenu": "Deskonektar",
+  "menu.disconnect": "Deskonektar"
 }

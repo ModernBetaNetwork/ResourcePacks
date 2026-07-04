@@ -51,8 +51,8 @@
   "telemetry.property.advancement_id.title": "Achievement ID",
   
   "menu.returnToGame": "Back to game",
-  "menu.returnToMenu": "Save and quit to title",
-  "menu.disconnect": "Save and quit to title",
+  "menu.returnToMenu": "Disconnect",
+  "menu.disconnect": "Disconnect",
   "menu.sendFeedback": "Give feedback",
   
   "attribute.modifier.equals.0": "",

@@ -108,5 +108,8 @@
   "item.minecraft.music_disc_13": "§fDisco de Música",
   "item.minecraft.music_disc_13.desc": "",
   "item.minecraft.music_disc_cat": "§fDisco de Música",
-  "item.minecraft.music_disc_cat.desc": ""
+  "item.minecraft.music_disc_cat.desc": "",
+
+  "menu.returnToMenu": "Desligar",
+  "menu.disconnect": "Desligar"
 }

@@ -108,5 +108,8 @@
   "item.minecraft.music_disc_13": "§fMuzikos diskas",
   "item.minecraft.music_disc_13.desc": "",
   "item.minecraft.music_disc_cat": "§fMuzikos diskas",
-  "item.minecraft.music_disc_cat.desc": ""
+  "item.minecraft.music_disc_cat.desc": "",
+
+  "menu.returnToMenu": "Atsijungti",
+  "menu.disconnect": "Atsijungti"
 }

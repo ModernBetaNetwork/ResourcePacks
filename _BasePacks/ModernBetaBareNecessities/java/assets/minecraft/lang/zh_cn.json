@@ -108,5 +108,8 @@
   "item.minecraft.music_disc_13": "§f音乐唱片",
   "item.minecraft.music_disc_13.desc": "",
   "item.minecraft.music_disc_cat": "§f音乐唱片",
-  "item.minecraft.music_disc_cat.desc": ""
+  "item.minecraft.music_disc_cat.desc": "",
+
+  "menu.returnToMenu": "断开连接",
+  "menu.disconnect": "断开连接"
 }

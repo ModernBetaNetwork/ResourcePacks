@@ -108,5 +108,8 @@
   "item.minecraft.music_disc_13": "§fzgike vreji",
   "item.minecraft.music_disc_13.desc": "",
   "item.minecraft.music_disc_cat": "§fzgike vreji",
-  "item.minecraft.music_disc_cat.desc": ""
+  "item.minecraft.music_disc_cat.desc": "",
+
+  "menu.returnToMenu": "tolcpedu",
+  "menu.disconnect": "tolcpedu"
 }

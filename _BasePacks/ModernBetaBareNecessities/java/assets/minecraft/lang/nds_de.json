@@ -108,5 +108,8 @@
   "item.minecraft.music_disc_13": "§fSchalplaat",
   "item.minecraft.music_disc_13.desc": "",
   "item.minecraft.music_disc_cat": "§fSchalplaat",
-  "item.minecraft.music_disc_cat.desc": ""
+  "item.minecraft.music_disc_cat.desc": "",
+
+  "menu.returnToMenu": "Verbinnen trennen",
+  "menu.disconnect": "Verbinnen trennen"
 }

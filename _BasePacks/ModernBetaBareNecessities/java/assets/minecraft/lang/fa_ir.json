@@ -108,5 +108,8 @@
   "item.minecraft.music_disc_13": "§fديسک موزيک",
   "item.minecraft.music_disc_13.desc": "",
   "item.minecraft.music_disc_cat": "§fديسک موزيک",
-  "item.minecraft.music_disc_cat.desc": ""
+  "item.minecraft.music_disc_cat.desc": "",
+
+  "menu.returnToMenu": "قطع ارتباط",
+  "menu.disconnect": "قطع ارتباط"
 }

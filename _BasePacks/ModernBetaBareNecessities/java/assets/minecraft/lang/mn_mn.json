@@ -108,5 +108,8 @@
   "item.minecraft.music_disc_13": "§fПянз",
   "item.minecraft.music_disc_13.desc": "",
   "item.minecraft.music_disc_cat": "§fПянз",
-  "item.minecraft.music_disc_cat.desc": ""
+  "item.minecraft.music_disc_cat.desc": "",
+
+  "menu.returnToMenu": "Салгах",
+  "menu.disconnect": "Салгах"
 }

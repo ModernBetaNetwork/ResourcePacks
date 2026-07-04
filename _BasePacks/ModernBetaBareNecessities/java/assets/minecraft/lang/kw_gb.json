@@ -108,5 +108,8 @@
   "item.minecraft.music_disc_13": "§fPlasenn Ilow",
   "item.minecraft.music_disc_13.desc": "",
   "item.minecraft.music_disc_cat": "§fPlasenn Ilow",
-  "item.minecraft.music_disc_cat.desc": ""
+  "item.minecraft.music_disc_cat.desc": "",
+
+  "menu.returnToMenu": "Skoedhya",
+  "menu.disconnect": "Skoedhya"
 }

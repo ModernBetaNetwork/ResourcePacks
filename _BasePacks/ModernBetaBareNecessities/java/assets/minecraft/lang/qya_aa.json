@@ -108,5 +108,8 @@
   "item.minecraft.music_disc_13": "§fLindecorma",
   "item.minecraft.music_disc_13.desc": "",
   "item.minecraft.music_disc_cat": "§fLindecorma",
-  "item.minecraft.music_disc_cat.desc": ""
+  "item.minecraft.music_disc_cat.desc": "",
+
+  "menu.returnToMenu": "Vanya sulie",
+  "menu.disconnect": "Vanya sulie"
 }

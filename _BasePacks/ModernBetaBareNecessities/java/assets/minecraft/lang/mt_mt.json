@@ -108,5 +108,8 @@
   "item.minecraft.music_disc_13": "§fDiska tal-Mużika",
   "item.minecraft.music_disc_13.desc": "",
   "item.minecraft.music_disc_cat": "§fDiska tal-Mużika",
-  "item.minecraft.music_disc_cat.desc": ""
+  "item.minecraft.music_disc_cat.desc": "",
+
+  "menu.returnToMenu": "Aqta' l-konnessjoni",
+  "menu.disconnect": "Aqta' l-konnessjoni"
 }

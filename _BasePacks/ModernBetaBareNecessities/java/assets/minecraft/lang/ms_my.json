@@ -108,5 +108,8 @@
   "item.minecraft.music_disc_13": "§fCakera Muzik",
   "item.minecraft.music_disc_13.desc": "",
   "item.minecraft.music_disc_cat": "§fCakera Muzik",
-  "item.minecraft.music_disc_cat.desc": ""
+  "item.minecraft.music_disc_cat.desc": "",
+
+  "menu.returnToMenu": "Putuskan sambungan",
+  "menu.disconnect": "Putuskan sambungan"
 }

@@ -108,5 +108,8 @@
   "item.minecraft.music_disc_13": "§fMuusikaplaat",
   "item.minecraft.music_disc_13.desc": "",
   "item.minecraft.music_disc_cat": "§fMuusikaplaat",
-  "item.minecraft.music_disc_cat.desc": ""
+  "item.minecraft.music_disc_cat.desc": "",
+
+  "menu.returnToMenu": "Katkesta ühendus",
+  "menu.disconnect": "Katkesta ühendus"
 }

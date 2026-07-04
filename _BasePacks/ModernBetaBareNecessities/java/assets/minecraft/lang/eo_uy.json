@@ -108,5 +108,8 @@
   "item.minecraft.music_disc_13": "§fSondisko",
   "item.minecraft.music_disc_13.desc": "",
   "item.minecraft.music_disc_cat": "§fSondisko",
-  "item.minecraft.music_disc_cat.desc": ""
+  "item.minecraft.music_disc_cat.desc": "",
+
+  "menu.returnToMenu": "Malkonekti",
+  "menu.disconnect": "Malkonekti"
 }

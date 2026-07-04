@@ -108,5 +108,8 @@
   "item.minecraft.music_disc_13": "§fClàr ciùil",
   "item.minecraft.music_disc_13.desc": "",
   "item.minecraft.music_disc_cat": "§fClàr ciùil",
-  "item.minecraft.music_disc_cat.desc": ""
+  "item.minecraft.music_disc_cat.desc": "",
+
+  "menu.returnToMenu": "Dì-cheangail",
+  "menu.disconnect": "Dì-cheangail"
 }

@@ -108,5 +108,8 @@
   "item.minecraft.music_disc_13": "§fMusiekplaat",
   "item.minecraft.music_disc_13.desc": "",
   "item.minecraft.music_disc_cat": "§fMusiekplaat",
-  "item.minecraft.music_disc_cat.desc": ""
+  "item.minecraft.music_disc_cat.desc": "",
+
+  "menu.returnToMenu": "Ontkoppel",
+  "menu.disconnect": "Ontkoppel"
 }

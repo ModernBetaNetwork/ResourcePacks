@@ -108,5 +108,8 @@
   "item.minecraft.music_disc_13": "§fレコード",
   "item.minecraft.music_disc_13.desc": "",
   "item.minecraft.music_disc_cat": "§fレコード",
-  "item.minecraft.music_disc_cat.desc": ""
+  "item.minecraft.music_disc_cat.desc": "",
+
+  "menu.returnToMenu": "切断",
+  "menu.disconnect": "切断"
 }

@@ -108,5 +108,8 @@
   "item.minecraft.music_disc_13": "§fĐĩa nhạc",
   "item.minecraft.music_disc_13.desc": "",
   "item.minecraft.music_disc_cat": "§fĐĩa nhạc",
-  "item.minecraft.music_disc_cat.desc": ""
+  "item.minecraft.music_disc_cat.desc": "",
+
+  "menu.returnToMenu": "Ngắt kết nối",
+  "menu.disconnect": "Ngắt kết nối"
 }

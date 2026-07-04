@@ -108,5 +108,8 @@
   "item.minecraft.music_disc_13": "§fDiosca Ceoil",
   "item.minecraft.music_disc_13.desc": "",
   "item.minecraft.music_disc_cat": "§fDiosca Ceoil",
-  "item.minecraft.music_disc_cat.desc": ""
+  "item.minecraft.music_disc_cat.desc": "",
+
+  "menu.returnToMenu": "Dícheangail",
+  "menu.disconnect": "Dícheangail"
 }

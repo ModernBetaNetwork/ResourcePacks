@@ -108,5 +108,8 @@
   "item.minecraft.music_disc_13": "§fDisg Cerddoriaeth",
   "item.minecraft.music_disc_13.desc": "",
   "item.minecraft.music_disc_cat": "§fDisg Cerddoriaeth",
-  "item.minecraft.music_disc_cat.desc": ""
+  "item.minecraft.music_disc_cat.desc": "",
+
+  "menu.returnToMenu": "Datgysylltu",
+  "menu.disconnect": "Datgysylltu"
 }

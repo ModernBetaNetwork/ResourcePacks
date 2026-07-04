@@ -108,5 +108,8 @@
   "item.minecraft.music_disc_13": "§fसंगीत डिस्क",
   "item.minecraft.music_disc_13.desc": "",
   "item.minecraft.music_disc_cat": "§fसंगीत डिस्क",
-  "item.minecraft.music_disc_cat.desc": ""
+  "item.minecraft.music_disc_cat.desc": "",
+
+  "menu.returnToMenu": "डिसकनेक्ट",
+  "menu.disconnect": "डिसकनेक्ट"
 }

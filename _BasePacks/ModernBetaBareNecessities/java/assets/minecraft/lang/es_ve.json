@@ -108,5 +108,8 @@
   "item.minecraft.music_disc_13": "§fVinilo",
   "item.minecraft.music_disc_13.desc": "",
   "item.minecraft.music_disc_cat": "§fVinilo",
-  "item.minecraft.music_disc_cat.desc": ""
+  "item.minecraft.music_disc_cat.desc": "",
+
+  "menu.returnToMenu": "Desconectar",
+  "menu.disconnect": "Desconectar"
 }

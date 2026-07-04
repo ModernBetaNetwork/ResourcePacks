@@ -108,5 +108,8 @@
   "item.minecraft.music_disc_13": "§fCakram Musik",
   "item.minecraft.music_disc_13.desc": "",
   "item.minecraft.music_disc_cat": "§fCakram Musik",
-  "item.minecraft.music_disc_cat.desc": ""
+  "item.minecraft.music_disc_cat.desc": "",
+
+  "menu.returnToMenu": "Putuskan sambungan",
+  "menu.disconnect": "Putuskan sambungan"
 }

@@ -1,4 +1,4 @@
-{
+﻿{
   "attribute.modifier.equals.0": "",
   "attribute.modifier.equals.1": "",
   "attribute.modifier.equals.2": "",
@@ -108,8 +108,5 @@
   "item.minecraft.music_disc_13": "§f음반",
   "item.minecraft.music_disc_13.desc": "",
   "item.minecraft.music_disc_cat": "§f음반",
-  "item.minecraft.music_disc_cat.desc": "",
-
-  "menu.returnToMenu": "연결 끊기",
-  "menu.disconnect": "연결 끊기"
+  "item.minecraft.music_disc_cat.desc": ""
 }

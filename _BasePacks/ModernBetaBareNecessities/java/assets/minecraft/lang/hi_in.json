@@ -1,4 +1,4 @@
-{
+﻿{
   "attribute.modifier.equals.0": "",
   "attribute.modifier.equals.1": "",
   "attribute.modifier.equals.2": "",
@@ -108,8 +108,5 @@
   "item.minecraft.music_disc_13": "§fसंगीत डिस्क",
   "item.minecraft.music_disc_13.desc": "",
   "item.minecraft.music_disc_cat": "§fसंगीत डिस्क",
-  "item.minecraft.music_disc_cat.desc": "",
-
-  "menu.returnToMenu": "डिसकनेक्ट",
-  "menu.disconnect": "डिसकनेक्ट"
+  "item.minecraft.music_disc_cat.desc": ""
 }

@@ -1,4 +1,4 @@
-{
+﻿{
   "attribute.modifier.equals.0": "",
   "attribute.modifier.equals.1": "",
   "attribute.modifier.equals.2": "",
@@ -108,8 +108,5 @@
   "item.minecraft.music_disc_13": "§fGlazbeni Disk",
   "item.minecraft.music_disc_13.desc": "",
   "item.minecraft.music_disc_cat": "§fGlazbeni Disk",
-  "item.minecraft.music_disc_cat.desc": "",
-
-  "menu.returnToMenu": "Odspoji",
-  "menu.disconnect": "Odspoji"
+  "item.minecraft.music_disc_cat.desc": ""
 }

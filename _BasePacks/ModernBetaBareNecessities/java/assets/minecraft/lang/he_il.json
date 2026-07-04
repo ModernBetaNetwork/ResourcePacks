@@ -1,4 +1,4 @@
-{
+﻿{
   "attribute.modifier.equals.0": "",
   "attribute.modifier.equals.1": "",
   "attribute.modifier.equals.2": "",
@@ -108,8 +108,5 @@
   "item.minecraft.music_disc_13": "§fדיסק מוזיקה",
   "item.minecraft.music_disc_13.desc": "",
   "item.minecraft.music_disc_cat": "§fדיסק מוזיקה",
-  "item.minecraft.music_disc_cat.desc": "",
-
-  "menu.returnToMenu": "התנתק",
-  "menu.disconnect": "התנתק"
+  "item.minecraft.music_disc_cat.desc": ""
 }

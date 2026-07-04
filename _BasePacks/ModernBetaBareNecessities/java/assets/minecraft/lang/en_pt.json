@@ -1,4 +1,4 @@
-{
+﻿{
   "attribute.modifier.equals.0": "",
   "attribute.modifier.equals.1": "",
   "attribute.modifier.equals.2": "",
@@ -112,8 +112,5 @@
   "item.minecraft.music_disc_13.desc": "",
   "item.minecraft.music_disc_cat": "§fShanty",
   "item.minecraft.music_disc_cat.desc": "",
-  "item.minecraft.spectral_arrow": "Pail o' bovine's juice",
-
-  "menu.returnToMenu": "Sever the tether",
-  "menu.disconnect": "Sever the tether"
+  "item.minecraft.spectral_arrow": "Pail o' bovine's juice"
 }

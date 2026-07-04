@@ -1,4 +1,4 @@
-{
+﻿{
   "attribute.modifier.equals.0": "",
   "attribute.modifier.equals.1": "",
   "attribute.modifier.equals.2": "",
@@ -108,8 +108,5 @@
   "item.minecraft.music_disc_13": "§fVínýll",
   "item.minecraft.music_disc_13.desc": "",
   "item.minecraft.music_disc_cat": "§fVínýll",
-  "item.minecraft.music_disc_cat.desc": "",
-
-  "menu.returnToMenu": "Aftengja",
-  "menu.disconnect": "Aftengja"
+  "item.minecraft.music_disc_cat.desc": ""
 }

@@ -1,4 +1,4 @@
-{
+﻿{
   "attribute.modifier.equals.0": "",
   "attribute.modifier.equals.1": "",
   "attribute.modifier.equals.2": "",
@@ -108,8 +108,5 @@
   "item.minecraft.music_disc_13": "§fMusikplaat",
   "item.minecraft.music_disc_13.desc": "",
   "item.minecraft.music_disc_cat": "§fMusikplaat",
-  "item.minecraft.music_disc_cat.desc": "",
-
-  "menu.returnToMenu": "Verbendung trennen",
-  "menu.disconnect": "Verbendung trennen"
+  "item.minecraft.music_disc_cat.desc": ""
 }

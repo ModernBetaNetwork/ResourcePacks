@@ -1,4 +1,4 @@
-{
+﻿{
   "attribute.modifier.equals.0": "",
   "attribute.modifier.equals.1": "",
   "attribute.modifier.equals.2": "",
@@ -108,8 +108,5 @@
   "item.minecraft.music_disc_13": "§fbom jengva'",
   "item.minecraft.music_disc_13.desc": "",
   "item.minecraft.music_disc_cat": "§fbom jengva'",
-  "item.minecraft.music_disc_cat.desc": "",
-
-  "menu.returnToMenu": "Qaw",
-  "menu.disconnect": "Qaw"
+  "item.minecraft.music_disc_cat.desc": ""
 }

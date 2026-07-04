@@ -1,4 +1,4 @@
-{
+﻿{
   "attribute.modifier.equals.0": "",
   "attribute.modifier.equals.1": "",
   "attribute.modifier.equals.2": "",
@@ -108,8 +108,5 @@
   "item.minecraft.music_disc_13": "§fแผ่นเสียง",
   "item.minecraft.music_disc_13.desc": "",
   "item.minecraft.music_disc_cat": "§fแผ่นเสียง",
-  "item.minecraft.music_disc_cat.desc": "",
-
-  "menu.returnToMenu": "ตัดการเชื่อมต่อ",
-  "menu.disconnect": "ตัดการเชื่อมต่อ"
+  "item.minecraft.music_disc_cat.desc": ""
 }

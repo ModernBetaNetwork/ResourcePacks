@@ -1,4 +1,4 @@
-{
+﻿{
   "attribute.modifier.equals.0": "",
   "attribute.modifier.equals.1": "",
   "attribute.modifier.equals.2": "",
@@ -108,8 +108,5 @@
   "item.minecraft.music_disc_13": "§fSchallplatte",
   "item.minecraft.music_disc_13.desc": "",
   "item.minecraft.music_disc_cat": "§fSchallplatte",
-  "item.minecraft.music_disc_cat.desc": "",
-
-  "menu.returnToMenu": "Verbindung trennen",
-  "menu.disconnect": "Verbindung trennen"
+  "item.minecraft.music_disc_cat.desc": ""
 }

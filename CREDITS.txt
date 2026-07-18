@@ -7,3 +7,4 @@ PoeticRainbow (Creator, Golden Days pack) - Fixed chest model texture while usin
 wwu - Translations & parity fixes
 Vanilla Tweaks: https://vanillatweaks.net/
 Bedrock Tweaks: https://bedrocktweaks.net/
+chililisoup's bsw_fix (26.2 large sign text fix): https://github.com/chililisoup/BigSignWriter/blob/main/

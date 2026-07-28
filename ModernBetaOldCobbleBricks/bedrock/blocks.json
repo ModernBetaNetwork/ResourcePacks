@@ -11,6 +11,16 @@
       "sound" : "wood",
       "textures" : "bed_bottom"
    },
+   "beehive" : {
+      "textures" : {
+         "down" : "chest_top",
+         "east" : "chest_side",
+         "north" : "chest_side",
+         "south" : "chest_face",
+         "up" : "chest_top",
+         "west" : "chest_side"
+      }
+   },
    "bedrock" : {
       "sound" : "stone",
       "textures" : "bedrock"

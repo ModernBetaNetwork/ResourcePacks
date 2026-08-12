@@ -31,7 +31,7 @@ const OVERLAY_DIR = "_OverlayPacks";
 // Config file at the root of each pack that controls base/overlay inclusion
 const PACK_CONFIG_FILE = "build-config.json";
 
-type PackConfig = { basePacks?: boolean; overlayPacks: boolean; includeCredits: boolean };
+type PackConfig = { basePacks?: boolean; overlayPacks: boolean; overlayPacksReplace: boolean; includeCredits: boolean };
 
 type BuildConfig = {
 	java?: PackConfig;
@@ -45,6 +45,7 @@ async function readBuildConfig(packDir: string, defaults: PackConfig): Promise<B
 		const parseSection = (section: Record<string, unknown>): PackConfig => ({
 			...(defaults.basePacks !== undefined ? { basePacks: section.basePacks === true } : {}),
 			overlayPacks: section.overlayPacks === true,
+			overlayPacksReplace: section.overlayPacksReplace !== false,
 			includeCredits: section.includeCredits === true,
 		});
 		return {
@@ -90,9 +91,9 @@ async function discoverPacks(searchDir: string, configDefaults: PackConfig): Pro
 
 // Discover packs from each location
 const [mainPacks, basePacks, overlayPacks] = await Promise.all([
-	discoverPacks(rootDir, { basePacks: true, overlayPacks: true, includeCredits: true }),
-	discoverPacks(join(rootDir, BASE_DIR), { overlayPacks: true, includeCredits: true }),
-	discoverPacks(join(rootDir, OVERLAY_DIR), { overlayPacks: false, includeCredits: true }),
+	discoverPacks(rootDir, { basePacks: true, overlayPacks: true, overlayPacksReplace: true, includeCredits: true }),
+	discoverPacks(join(rootDir, BASE_DIR), { overlayPacks: true, overlayPacksReplace: true, includeCredits: true }),
+	discoverPacks(join(rootDir, OVERLAY_DIR), { overlayPacks: false, overlayPacksReplace: true, includeCredits: true }),
 ]);
 
 // Filter out the base/ overlay/ out/ scripts/ dirs from mainPacks
@@ -136,9 +137,11 @@ async function dirExists(path: string): Promise<boolean> {
 	}
 }
 
-async function addDirToZip(zip: Zippable, sourceDir: string, exclude?: Set<string>): Promise<void> {
+async function addDirToZip(zip: Zippable, sourceDir: string, exclude?: Set<string>, skipExisting?: boolean): Promise<void> {
 	for (const filePath of await readdir(sourceDir, { recursive: true })) {
 		if (exclude && exclude.has(basename(filePath))) continue;
+		const zipKey = filePath.replaceAll("\\", "/");
+		if (skipExisting && zipKey in zip) continue;
 		try {
 			await addFile(zip, filePath, Bun.file(join(sourceDir, filePath)));
 		} catch (err) {
@@ -180,11 +183,12 @@ async function buildZip(pack: PackEntry, subDir: string): Promise<Zippable> {
 	await addDirToZip(contents, sourceDir);
 
 	if (config.overlayPacks) {
-		// 3. Add all overlay pack files on top (overrides everything)
+		// 3. Add all overlay pack files on top (overrides everything when overlayPacksReplace is true)
+		const skipExisting = !config.overlayPacksReplace;
 		for (const overlayPack of overlayPacks) {
 			const overlayDir = join(overlayPack.dir, overlayPack.name, subDir);
 			if (await dirExists(overlayDir)) {
-				await addDirToZip(contents, overlayDir, overlayExclude);
+				await addDirToZip(contents, overlayDir, overlayExclude, skipExisting);
 			}
 		}
 	}

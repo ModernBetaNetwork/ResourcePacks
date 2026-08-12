@@ -2,6 +2,7 @@
 	"java": {
 		"basePacks": true,
 		"overlayPacks": true,
+		"overlayPacksReplace": true,
 		"includeCredits": true
 	},
 	"bedrock": {

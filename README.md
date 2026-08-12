@@ -31,11 +31,13 @@ Place a `build-config.json` at the root of any pack folder to control how it is 
     "java": {
         "basePacks": true,
         "overlayPacks": true,
+        "overlayPacksReplace": true,
         "includeCredits": true
     },
     "bedrock": {
         "basePacks": true,
         "overlayPacks": true,
+        "overlayPacksReplace": true,
         "includeCredits": true
     }
 }
@@ -45,14 +47,15 @@ Place a `build-config.json` at the root of any pack folder to control how it is 
 |---|---|---|
 | `basePacks` | `boolean` | Merge files from `_BasePacks` into this pack before its own files. |
 | `overlayPacks` | `boolean` | Merge files from `_OverlayPacks` into this pack on top of its own files. |
+| `overlayPacksReplace` | `boolean` | When `true`, overlay files replace same-name files already in the pack. When `false`, overlays only add new files and skip any that already exist. |
 | `includeCredits` | `boolean` | Include `CREDITS.txt` in the output zip. |
 
 ### Root packs — defaults: all `true`
 
-### `_BasePacks` packs — defaults: `overlayPacks: true`, `includeCredits: true`
+### `_BasePacks` packs — defaults: `overlayPacks: true`, `overlayPacksReplace: true`, `includeCredits: true`
 - `basePacks` is not applicable here — base packs cannot include other base packs.
 
-### `_OverlayPacks` packs — defaults: `overlayPacks: false`, `includeCredits: true`
+### `_OverlayPacks` packs — defaults: `overlayPacks: false`, `overlayPacksReplace: true`, `includeCredits: true`
 - `basePacks` is not applicable here — overlay packs cannot include base packs.
 - `overlayPacks` defaults to `false` — opt in via `build-config.json` when an overlay needs other overlays applied.
 

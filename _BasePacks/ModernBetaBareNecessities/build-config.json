@@ -1,10 +1,12 @@
 {
 	"java": {
 		"overlayPacks": true,
+		"overlayPacksReplace": true,
 		"includeCredits": true
 	},
 	"bedrock": {
 		"overlayPacks": true,
+		"overlayPacksReplace": true,
 		"includeCredits": true
 	}
 }

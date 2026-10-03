@@ -1,4 +1,4 @@
-{
+﻿{
   "attribute.modifier.equals.0": "",
   "attribute.modifier.equals.1": "",
   "attribute.modifier.equals.2": "",
@@ -113,5 +113,6 @@
   "item.minecraft.music_disc_13.desc": "",
   "item.minecraft.music_disc_cat": "§fɔsᴉᗡ ɔᴉsnW",
   "item.minecraft.music_disc_cat.desc": "",
-  "item.minecraft.spectral_arrow": "ʇǝʞɔnq ʞlᴉW"
+  "item.minecraft.spectral_arrow": "ʇǝʞɔnq ʞlᴉW",
+  "item.minecraft.fire_charge": "ǝɹıℲ"
 }

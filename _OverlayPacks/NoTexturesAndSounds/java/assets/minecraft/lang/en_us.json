@@ -161,6 +161,7 @@
   "block.minecraft.jack_o_lantern": "Jack 'o'Lantern",
   "item.minecraft.golden_boots": "Golden boots",
   "item.minecraft.lava_bucket": "Lava bucket",
+  "item.minecraft.fire_charge": "Fire",
   
   "menu.game": "Game menu",
   "deathScreen.score.value": "Score: &e0",

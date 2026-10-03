@@ -2125,10 +2125,30 @@
     "sounds": []
   },
   "item.firecharge.use": {
+    "replace": true,
     "sounds": [
-      "mob/ghast/fireball4"
+      {
+        "name": "dig/wood1",
+        "pitch": 0.75,
+        "volume": 1.0
+      },
+      {
+        "name": "dig/wood2",
+        "pitch": 0.75,
+        "volume": 1.0
+      },
+      {
+        "name": "dig/wood3",
+        "pitch": 0.75,
+        "volume": 1.0
+      },
+      {
+        "name": "dig/wood4",
+        "pitch": 0.75,
+        "volume": 1.0
+      }
     ],
-    "subtitle": "subtitles.item.firecharge.use"
+    "subtitle": "subtitles.block.generic.place"
   },
   "item.flintandsteel.use": {
     "replace": true,

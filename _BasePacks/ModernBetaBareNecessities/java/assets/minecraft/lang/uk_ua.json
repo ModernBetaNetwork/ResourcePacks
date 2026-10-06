@@ -109,5 +109,9 @@
   "item.minecraft.music_disc_13.desc": "",
   "item.minecraft.music_disc_cat": "§fПлатівка",
   "item.minecraft.music_disc_cat.desc": "",
-  "item.minecraft.fire_charge": "Вогонь"
+  "item.minecraft.fire_charge": "Вогонь",
+  "item.minecraft.chainmail_boots": "Ланцюгові черевики",
+  "item.minecraft.chainmail_chestplate": "Ланцюговий нагрудник",
+  "item.minecraft.chainmail_helmet": "Ланцюговий шолом",
+  "item.minecraft.chainmail_leggings": "Ланцюгові поножі"
 }

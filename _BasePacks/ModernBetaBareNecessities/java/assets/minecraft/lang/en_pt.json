@@ -113,5 +113,9 @@
   "item.minecraft.music_disc_cat": "§fShanty",
   "item.minecraft.music_disc_cat.desc": "",
   "item.minecraft.spectral_arrow": "Pail o' bovine's juice",
-  "item.minecraft.fire_charge": "Flames"
+  "item.minecraft.fire_charge": "Flames",
+  "item.minecraft.chainmail_boots": "Chain Deckwalkers",
+  "item.minecraft.chainmail_chestplate": "Chain Breastplate o' Plunder",
+  "item.minecraft.chainmail_helmet": "Chain Buccaneer's Helm",
+  "item.minecraft.chainmail_leggings": "Chain Slops"
 }

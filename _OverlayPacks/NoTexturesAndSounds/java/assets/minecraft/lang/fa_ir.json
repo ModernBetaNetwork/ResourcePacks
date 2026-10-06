@@ -109,5 +109,9 @@
   "item.minecraft.music_disc_13.desc": "",
   "item.minecraft.music_disc_cat": "§fديسک موزيک",
   "item.minecraft.music_disc_cat.desc": "",
-   "item.minecraft.fire_charge": "آتش"
+  "item.minecraft.fire_charge": "آتش",
+  "item.minecraft.chainmail_boots": "چکمه زنجیری",
+  "item.minecraft.chainmail_chestplate": "جوشن زنجیری",
+  "item.minecraft.chainmail_helmet": "کلاه‌خود زنجیری",
+  "item.minecraft.chainmail_leggings": "شلوار زنجیری"
 }

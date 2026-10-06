@@ -109,5 +109,9 @@
   "item.minecraft.music_disc_13.desc": "",
   "item.minecraft.music_disc_cat": "§fMuziko-disko",
   "item.minecraft.music_disc_cat.desc": "",
-  "item.minecraft.fire_charge": "Fairo"
+  "item.minecraft.fire_charge": "Fairo",
+  "item.minecraft.chainmail_boots": "Katena botini",
+  "item.minecraft.chainmail_chestplate": "Katena kuraso",
+  "item.minecraft.chainmail_helmet": "Katena kasko",
+  "item.minecraft.chainmail_leggings": "Katena pantaloni"
 }

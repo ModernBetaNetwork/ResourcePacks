@@ -204,5 +204,9 @@
   "item.minecraft.glistering_melon_slice": "Golden Apple",
   "item.minecraft.quartz": "Cookie",
   "item.minecraft.spectral_arrow": "Milk Bucket",
-  "item.minecraft.fire_charge": "Fire"
+  "item.minecraft.fire_charge": "Fire",
+  "item.minecraft.chainmail_boots": "Chain Boots",
+  "item.minecraft.chainmail_chestplate": "Chain Chestplate",
+  "item.minecraft.chainmail_helmet": "Chain Helmet",
+  "item.minecraft.chainmail_leggings": "Chain Leggings"
 }

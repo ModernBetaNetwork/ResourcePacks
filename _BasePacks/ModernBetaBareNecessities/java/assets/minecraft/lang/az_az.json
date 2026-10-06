@@ -109,5 +109,9 @@
   "item.minecraft.music_disc_13.desc": "",
   "item.minecraft.music_disc_cat": "§fMusiqi Diski",
   "item.minecraft.music_disc_cat.desc": "",
-  "item.minecraft.fire_charge": "Od"
+  "item.minecraft.fire_charge": "Od",
+  "item.minecraft.chainmail_boots": "Zəncir Çəkmələr",
+  "item.minecraft.chainmail_chestplate": "Zəncir Döşlük",
+  "item.minecraft.chainmail_helmet": "Zəncir Dəbilqə",
+  "item.minecraft.chainmail_leggings": "Zəncir Şalvar"
 }

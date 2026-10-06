@@ -109,5 +109,9 @@
   "item.minecraft.music_disc_13.desc": "",
   "item.minecraft.music_disc_cat": "§fΜουσικός δίσκος",
   "item.minecraft.music_disc_cat.desc": "",
-  "item.minecraft.fire_charge": "Φωτιά"
+  "item.minecraft.fire_charge": "Φωτιά",
+  "item.minecraft.chainmail_boots": "Αλυσιδωτές Μπότες",
+  "item.minecraft.chainmail_chestplate": "Αλυσιδωτός Θώρακας",
+  "item.minecraft.chainmail_helmet": "Αλυσιδωτό Κράνος",
+  "item.minecraft.chainmail_leggings": "Αλυσιδωτό Παντελόνι"
 }

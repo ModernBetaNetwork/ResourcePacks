@@ -109,5 +109,9 @@
   "item.minecraft.music_disc_13.desc": "",
   "item.minecraft.music_disc_cat": "§f§fMusic Disc",
   "item.minecraft.music_disc_cat.desc": "",
-  "item.minecraft.fire_charge": "Ahi"
+  "item.minecraft.fire_charge": "Ahi",
+  "item.minecraft.chainmail_boots": "Hū Mekameka",
+  "item.minecraft.chainmail_chestplate": "Pare Uma Mekameka",
+  "item.minecraft.chainmail_helmet": "Potae Mekameka",
+  "item.minecraft.chainmail_leggings": "Tarau Mekameka"
 }

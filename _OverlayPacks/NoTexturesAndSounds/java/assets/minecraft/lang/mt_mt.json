@@ -109,5 +109,9 @@
   "item.minecraft.music_disc_13.desc": "",
   "item.minecraft.music_disc_cat": "§fDiska tal-Mużika",
   "item.minecraft.music_disc_cat.desc": "",
-  "item.minecraft.fire_charge": "Nar"
+  "item.minecraft.fire_charge": "Nar",
+  "item.minecraft.chainmail_boots": "Stivali tal-Katina",
+  "item.minecraft.chainmail_chestplate": "Plakka tas-Sider tal-Katina",
+  "item.minecraft.chainmail_helmet": "Elmu tal-Katina",
+  "item.minecraft.chainmail_leggings": "Qliezet tal-Katina"
 }

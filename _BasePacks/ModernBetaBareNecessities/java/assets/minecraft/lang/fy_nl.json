@@ -109,5 +109,9 @@
   "item.minecraft.music_disc_13.desc": "",
   "item.minecraft.music_disc_cat": "§fMuzykplaat",
   "item.minecraft.music_disc_cat.desc": "",
-  "item.minecraft.fire_charge": "Fjoer"
+  "item.minecraft.fire_charge": "Fjoer",
+  "item.minecraft.chainmail_boots": "Keatlinglearzens",
+  "item.minecraft.chainmail_chestplate": "Keatlingboarstplaat",
+  "item.minecraft.chainmail_helmet": "Keatlinghelm",
+  "item.minecraft.chainmail_leggings": "Keatlingbroek"
 }

@@ -109,5 +109,9 @@
   "item.minecraft.music_disc_13.desc": "",
   "item.minecraft.music_disc_cat": "§fMuzikos diskas",
   "item.minecraft.music_disc_cat.desc": "",
-  "item.minecraft.fire_charge": "Ugnis"
+  "item.minecraft.fire_charge": "Ugnis",
+  "item.minecraft.chainmail_boots": "Grandininiai batai",
+  "item.minecraft.chainmail_chestplate": "Grandininis krūtinės šarvas",
+  "item.minecraft.chainmail_helmet": "Grandininis šalmas",
+  "item.minecraft.chainmail_leggings": "Grandininės kelnės"
 }

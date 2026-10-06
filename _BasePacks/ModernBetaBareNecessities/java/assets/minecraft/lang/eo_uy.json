@@ -109,5 +109,9 @@
   "item.minecraft.music_disc_13.desc": "",
   "item.minecraft.music_disc_cat": "§fSondisko",
   "item.minecraft.music_disc_cat.desc": "",
-  "item.minecraft.fire_charge": "Fajro"
+  "item.minecraft.fire_charge": "Fajro",
+  "item.minecraft.chainmail_boots": "Ĉenaj Botoj",
+  "item.minecraft.chainmail_chestplate": "Ĉena Brustokiraso",
+  "item.minecraft.chainmail_helmet": "Ĉena Kasko",
+  "item.minecraft.chainmail_leggings": "Ĉenaj Pantalonoj"
 }

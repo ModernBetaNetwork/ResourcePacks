@@ -109,5 +109,9 @@
   "item.minecraft.music_disc_13.desc": "",
   "item.minecraft.music_disc_cat": "§fレコード",
   "item.minecraft.music_disc_cat.desc": "",
-  "item.minecraft.fire_charge": "火"
+  "item.minecraft.fire_charge": "火",
+  "item.minecraft.chainmail_boots": "チェーンブーツ",
+  "item.minecraft.chainmail_chestplate": "チェーンチェストプレート",
+  "item.minecraft.chainmail_helmet": "チェーンヘルメット",
+  "item.minecraft.chainmail_leggings": "チェーンレギンス"
 }

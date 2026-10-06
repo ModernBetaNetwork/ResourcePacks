@@ -109,5 +109,9 @@
   "item.minecraft.music_disc_13.desc": "",
   "item.minecraft.music_disc_cat": "§f§fMusic Disc",
   "item.minecraft.music_disc_cat.desc": "",
-  "item.minecraft.fire_charge": "Dolla"
+  "item.minecraft.fire_charge": "Dolla",
+  "item.minecraft.chainmail_boots": "Ráksuskuovat",
+  "item.minecraft.chainmail_chestplate": "Ráksubrynja",
+  "item.minecraft.chainmail_helmet": "Ráksuhjálmmá",
+  "item.minecraft.chainmail_leggings": "Ráksubusket"
 }

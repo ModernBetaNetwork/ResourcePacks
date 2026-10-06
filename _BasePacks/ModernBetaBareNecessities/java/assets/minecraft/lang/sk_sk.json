@@ -109,5 +109,9 @@
   "item.minecraft.music_disc_13.desc": "",
   "item.minecraft.music_disc_cat": "§fHudobná platňa",
   "item.minecraft.music_disc_cat.desc": "",
-  "item.minecraft.fire_charge": "Oheň"
+  "item.minecraft.fire_charge": "Oheň",
+  "item.minecraft.chainmail_boots": "Reťazové topánky",
+  "item.minecraft.chainmail_chestplate": "Reťazový náprsník",
+  "item.minecraft.chainmail_helmet": "Reťazová prilba",
+  "item.minecraft.chainmail_leggings": "Reťazové nohavice"
 }

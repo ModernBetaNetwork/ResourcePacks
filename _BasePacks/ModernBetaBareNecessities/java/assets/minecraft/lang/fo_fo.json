@@ -109,5 +109,9 @@
   "item.minecraft.music_disc_13.desc": "",
   "item.minecraft.music_disc_cat": "§fLjómfløga",
   "item.minecraft.music_disc_cat.desc": "",
-  "item.minecraft.fire_charge": "Eldur"
+  "item.minecraft.fire_charge": "Eldur",
+  "item.minecraft.chainmail_boots": "Keðiskógvar",
+  "item.minecraft.chainmail_chestplate": "Keðibrynja",
+  "item.minecraft.chainmail_helmet": "Keðihjálmur",
+  "item.minecraft.chainmail_leggings": "Keðibuksur"
 }

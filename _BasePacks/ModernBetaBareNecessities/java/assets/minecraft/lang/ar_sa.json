@@ -109,5 +109,9 @@
   "item.minecraft.music_disc_13.desc": "",
   "item.minecraft.music_disc_cat": "§fأسطوانة أغاني",
   "item.minecraft.music_disc_cat.desc": "",
-  "item.minecraft.fire_charge": "نار"
+  "item.minecraft.fire_charge": "نار",
+  "item.minecraft.chainmail_boots": "حذاء سلسلي",
+  "item.minecraft.chainmail_chestplate": "صدرية سلسلية",
+  "item.minecraft.chainmail_helmet": "خوذة سلسلية",
+  "item.minecraft.chainmail_leggings": "بنطال سلسلي"
 }

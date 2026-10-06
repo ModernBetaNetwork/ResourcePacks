@@ -109,5 +109,9 @@
   "item.minecraft.music_disc_13.desc": "",
   "item.minecraft.music_disc_cat": "§fMüzik Diski",
   "item.minecraft.music_disc_cat.desc": "",
-  "item.minecraft.fire_charge": "Ateş"
+  "item.minecraft.fire_charge": "Ateş",
+  "item.minecraft.chainmail_boots": "Zincir Bot",
+  "item.minecraft.chainmail_chestplate": "Zincir Göğüslük",
+  "item.minecraft.chainmail_helmet": "Zincir Miğfer",
+  "item.minecraft.chainmail_leggings": "Zincir Pantolon"
 }

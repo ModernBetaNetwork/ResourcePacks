@@ -109,5 +109,9 @@
   "item.minecraft.music_disc_13.desc": "",
   "item.minecraft.music_disc_cat": "§fDisco de Música",
   "item.minecraft.music_disc_cat.desc": "",
-  "item.minecraft.fire_charge": "Fogo"
+  "item.minecraft.fire_charge": "Fogo",
+  "item.minecraft.chainmail_boots": "Botas de cadeia",
+  "item.minecraft.chainmail_chestplate": "Peitoral de cadeia",
+  "item.minecraft.chainmail_helmet": "Capacete de cadeia",
+  "item.minecraft.chainmail_leggings": "Calças de cadeia"
 }

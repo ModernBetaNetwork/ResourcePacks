@@ -109,5 +109,9 @@
   "item.minecraft.music_disc_13.desc": "",
   "item.minecraft.music_disc_cat": "§f§fMusic Disc",
   "item.minecraft.music_disc_cat.desc": "",
-  "item.minecraft.fire_charge": "Zjarr"
+  "item.minecraft.fire_charge": "Zjarr",
+  "item.minecraft.chainmail_boots": "Çizme me Zinxhir",
+  "item.minecraft.chainmail_chestplate": "Parzmore me Zinxhir",
+  "item.minecraft.chainmail_helmet": "Helmetë me Zinxhir",
+  "item.minecraft.chainmail_leggings": "Pantallona me Zinxhir"
 }

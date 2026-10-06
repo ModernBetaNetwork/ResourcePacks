@@ -109,5 +109,9 @@
   "item.minecraft.music_disc_13.desc": "",
   "item.minecraft.music_disc_cat": "§fМузички Диск",
   "item.minecraft.music_disc_cat.desc": "",
-  "item.minecraft.fire_charge": "Оган"
+  "item.minecraft.fire_charge": "Оган",
+  "item.minecraft.chainmail_boots": "Верижни чизми",
+  "item.minecraft.chainmail_chestplate": "Верижен оклоп",
+  "item.minecraft.chainmail_helmet": "Верижен шлем",
+  "item.minecraft.chainmail_leggings": "Верижни панталони"
 }

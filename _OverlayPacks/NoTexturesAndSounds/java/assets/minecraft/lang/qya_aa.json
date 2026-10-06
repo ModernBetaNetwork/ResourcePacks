@@ -109,5 +109,9 @@
   "item.minecraft.music_disc_13.desc": "",
   "item.minecraft.music_disc_cat": "§fLindecorma",
   "item.minecraft.music_disc_cat.desc": "",
-  "item.minecraft.fire_charge": "Nár"
+  "item.minecraft.fire_charge": "Nár",
+  "item.minecraft.chainmail_boots": "Limilëo Hyapat",
+  "item.minecraft.chainmail_chestplate": "Limilëo Hroacolla",
+  "item.minecraft.chainmail_helmet": "Limilëo Cassë",
+  "item.minecraft.chainmail_leggings": "Limilëo Telcocolla"
 }

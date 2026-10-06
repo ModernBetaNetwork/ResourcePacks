@@ -109,5 +109,9 @@
   "item.minecraft.music_disc_13.desc": "",
   "item.minecraft.music_disc_cat": "§fClàr ciùil",
   "item.minecraft.music_disc_cat.desc": "",
-  "item.minecraft.fire_charge": "Teine"
+  "item.minecraft.fire_charge": "Teine",
+  "item.minecraft.chainmail_boots": "Bòtannan Slabhraidh",
+  "item.minecraft.chainmail_chestplate": "Uchd-phlàta Slabhraidh",
+  "item.minecraft.chainmail_helmet": "Clogaid Slabhraidh",
+  "item.minecraft.chainmail_leggings": "Briogais Slabhraidh"
 }

@@ -109,5 +109,9 @@
   "item.minecraft.music_disc_13.desc": "",
   "item.minecraft.music_disc_cat": "§f음반",
   "item.minecraft.music_disc_cat.desc": "",
-  "item.minecraft.fire_charge": "불"
+  "item.minecraft.fire_charge": "불",
+  "item.minecraft.chainmail_boots": "사슬 부츠",
+  "item.minecraft.chainmail_chestplate": "사슬 흉갑",
+  "item.minecraft.chainmail_helmet": "사슬 투구",
+  "item.minecraft.chainmail_leggings": "사슬 레깅스"
 }

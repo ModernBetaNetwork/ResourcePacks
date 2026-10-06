@@ -109,5 +109,9 @@
   "item.minecraft.music_disc_13.desc": "",
   "item.minecraft.music_disc_cat": "§fDisco de música",
   "item.minecraft.music_disc_cat.desc": "",
-  "item.minecraft.fire_charge": "Lume"
+  "item.minecraft.fire_charge": "Lume",
+  "item.minecraft.chainmail_boots": "Botas de cadea",
+  "item.minecraft.chainmail_chestplate": "Peiteira de cadea",
+  "item.minecraft.chainmail_helmet": "Casco de cadea",
+  "item.minecraft.chainmail_leggings": "Pantalóns de cadea"
 }

@@ -109,5 +109,9 @@
   "item.minecraft.music_disc_13.desc": "",
   "item.minecraft.music_disc_cat": "§fPhonodiscus",
   "item.minecraft.music_disc_cat.desc": "",
-  "item.minecraft.fire_charge": "Ignis"
+  "item.minecraft.fire_charge": "Ignis",
+  "item.minecraft.chainmail_boots": "Caligae Catenatae",
+  "item.minecraft.chainmail_chestplate": "Lorica Catenata",
+  "item.minecraft.chainmail_helmet": "Galea Catenata",
+  "item.minecraft.chainmail_leggings": "Ocreae Catenatae"
 }

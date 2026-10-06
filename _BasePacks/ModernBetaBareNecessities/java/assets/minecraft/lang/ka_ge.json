@@ -109,5 +109,9 @@
   "item.minecraft.music_disc_13.desc": "",
   "item.minecraft.music_disc_cat": "§fმუსიკალური დისკი",
   "item.minecraft.music_disc_cat.desc": "",
-  "item.minecraft.fire_charge": "ცეცხლი"
+  "item.minecraft.fire_charge": "ცეცხლი",
+  "item.minecraft.chainmail_boots": "ჯაჭვის ჩექმები",
+  "item.minecraft.chainmail_chestplate": "ჯაჭვის მკერდსაფარი",
+  "item.minecraft.chainmail_helmet": "ჯაჭვის ჩაფხუტი",
+  "item.minecraft.chainmail_leggings": "ჯაჭვის შარვალი"
 }

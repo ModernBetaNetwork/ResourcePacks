@@ -162,6 +162,10 @@
   "item.minecraft.golden_boots": "Golden boots",
   "item.minecraft.lava_bucket": "Lava bucket",
   "item.minecraft.fire_charge": "Fire",
+  "item.minecraft.chainmail_boots": "Chain Boots",
+  "item.minecraft.chainmail_chestplate": "Chain Chestplate",
+  "item.minecraft.chainmail_helmet": "Chain Helmet",
+  "item.minecraft.chainmail_leggings": "Chain Leggings",
   
   "menu.game": "Game menu",
   "deathScreen.score.value": "Score: &e0",

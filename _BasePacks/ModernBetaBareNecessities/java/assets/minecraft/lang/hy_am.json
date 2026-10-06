@@ -109,5 +109,9 @@
   "item.minecraft.music_disc_13.desc": "",
   "item.minecraft.music_disc_cat": "§fԵրաժշտության Դիսկ",
   "item.minecraft.music_disc_cat.desc": "",
-  "item.minecraft.fire_charge": "Կրակ"
+  "item.minecraft.fire_charge": "Կրակ",
+  "item.minecraft.chainmail_boots": "Շղթայական կոշիկներ",
+  "item.minecraft.chainmail_chestplate": "Շղթայական կրծապաշտպան",
+  "item.minecraft.chainmail_helmet": "Շղթայական սաղավարտ",
+  "item.minecraft.chainmail_leggings": "Շղթայական տաբատ"
 }

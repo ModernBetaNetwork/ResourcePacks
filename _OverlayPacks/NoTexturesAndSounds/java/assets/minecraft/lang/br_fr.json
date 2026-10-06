@@ -109,5 +109,9 @@
   "item.minecraft.music_disc_13.desc": "",
   "item.minecraft.music_disc_cat": "§fPladenn sonerezh",
   "item.minecraft.music_disc_cat.desc": "",
-  "item.minecraft.fire_charge": "Tan"
+  "item.minecraft.fire_charge": "Tan",
+  "item.minecraft.chainmail_boots": "Botoù chadennoù",
+  "item.minecraft.chainmail_chestplate": "Brozh-kof chadennoù",
+  "item.minecraft.chainmail_helmet": "Tok chadennoù",
+  "item.minecraft.chainmail_leggings": "Bragoù chadennoù"
 }

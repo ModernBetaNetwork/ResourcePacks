@@ -109,5 +109,9 @@
   "item.minecraft.music_disc_13.desc": "",
   "item.minecraft.music_disc_cat": "§f音乐唱片",
   "item.minecraft.music_disc_cat.desc": "",
-  "item.minecraft.fire_charge": "火"
+  "item.minecraft.fire_charge": "火",
+  "item.minecraft.chainmail_boots": "锁链靴子",
+  "item.minecraft.chainmail_chestplate": "锁链胸甲",
+  "item.minecraft.chainmail_helmet": "锁链头盔",
+  "item.minecraft.chainmail_leggings": "锁链护腿"
 }

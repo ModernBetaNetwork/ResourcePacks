@@ -109,5 +109,9 @@
   "item.minecraft.music_disc_13.desc": "",
   "item.minecraft.music_disc_cat": "§fGlasbena plošča",
   "item.minecraft.music_disc_cat.desc": "",
-  "item.minecraft.fire_charge": "Ogenj"
+  "item.minecraft.fire_charge": "Ogenj",
+  "item.minecraft.chainmail_boots": "Verižni škornji",
+  "item.minecraft.chainmail_chestplate": "Verižni oklep",
+  "item.minecraft.chainmail_helmet": "Verižna čelada",
+  "item.minecraft.chainmail_leggings": "Verižne hlače"
 }

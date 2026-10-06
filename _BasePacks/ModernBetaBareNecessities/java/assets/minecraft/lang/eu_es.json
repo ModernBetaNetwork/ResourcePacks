@@ -109,5 +109,9 @@
   "item.minecraft.music_disc_13.desc": "",
   "item.minecraft.music_disc_cat": "§fMusika diskoa",
   "item.minecraft.music_disc_cat.desc": "",
-   "item.minecraft.fire_charge": "Su"
+   "item.minecraft.fire_charge": "Su",
+  "item.minecraft.chainmail_boots": "Kateazko botak",
+  "item.minecraft.chainmail_chestplate": "Kateazko bularraldea",
+  "item.minecraft.chainmail_helmet": "Kateazko kaskoa",
+  "item.minecraft.chainmail_leggings": "Kateazko galtzak"
 }

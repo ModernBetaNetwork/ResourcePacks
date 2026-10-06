@@ -109,5 +109,9 @@
   "item.minecraft.music_disc_13.desc": "",
   "item.minecraft.music_disc_cat": "§fSchallplack",
   "item.minecraft.music_disc_cat.desc": "",
-  "item.minecraft.fire_charge": "Feier"
+  "item.minecraft.fire_charge": "Feier",
+  "item.minecraft.chainmail_boots": "Kettestiwwelen",
+  "item.minecraft.chainmail_chestplate": "Kette-Brustpanzer",
+  "item.minecraft.chainmail_helmet": "Kettehelm",
+  "item.minecraft.chainmail_leggings": "Kettebox"
 }

@@ -12,8 +12,7 @@
         {"coordinates": [-4, 16, -14, 8, 8, 6], "textureOffset": [0, 0]},
         {"coordinates": [-4.3, 23, -12, 1, 3, 1], "textureOffset": [22, 0]},
         {"coordinates": [3.3, 23, -12, 1, 3, 1], "textureOffset": [22, 0]}
-      ],
-		    ]
+      ]
     },
     {
       "part": "body",

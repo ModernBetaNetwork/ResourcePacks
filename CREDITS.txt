@@ -8,3 +8,4 @@ wwu - Translations & parity fixes
 Vanilla Tweaks: https://vanillatweaks.net/
 Bedrock Tweaks: https://bedrocktweaks.net/
 chililisoup's bsw_fix (26.2 large sign text fix): https://github.com/chililisoup/BigSignWriter/blob/main/
+DuckHunt1337 - Various parity fixes with block states

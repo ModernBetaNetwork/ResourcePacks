@@ -1,0 +1,14 @@
+{
+  "format_version": "1",
+  "items": {
+    "minecraft:fire_charge": [
+      {
+        "name": "Fire",
+        "allow_offhand": false,
+        "icon": "blaze_powder",
+        "frame": 0,
+        "custom_model_data": 1
+      }
+    ]
+  }
+}

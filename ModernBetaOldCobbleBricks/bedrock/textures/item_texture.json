@@ -225,6 +225,9 @@
     },
     "minecart_hopper": {
       "textures": "textures/items/boat_oak"
+    },
+    "bucket_milk": {
+      "textures": "textures/items/bucket_milk"
     }
   }
 }

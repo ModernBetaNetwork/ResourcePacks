@@ -2352,5 +2352,10 @@
    "invisible_stair": {
       "sound": "wood",
       "textures" : "none"
+   },
+   "sugar_cane": {
+      "sound": "grass",
+      "textures" : "reeds",
+      "geometry" : "geometry.cross"
    }
 }

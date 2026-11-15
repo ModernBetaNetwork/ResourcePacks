@@ -206,6 +206,59 @@
     ],
     "subtitle": "subtitles.block.generic.footsteps"
   },
+  "block.sponge.break": {
+    "replace": true,
+
+    "sounds": [
+      "dig/grass1",
+      "dig/grass2",
+      "dig/grass3",
+      "dig/grass4"
+    ],
+    "subtitle": "subtitles.block.generic.break"
+  },
+  "block.sponge.fall": {
+    "replace": true,
+    "sounds": [
+      "dig/grass1",
+      "dig/grass2",
+      "dig/grass3",
+      "dig/grass4"
+    ]
+  },
+  "block.sponge.hit": {
+    "replace": true,
+
+    "sounds": [
+      "dig/grass1",
+      "dig/grass2",
+      "dig/grass3",
+      "dig/grass4"
+    ],
+    "subtitle": "subtitles.block.generic.hit"
+  },
+  "block.sponge.place": {
+    "replace": true,
+
+    "sounds": [
+      "dig/grass1",
+      "dig/grass2",
+      "dig/grass3",
+      "dig/grass4"
+    ],
+    "subtitle": "subtitles.block.generic.place"
+  },
+  "block.sponge.step": {
+    "replace": true,
+
+    "sounds": [
+      "dig/grass1",
+      "dig/grass2",
+      "dig/grass3",
+      "dig/grass4"
+    ],
+    "subtitle": "subtitles.block.generic.footsteps"
+  },
   "block.fungus.break": {
     "replace": true,
     "sounds": [
@@ -2600,4 +2653,5 @@
     ],
     "subtitle": "subtitles.entity.zombie_pigman.hurt"
   }
+
 }

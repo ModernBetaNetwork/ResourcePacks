@@ -208,13 +208,14 @@
   },
   "block.sponge.break": {
     "replace": true,
-    "subtitle": "subtitles.block.generic.break",
+
     "sounds": [
       "dig/grass1",
       "dig/grass2",
       "dig/grass3",
       "dig/grass4"
-    ]
+    ],
+    "subtitle": "subtitles.block.generic.break"
   },
   "block.sponge.fall": {
     "replace": true,
@@ -227,33 +228,36 @@
   },
   "block.sponge.hit": {
     "replace": true,
-    "subtitle": "subtitles.block.generic.hit",
+
     "sounds": [
       "dig/grass1",
       "dig/grass2",
       "dig/grass3",
       "dig/grass4"
-    ]
+    ],
+    "subtitle": "subtitles.block.generic.hit"
   },
   "block.sponge.place": {
     "replace": true,
-    "subtitle": "subtitles.block.generic.place",
+
     "sounds": [
       "dig/grass1",
       "dig/grass2",
       "dig/grass3",
       "dig/grass4"
-    ]
+    ],
+    "subtitle": "subtitles.block.generic.place"
   },
   "block.sponge.step": {
     "replace": true,
-    "subtitle": "subtitles.block.generic.footsteps",
+
     "sounds": [
       "dig/grass1",
       "dig/grass2",
       "dig/grass3",
       "dig/grass4"
-    ]
+    ],
+    "subtitle": "subtitles.block.generic.footsteps"
   },
   "block.fungus.break": {
     "replace": true,

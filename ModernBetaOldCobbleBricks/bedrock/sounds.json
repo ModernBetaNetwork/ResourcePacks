@@ -1201,6 +1201,40 @@
          "pitch" : 1.0,
          "volume" : 1.0
       },
+      "sponge" : {
+         "events" : {
+            "break" : {
+               "pitch" : [ 0.80, 1.0 ],
+               "sound" : "dig.grass",
+               "volume" : 0.70
+            },
+            "default" : "",
+            "hit" : {
+               "pitch" : 0.50,
+               "sound" : "hit.grass",
+               "volume" : 0.30
+            },
+            "item.use.on" : {
+               "pitch" : 0.80,
+               "sound" : "use.grass"
+            },
+            "place" : {
+               "pitch" : [ 0.80, 1.0 ],
+               "sound" : "dig.grass",
+               "volume" : 0.80
+            },
+            "power.off" : {
+               "pitch" : 0.50,
+               "sound" : "block.click"
+            },
+            "power.on" : {
+               "pitch" : 0.60,
+               "sound" : "block.click"
+            }
+         },
+         "pitch" : 1.0,
+         "volume" : 1.0
+      },
       "gravel" : {
          "events" : {
             "break" : {

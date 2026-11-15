@@ -206,6 +206,55 @@
     ],
     "subtitle": "subtitles.block.generic.footsteps"
   },
+  "block.sponge.break": {
+    "replace": true,
+    "subtitle": "subtitles.block.generic.break",
+    "sounds": [
+      "dig/grass1",
+      "dig/grass2",
+      "dig/grass3",
+      "dig/grass4"
+    ]
+  },
+  "block.sponge.fall": {
+    "replace": true,
+    "sounds": [
+      "dig/grass1",
+      "dig/grass2",
+      "dig/grass3",
+      "dig/grass4"
+    ]
+  },
+  "block.sponge.hit": {
+    "replace": true,
+    "subtitle": "subtitles.block.generic.hit",
+    "sounds": [
+      "dig/grass1",
+      "dig/grass2",
+      "dig/grass3",
+      "dig/grass4"
+    ]
+  },
+  "block.sponge.place": {
+    "replace": true,
+    "subtitle": "subtitles.block.generic.place",
+    "sounds": [
+      "dig/grass1",
+      "dig/grass2",
+      "dig/grass3",
+      "dig/grass4"
+    ]
+  },
+  "block.sponge.step": {
+    "replace": true,
+    "subtitle": "subtitles.block.generic.footsteps",
+    "sounds": [
+      "dig/grass1",
+      "dig/grass2",
+      "dig/grass3",
+      "dig/grass4"
+    ]
+  },
   "block.fungus.break": {
     "replace": true,
     "sounds": [
